@@ -228,7 +228,7 @@ body{
 .t tr.sub .calc-badge, .t tr.sub .guide-badge{ text-transform:none; letter-spacing:.01em; }
 
 /* ---- compiled utility classes (Tailwind v3, generated at build) ---- */
-.col-span-2{grid-column:span 2/span 2}.col-span-5{grid-column:span 5/span 5}.col-span-6{grid-column:span 6/span 6}.col-span-7{grid-column:span 7/span 7}.mb-\[2px\]{margin-bottom:2px}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-\[1px\]{margin-top:1px}.mt-\[2px\]{margin-top:2px}.flex{display:flex}.table{display:table}.grid{display:grid}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-\[1\.5mm\]{gap:1.5mm}.gap-\[1\.5px\]{gap:1.5px}.gap-\[1px\]{gap:1px}.gap-\[2px\]{gap:2px}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.border{border-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.pl-2{padding-left:.5rem}.pt-\[1px\]{padding-top:1px}
+.col-span-2{grid-column:span 2/span 2}.col-span-5{grid-column:span 5/span 5}.col-span-7{grid-column:span 7/span 7}.mb-\[2px\]{margin-bottom:2px}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-\[1px\]{margin-top:1px}.mt-\[2px\]{margin-top:2px}.flex{display:flex}.table{display:table}.grid{display:grid}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-3{gap:.75rem}.gap-\[1\.5mm\]{gap:1.5mm}.gap-\[1\.5px\]{gap:1.5px}.gap-\[1px\]{gap:1px}.gap-\[2px\]{gap:2px}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.pl-2{padding-left:.5rem}.pt-\[1px\]{padding-top:1px}
 </style>
 </head>
 <body>
@@ -339,16 +339,18 @@ body{
 </section>
 <!-- D : Subjective History & Pain Map (Shoulder + Neck + Arm) -->
 <section class="card flex flex-col" id="p1-subjective">
-<div class="card-h"><span>D · Subjective History, Symptom Behaviour &amp; Shoulder / Neck / Arm Pain Map</span><span class="tag">SUBJECTIVE</span></div>
-<div class="card-b grid grid-cols-12 gap-2" style="padding:.6mm 1.2mm;">
-<div class="col-span-6 flex flex-col gap-[1.5px]">
+<div class="card-h"><span>D · Subjective History, Symptom Behaviour &amp; Shoulder / Neck / Arm Body Chart</span><span class="tag">SUBJECTIVE</span></div>
+<div class="card-b" style="padding:.6mm 1.2mm;">
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-[1.5px]">
 <div class="sh" style="margin:0 0 1px;"><span>Symptom Location &amp; Clinical Pattern</span><span class="stat">Clinical Signpost</span></div>
 <div class="ci"><span class="cb"></span><div><b>Anterolateral / Deltoid Pain on Overhead Activity:</b> full passive ER → <span class="nav b">Subacromial pain / RCRSP (p2/p4)</span></div></div>
 <div class="ci"><span class="cb"></span><div><b>Global Stiffness &amp; Severe Night Pain:</b> passive ER loss → <span class="nav b">Frozen shoulder / GH OA (p2/p6)</span></div></div>
 <div class="ci"><span class="cb"></span><div><b>Superior AC Joint Pain &amp; High-Arc Provocation:</b> local tenderness → <span class="nav b">AC joint pathology (p2/p4)</span></div></div>
 <div class="ci"><span class="cb"></span><div><b>Apprehension or Slipping in Abduction + ER:</b> trauma or hyperlaxity → <span class="nav b">Traumatic or Stanmore II/III instability (p2/p4)</span></div></div>
 <div class="ci"><span class="cb"></span><div><b>Neck Pain Radiating Distal to Elbow with Paresthesia:</b> (+) <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wainner-cervical-radiculopathy-cluster" rel="noopener" target="_blank">Wainner cluster</a> / <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#ultt-a" rel="noopener" target="_blank">ULTT A</a> → <span class="nav b">Cervical radiculopathy (p1/p3)</span></div></div>
-<div class="sh" style="margin:.8mm 0 1px;"><span>Aggravating, Easing &amp; Irritability Profile</span><span class="stat">Behaviour</span></div>
+</div>
+<div class="flex flex-col gap-[1.5px] border-l pl-2" style="border-color:var(--line)"><div class="sh" style="margin:0 0 1px;"><span>Aggravating, Easing &amp; Irritability Profile</span><span class="stat">Behaviour</span></div>
 <div class="row xs">
 <div class="fr" style="flex:1"><span class="lb">Aggravating</span><span class="fl"></span></div>
 <div class="fr" style="flex:1"><span class="lb">Easing</span><span class="fl"></span></div>
@@ -381,53 +383,108 @@ body{
 <span class="lb">Hand dominance &amp; sport / work demand:</span><span class="fl"></span>
 </div>
 </div>
-<div class="col-span-6 flex flex-col border-l pl-2" style="border-color:var(--line)">
-<div class="sh" style="margin:0 0 .5mm;"><span>Shoulder, Neck &amp; Arm Body Chart</span><span class="stat">Clinical signposts <span class="eb eb-e">E</span></span></div>
-<svg aria-label="Shoulder, neck and arm body chart, anterior and posterior" style="width:100%;height:auto;max-height:52mm;display:block" viewbox="0 0 200 130">
-<defs><marker id="ah" markerheight="4" markerwidth="4" orient="auto" refx="3" refy="3" viewbox="0 0 6 6"><path d="M0 0 L6 3 L0 6 Z" fill="#1e3a8a"></path></marker></defs>
-<path d="M 45.0 22 L 44.8 27 Q 41.0 29 30.0 31.5 C 22.0 32 16.0 35.5 15.5 44 Q 13.5 57 12.5 70 Q 10.5 85 9.5 98 L 8.9 101 Q 5.0 104 5.3 108.5 Q 6.0 110 7.5 109 L 8.0 114 Q 9.5 120.5 12.5 120 Q 15.8 119.5 16.2 114 L 16.8 99 Q 19.5 85 21.5 70 Q 24.0 57 26.5 47.5 Q 28.5 49 29.0 51 Q 30.2 72 31.4 92 Q 30.5 108 29.0 124 L 71.0 124 Q 69.5 108 68.6 92 Q 69.8 72 71.0 51 Q 71.5 49 73.5 47.5 Q 76.0 57 78.5 70 Q 80.5 85 83.2 99 L 83.8 114 Q 84.2 119.5 87.5 120 Q 90.5 120.5 92.0 114 L 92.5 109 Q 94.0 110 94.7 108.5 Q 95.0 104 91.1 101 L 90.5 98 Q 89.5 85 87.5 70 Q 86.5 57 84.5 44 C 84.0 35.5 78.0 32 70.0 31.5 Q 59.0 29 55.2 27 L 55.0 22 Z" fill="#fff" stroke="#334155" stroke-linejoin="round" stroke-width=".7"></path>
-<ellipse cx="50" cy="12.5" fill="#fff" rx="7.6" ry="9.6" stroke="#334155" stroke-width=".8"></ellipse>
-<text fill="#334155" font-size="4.2" font-weight="800" letter-spacing=".4" text-anchor="middle" x="50" y="129">ANTERIOR</text>
-<path d="M 145.0 22 L 144.8 27 Q 141.0 29 130.0 31.5 C 122.0 32 116.0 35.5 115.5 44 Q 113.5 57 112.5 70 Q 110.5 85 109.5 98 L 108.9 101 Q 105.0 104 105.3 108.5 Q 106.0 110 107.5 109 L 108.0 114 Q 109.5 120.5 112.5 120 Q 115.8 119.5 116.2 114 L 116.8 99 Q 119.5 85 121.5 70 Q 124.0 57 126.5 47.5 Q 128.5 49 129.0 51 Q 130.2 72 131.4 92 Q 130.5 108 129.0 124 L 171.0 124 Q 169.5 108 168.6 92 Q 169.8 72 171.0 51 Q 171.5 49 173.5 47.5 Q 176.0 57 178.5 70 Q 180.5 85 183.2 99 L 183.8 114 Q 184.2 119.5 187.5 120 Q 190.5 120.5 192.0 114 L 192.5 109 Q 194.0 110 194.7 108.5 Q 195.0 104 191.1 101 L 190.5 98 Q 189.5 85 187.5 70 Q 186.5 57 184.5 44 C 184.0 35.5 178.0 32 170.0 31.5 Q 159.0 29 155.2 27 L 155.0 22 Z" fill="#fff" stroke="#334155" stroke-linejoin="round" stroke-width=".7"></path>
-<ellipse cx="150" cy="12.5" fill="#fff" rx="7.6" ry="9.6" stroke="#334155" stroke-width=".8"></ellipse>
-<text fill="#334155" font-size="4.2" font-weight="800" letter-spacing=".4" text-anchor="middle" x="150" y="129">POSTERIOR</text>
-<path d="M 48 31.5 Q 38 30 26 32.6" fill="none" stroke="#94a3b8" stroke-width=".5"></path>
-<path d="M 20.5 70.5 L 14.5 70.5" stroke="#94a3b8" stroke-dasharray="1 .8" stroke-width=".4"></path>
-<path d="M 52 31.5 Q 62 30 74 32.6" fill="none" stroke="#94a3b8" stroke-width=".5"></path>
-<path d="M 79.5 70.5 L 85.5 70.5" stroke="#94a3b8" stroke-dasharray="1 .8" stroke-width=".4"></path>
-<line stroke="#94a3b8" stroke-width=".4" x1="50" x2="50" y1="31.5" y2="58"></line>
-<line stroke="#94a3b8" stroke-dasharray="1.2 1" stroke-width=".45" x1="150" x2="150" y1="29" y2="118"></line>
-<path d="M 142 40 L 126 34.5" fill="none" stroke="#94a3b8" stroke-width=".55"></path>
-<path d="M 141.5 37.5 L 139.5 62 L 129.5 47 L 128 38" fill="none" stroke="#94a3b8" stroke-width=".45"></path>
-<path d="M 158 40 L 174 34.5" fill="none" stroke="#94a3b8" stroke-width=".55"></path>
-<path d="M 158.5 37.5 L 160.5 62 L 170.5 47 L 172 38" fill="none" stroke="#94a3b8" stroke-width=".45"></path>
-<text fill="#94a3b8" font-size="4" font-weight="800" text-anchor="middle" x="23" y="125">R</text>
-<text fill="#94a3b8" font-size="4" font-weight="800" text-anchor="middle" x="77" y="125">L</text>
-<text fill="#94a3b8" font-size="4" font-weight="800" text-anchor="middle" x="123" y="125">L</text>
-<text fill="#94a3b8" font-size="4" font-weight="800" text-anchor="middle" x="177" y="125">R</text>
-<text fill="#64748b" font-size="3.3" font-weight="800" text-anchor="middle" x="15.799999999999997" y="66">C5</text>
-<text fill="#64748b" font-size="3.3" font-weight="800" text-anchor="middle" x="23.4" y="57.5">T1</text>
-<text fill="#64748b" font-size="3.3" font-weight="800" text-anchor="middle" x="12.700000000000003" y="86">C6</text>
-<text fill="#64748b" font-size="3.3" font-weight="800" text-anchor="middle" x="17.4" y="86">C8</text>
-<text fill="#64748b" font-size="3.3" font-weight="800" text-anchor="middle" x="12" y="117.5">C7</text>
-<path d="M 15 92 L 14.399999999999999 111" stroke="#94a3b8" stroke-dasharray=".8 .8" stroke-width=".3"></path>
-<circle cx="27.5" cy="32.2" fill="#065f46" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="27.5" y="33.550000000000004">1</text>
-<circle cx="23.2" cy="41.2" fill="#1e3a8a" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="23.2" y="42.550000000000004">2</text>
-<circle cx="15.700000000000003" cy="47.5" fill="#1e3a8a" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="15.700000000000003" y="48.85">3</text>
-<path d="M 15.399999999999999 51 L 14.600000000000001 59.5" marker-end="url(#ah)" stroke="#1e3a8a" stroke-width=".7"></path>
-<circle cx="60.5" cy="46" fill="#b42318" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="60.5" y="47.35">C</text>
-<circle cx="133" cy="45" fill="#1e3a8a" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="133" y="46.35">4</text>
-<circle cx="137" cy="31" fill="#b45309" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="137" y="32.35">5</text>
-<circle cx="143.8" cy="52" fill="#b45309" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="143.8" y="53.35">6</text>
-<circle cx="158.5" cy="32.2" fill="#b42318" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="158.5" y="33.550000000000004">P</text>
-<circle cx="166" cy="46" fill="#b42318" r="3.1" stroke="#fff" stroke-width=".6"></circle><text fill="#fff" font-size="3.9" font-weight="800" text-anchor="middle" x="166" y="47.35">H</text>
-</svg>
-<div class="xs" style="text-align:center;color:var(--mut);margin:.4mm 0 .3mm"><b style="color:var(--ink)">Mark:</b> shade = pain · //// = pins &amp; needles · ×× = numbness · → = radiation · write 0–10 beside each area</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:.6mm 1.6mm;font-size:6.6px;color:var(--ink)">
-<div style="display:flex;flex-direction:column;gap:.5mm"><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#065f46;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">1</span><span><b>AC joint</b> — points to top of shoulder</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#1e3a8a;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">2</span><span><b>Anterior shoulder</b> — biceps groove / anterior instability</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#1e3a8a;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">3</span><span><b>Lateral deltoid → insertion</b> — cuff / subacromial referral</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#1e3a8a;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">4</span><span><b>Posterior shoulder</b> — posterior cuff / suprascapular n.</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#b45309;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">5</span><span><b>Upper trapezius / suprascapular</b> — neck referral</span></div></div>
-<div style="display:flex;flex-direction:column;gap:.5mm"><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#b45309;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">6</span><span><b>Medial scapular border</b> — neck referral</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#b42318;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">C</span><span><b>Left chest / arm / jaw</b> — cardiac</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#b42318;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">P</span><span><b>Apex, medial scapula + ulnar arm</b> — Pancoast</span></div><div style="display:flex;gap:.8mm;align-items:flex-start"><span style="flex:none;width:3.1mm;height:3.1mm;border-radius:50%;background:#b42318;color:#fff;font-weight:800;font-size:6px;display:inline-flex;align-items:center;justify-content:center">H</span><span><b>Right shoulder tip / scapula</b> — hepatobiliary / diaphragm</span></div></div>
 </div>
-<div class="xs" style="margin-top:.6mm;padding:.5mm 1mm;border-radius:1mm;background:#fff7ed;color:#7c2d12;line-height:1.2"><b>Pain below the elbow, paraesthesia or pain changed by neck movement</b> → cervical screen (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wainner-cervical-radiculopathy-cluster" rel="noopener" target="_blank">Wainner</a>). <b>Pain not changed by shoulder movement</b> → red-flag screen (B).</div>
+<div class="sh" style="margin:1mm 0 .4mm;"><span>Body Chart — where is the pain?</span><span class="stat">Clinical signposts <span class="eb eb-e">E</span></span></div>
+<svg aria-label="Shoulder body chart, anterior and posterior, with labelled clinical zones" font-family="Source Sans 3, Arial, sans-serif" style="width:100%;height:auto;display:block" viewbox="0 0 880 240" xmlns="http://www.w3.org/2000/svg"><g>
+<path d="M 203.0 0.0 C 202.5 14.0 202.0 24.0 200.0 31.0 C 190.0 36.0 172.0 40.0 160.0 44.0 C 144.0 46.0 132.0 56.0 131.0 78.0 C 130.0 110.0 129.0 160.0 130.0 230.0 L 151.0 230.0 C 152.0 180.0 153.0 130.0 155.0 101.0 C 158.0 98.0 160.0 100.0 161.0 103.0 C 162.0 150.0 164.0 190.0 165.0 230.0 L 275.0 230.0 C 276.0 190.0 278.0 150.0 279.0 103.0 C 280.0 100.0 282.0 98.0 285.0 101.0 C 287.0 130.0 288.0 180.0 289.0 230.0 L 310.0 230.0 C 311.0 160.0 310.0 110.0 309.0 78.0 C 308.0 56.0 296.0 46.0 280.0 44.0 C 268.0 40.0 250.0 36.0 240.0 31.0 C 238.0 24.0 237.5 14.0 237.0 0.0 Z" fill="#f4dccb" stroke="#b88a6e" stroke-linejoin="round" stroke-width="1.1"></path>
+<path d="M 160 44 C 144 46 132 56 131 78 C 130 110 129 160 130 230 L 138 230 C 137 160 138 110 140 80 C 142 62 150 52 160 48 Z" fill="#d9a888" fill-opacity=".28"></path>
+<path d="M 161 103 C 162 150 164 190 165 230 L 173 230 C 171 190 169 150 167 108 Z" fill="#d9a888" fill-opacity=".22"></path>
+<path d="M 280 44 C 296 46 308 56 309 78 C 310 110 311 160 310 230 L 302 230 C 303 160 302 110 300 80 C 298 62 290 52 280 48 Z" fill="#d9a888" fill-opacity=".28"></path>
+<path d="M 279 103 C 278 150 276 190 275 230 L 267 230 C 269 190 271 150 273 108 Z" fill="#d9a888" fill-opacity=".22"></path>
+<path d="M 202 0 C 202.5 14 202 24 200 31 L 240 31 C 238 24 237.5 14 238 0 Z" fill="#d9a888" fill-opacity=".14"></path>
+<path d="M 208 4 C 210 18 213 28 216 37" fill="none" stroke="#c9997c" stroke-width=".8"></path>
+<path d="M 232 4 C 230 18 227 28 224 37" fill="none" stroke="#c9997c" stroke-width=".8"></path>
+<path d="M 214 39 Q 220 42 226 39" fill="none" stroke="#c9997c" stroke-width=".9"></path>
+<path d="M 213 41 C 195 39 175 42 160 46" fill="none" stroke="#c9997c" stroke-width="1.1"></path>
+<path d="M 170 47 C 160 62 150 95 141 128" fill="none" stroke="#c9997c" stroke-width="1"></path>
+<path d="M 216 128 C 198 140 174 132 157 106" fill="none" stroke="#c9997c" stroke-width="1"></path>
+<circle cx="184" cy="126" fill="#e2bba1" r="2.3"></circle>
+<path d="M 220 44 L 220 150" stroke="#c9997c" stroke-dasharray="2 2" stroke-width=".7"></path>
+<g opacity=".93">
+<path d="M 227 62 C 244 53 266 57 276 71" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 62 C 244 53 266 57 276 71" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 80 C 244 71 266 75 276 89" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 80 C 244 71 266 75 276 89" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 98 C 244 89 266 93 276 107" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 98 C 244 89 266 93 276 107" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 116 C 244 107 266 111 276 125" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 116 C 244 107 266 111 276 125" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 134 C 244 125 266 129 276 143" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 134 C 244 125 266 129 276 143" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 152 C 244 143 266 147 276 161" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 152 C 244 143 266 147 276 161" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 170 C 244 161 266 165 276 179" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 170 C 244 161 266 165 276 179" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 227 188 C 244 179 266 183 276 197" fill="none" opacity=".55" stroke="#b9a88a" stroke-linecap="round" stroke-width="5.2"></path>
+<path d="M 227 188 C 244 179 266 183 276 197" fill="none" stroke="#f7f1e3" stroke-linecap="round" stroke-width="3.8"></path>
+<path d="M 213 44 L 227 44 L 226 72 L 225 160 L 215 160 L 214 72 Z" fill="#f7f1e3" stroke="#b9a88a" stroke-width=".7"></path>
+<path d="M 227 44 C 240 39 254 47 268 42 C 276 40 282 41 286 44 L 285 48 C 276 46 270 47 266 48 C 254 52 240 45 228 50 Z" fill="#f7f1e3" stroke="#b9a88a" stroke-width=".8"></path>
+<path d="M 282 43 C 292 40 300 44 301 50 C 296 52 288 51 282 49 Z" fill="#f7f1e3" stroke="#b9a88a" stroke-width=".8"></path>
+<path d="M 277 55 C 282 54 286 57 286 61 C 283 61 280 59 277 58 Z" fill="#f7f1e3" stroke="#b9a88a" stroke-width=".7"></path>
+<path d="M 284 58 C 280 70 281 84 284 94" fill="none" stroke="#b9a88a" stroke-width="1.2"></path>
+<circle cx="294" cy="68" fill="#f7f1e3" r="12" stroke="#b9a88a" stroke-width=".9"></circle>
+<path d="M 289 78 C 292 110 294 170 295 230 L 304 230 C 304 170 305 110 306 72 Z" fill="#f7f1e3" stroke="#b9a88a" stroke-width=".9"></path>
+<path d="M 299 60 L 300 82" stroke="#b9a88a" stroke-width=".7"></path>
+</g>
+<ellipse cx="162" cy="47" fill="#16a34a" fill-opacity="0.42" rx="8" ry="5" stroke="#16a34a" stroke-width="1.1" transform="rotate(0 162 47)"></ellipse>
+<ellipse cx="147" cy="58" fill="#2563eb" fill-opacity="0.42" rx="11" ry="7" stroke="#2563eb" stroke-width="1.1" transform="rotate(-15 147 58)"></ellipse>
+<ellipse cx="149" cy="80" fill="#9333ea" fill-opacity="0.42" rx="6" ry="13" stroke="#9333ea" stroke-width="1.1" transform="rotate(0 149 80)"></ellipse>
+<ellipse cx="134" cy="108" fill="#0ea5e9" fill-opacity="0.42" rx="6" ry="18" stroke="#0ea5e9" stroke-width="1.1" transform="rotate(0 134 108)"></ellipse>
+<ellipse cx="211" cy="45" fill="#0891b2" fill-opacity="0.42" rx="6" ry="5" stroke="#0891b2" stroke-width="1.1" transform="rotate(0 211 45)"></ellipse>
+<ellipse cx="290" cy="72" fill="#f59e0b" fill-opacity="0.33" rx="17" ry="22" stroke="#f59e0b" stroke-width="1.1" transform="rotate(0 290 72)"></ellipse>
+<path d="M 234 18 C 250 34 266 50 278 70 C 284 92 286 130 288 200" fill="none" stroke="#7c3aed" stroke-linecap="round" stroke-opacity=".55" stroke-width="7"></path>
+<ellipse cx="248" cy="118" fill="#dc2626" fill-opacity="0.3" rx="22" ry="24" stroke="#dc2626" stroke-width="1.1" transform="rotate(0 248 118)"></ellipse>
+<text fill="#15803d" font-size="11.2" font-weight="800" text-anchor="start" x="8" y="30.0">AC joint</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="8" y="40.6">point-tender, high arc</text><path d="M 126 26.4 L 162 47" fill="none" stroke="#15803d" stroke-opacity=".9" stroke-width=".9"></path><circle cx="126" cy="26.4" fill="#15803d" r="1.5"></circle><circle cx="162" cy="47" fill="#fff" r="2" stroke="#15803d" stroke-width="1.2"></circle>
+<text fill="#1d4ed8" font-size="11.2" font-weight="800" text-anchor="start" x="8" y="70.0">Subacromial / cuff</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="8" y="80.6">RCRSP, bursitis</text><path d="M 126 66.4 L 147 58" fill="none" stroke="#1d4ed8" stroke-opacity=".9" stroke-width=".9"></path><circle cx="126" cy="66.4" fill="#1d4ed8" r="1.5"></circle><circle cx="147" cy="58" fill="#fff" r="2" stroke="#1d4ed8" stroke-width="1.2"></circle>
+<text fill="#7e22ce" font-size="11.2" font-weight="800" text-anchor="start" x="8" y="110.0">Biceps groove (LHB)</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="8" y="120.6">anterior shoulder pain</text><path d="M 126 106.4 L 149 82" fill="none" stroke="#7e22ce" stroke-opacity=".9" stroke-width=".9"></path><circle cx="126" cy="106.4" fill="#7e22ce" r="1.5"></circle><circle cx="149" cy="82" fill="#fff" r="2" stroke="#7e22ce" stroke-width="1.2"></circle>
+<text fill="#0369a1" font-size="11.2" font-weight="800" text-anchor="start" x="8" y="150.0">Lateral arm</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="8" y="160.6">cuff referral to deltoid</text><path d="M 126 146.4 L 134 112" fill="none" stroke="#0369a1" stroke-opacity=".9" stroke-width=".9"></path><circle cx="126" cy="146.4" fill="#0369a1" r="1.5"></circle><circle cx="134" cy="112" fill="#fff" r="2" stroke="#0369a1" stroke-width="1.2"></circle>
+<text fill="#0e7490" font-size="11.2" font-weight="800" text-anchor="start" x="8" y="190.0">SC joint</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="8" y="200.6">medial clavicle</text><path d="M 126 186.4 L 211 45" fill="none" stroke="#0e7490" stroke-opacity=".9" stroke-width=".9"></path><circle cx="126" cy="186.4" fill="#0e7490" r="1.5"></circle><circle cx="211" cy="45" fill="#fff" r="2" stroke="#0e7490" stroke-width="1.2"></circle>
+<text fill="#6d28d9" font-size="11.2" font-weight="800" text-anchor="end" x="432" y="30.0">Neck / brachial plexus</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="end" x="432" y="40.6">radicular pain, neuritis</text><path d="M 318 26.4 L 250 34" fill="none" stroke="#6d28d9" stroke-opacity=".9" stroke-width=".9"></path><circle cx="318" cy="26.4" fill="#6d28d9" r="1.5"></circle><circle cx="250" cy="34" fill="#fff" r="2" stroke="#6d28d9" stroke-width="1.2"></circle>
+<text fill="#b45309" font-size="11.2" font-weight="800" text-anchor="end" x="432" y="95.0">Glenohumeral joint</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="end" x="432" y="105.6">frozen, OA, instability</text><path d="M 318 91.4 L 300 82" fill="none" stroke="#b45309" stroke-opacity=".9" stroke-width=".9"></path><circle cx="318" cy="91.4" fill="#b45309" r="1.5"></circle><circle cx="300" cy="82" fill="#fff" r="2" stroke="#b45309" stroke-width="1.2"></circle>
+<text fill="#b91c1c" font-size="11.2" font-weight="800" text-anchor="end" x="432" y="160.0">Left chest / arm / jaw</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="end" x="432" y="170.6">cardiac — RED FLAG</text><path d="M 318 156.4 L 258 124" fill="none" stroke="#b91c1c" stroke-opacity=".9" stroke-width=".9"></path><circle cx="318" cy="156.4" fill="#b91c1c" r="1.5"></circle><circle cx="258" cy="124" fill="#fff" r="2" stroke="#b91c1c" stroke-width="1.2"></circle>
+</g><g>
+<path d="M 643.0 0.0 C 642.5 14.0 642.0 24.0 640.0 31.0 C 630.0 36.0 612.0 40.0 600.0 44.0 C 584.0 46.0 572.0 56.0 571.0 78.0 C 570.0 110.0 569.0 160.0 570.0 230.0 L 591.0 230.0 C 592.0 180.0 593.0 130.0 595.0 101.0 C 598.0 98.0 600.0 100.0 601.0 103.0 C 602.0 150.0 604.0 190.0 605.0 230.0 L 715.0 230.0 C 716.0 190.0 718.0 150.0 719.0 103.0 C 720.0 100.0 722.0 98.0 725.0 101.0 C 727.0 130.0 728.0 180.0 729.0 230.0 L 750.0 230.0 C 751.0 160.0 750.0 110.0 749.0 78.0 C 748.0 56.0 736.0 46.0 720.0 44.0 C 708.0 40.0 690.0 36.0 680.0 31.0 C 678.0 24.0 677.5 14.0 677.0 0.0 Z" fill="#f4dccb" stroke="#b88a6e" stroke-linejoin="round" stroke-width="1.1"></path>
+<path d="M 600 44 C 584 46 572 56 571 78 C 570 110 569 160 570 230 L 578 230 C 577 160 578 110 580 80 C 582 62 590 52 600 48 Z" fill="#d9a888" fill-opacity=".28"></path>
+<path d="M 601 103 C 602 150 604 190 605 230 L 613 230 C 611 190 609 150 607 108 Z" fill="#d9a888" fill-opacity=".22"></path>
+<path d="M 720 44 C 736 46 748 56 749 78 C 750 110 751 160 750 230 L 742 230 C 743 160 742 110 740 80 C 738 62 730 52 720 48 Z" fill="#d9a888" fill-opacity=".28"></path>
+<path d="M 719 103 C 718 150 716 190 715 230 L 707 230 C 709 190 711 150 713 108 Z" fill="#d9a888" fill-opacity=".22"></path>
+<path d="M 642 0 C 642.5 14 642 24 640 31 L 680 31 C 678 24 677.5 14 678 0 Z" fill="#d9a888" fill-opacity=".14"></path>
+<ellipse cx="660" cy="30" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="44" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="58" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="72" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="86" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="100" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="114" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="128" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="142" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="156" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="170" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="184" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<ellipse cx="660" cy="198" fill="#f7f1e3" rx="3.2" ry="2.6" stroke="#b9a88a" stroke-width=".6"></ellipse>
+<path d="M 640.0 52 C 628.0 49 614.0 48 602.0 52 C 598.0 62 596.0 80 600.0 96 C 608.0 112 620.0 124 630.0 134 C 634.0 118 638.0 90 640.0 52 Z" fill="#f7f1e3" opacity=".95" stroke="#b9a88a" stroke-width=".9"></path>
+<path d="M 638.0 64 C 620.0 58 604.0 52 588.0 48 C 582.0 47 578.0 50 578.0 54" fill="none" stroke="#b9a88a" stroke-linecap="round" stroke-width="2.4"></path>
+<path d="M 600.0 44 C 590.0 41 580.0 44 578.0 50" fill="none" stroke="#b9a88a" stroke-width="1"></path>
+<path d="M 680.0 52 C 692.0 49 706.0 48 718.0 52 C 722.0 62 724.0 80 720.0 96 C 712.0 112 700.0 124 690.0 134 C 686.0 118 682.0 90 680.0 52 Z" fill="#f7f1e3" opacity=".95" stroke="#b9a88a" stroke-width=".9"></path>
+<path d="M 682.0 64 C 700.0 58 716.0 52 732.0 48 C 738.0 47 742.0 50 742.0 54" fill="none" stroke="#b9a88a" stroke-linecap="round" stroke-width="2.4"></path>
+<path d="M 720.0 44 C 730.0 41 740.0 44 742.0 50" fill="none" stroke="#b9a88a" stroke-width="1"></path>
+<path d="M 642 30 C 620 40 602 44 586 48 M 678 30 C 700 40 718 44 734 48" fill="none" stroke="#c9997c" stroke-width="1"></path>
+<ellipse cx="622" cy="40" fill="#f97316" fill-opacity="0.42" rx="16" ry="6" stroke="#f97316" stroke-width="1.1" transform="rotate(-8 622 40)"></ellipse>
+<ellipse cx="636" cy="92" fill="#f97316" fill-opacity="0.32" rx="6" ry="24" stroke="#f97316" stroke-width="1.1" transform="rotate(0 636 92)"></ellipse>
+<ellipse cx="618" cy="82" fill="#2563eb" fill-opacity="0.42" rx="12" ry="14" stroke="#2563eb" stroke-width="1.1" transform="rotate(0 618 82)"></ellipse>
+<ellipse cx="590" cy="92" fill="#0ea5e9" fill-opacity="0.42" rx="6" ry="9" stroke="#0ea5e9" stroke-width="1.1" transform="rotate(0 590 92)"></ellipse>
+<ellipse cx="682" cy="36" fill="#dc2626" fill-opacity="0.35" rx="9" ry="8" stroke="#dc2626" stroke-width="1.1" transform="rotate(0 682 36)"></ellipse>
+<ellipse cx="704" cy="90" fill="#dc2626" fill-opacity="0.25" rx="16" ry="20" stroke="#dc2626" stroke-width="1.1" transform="rotate(0 704 90)"></ellipse>
+<text fill="#c2410c" font-size="11.2" font-weight="800" text-anchor="start" x="448" y="30.0">Upper trapezius</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="448" y="40.6">cervical referral</text><path d="M 566 26.4 L 622 40" fill="none" stroke="#c2410c" stroke-opacity=".9" stroke-width=".9"></path><circle cx="566" cy="26.4" fill="#c2410c" r="1.5"></circle><circle cx="622" cy="40" fill="#fff" r="2" stroke="#c2410c" stroke-width="1.2"></circle>
+<text fill="#1d4ed8" font-size="11.2" font-weight="800" text-anchor="start" x="448" y="75.0">Infraspinatus fossa</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="448" y="85.6">post. cuff, suprascap. n.</text><path d="M 566 71.4 L 616 80" fill="none" stroke="#1d4ed8" stroke-opacity=".9" stroke-width=".9"></path><circle cx="566" cy="71.4" fill="#1d4ed8" r="1.5"></circle><circle cx="616" cy="80" fill="#fff" r="2" stroke="#1d4ed8" stroke-width="1.2"></circle>
+<text fill="#c2410c" font-size="11.2" font-weight="800" text-anchor="start" x="448" y="120.0">Medial scapula</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="448" y="130.6">cervical referral</text><path d="M 566 116.4 L 636 96" fill="none" stroke="#c2410c" stroke-opacity=".9" stroke-width=".9"></path><circle cx="566" cy="116.4" fill="#c2410c" r="1.5"></circle><circle cx="636" cy="96" fill="#fff" r="2" stroke="#c2410c" stroke-width="1.2"></circle>
+<text fill="#0369a1" font-size="11.2" font-weight="800" text-anchor="start" x="448" y="165.0">Quadrilateral space</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="start" x="448" y="175.6">axillary nerve</text><path d="M 566 161.4 L 590 94" fill="none" stroke="#0369a1" stroke-opacity=".9" stroke-width=".9"></path><circle cx="566" cy="161.4" fill="#0369a1" r="1.5"></circle><circle cx="590" cy="94" fill="#fff" r="2" stroke="#0369a1" stroke-width="1.2"></circle>
+<text fill="#b91c1c" font-size="11.2" font-weight="800" text-anchor="end" x="872" y="30.0">Lung apex</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="end" x="872" y="40.6">Pancoast — RED FLAG</text><path d="M 758 26.4 L 682 36" fill="none" stroke="#b91c1c" stroke-opacity=".9" stroke-width=".9"></path><circle cx="758" cy="26.4" fill="#b91c1c" r="1.5"></circle><circle cx="682" cy="36" fill="#fff" r="2" stroke="#b91c1c" stroke-width="1.2"></circle>
+<text fill="#b91c1c" font-size="11.2" font-weight="800" text-anchor="end" x="872" y="110.0">Right scapula / tip</text><text fill="#334155" font-size="9.6" font-weight="500" text-anchor="end" x="872" y="120.6">hepatobiliary — RED FLAG</text><path d="M 758 106.4 L 708 96" fill="none" stroke="#b91c1c" stroke-opacity=".9" stroke-width=".9"></path><circle cx="758" cy="106.4" fill="#b91c1c" r="1.5"></circle><circle cx="708" cy="96" fill="#fff" r="2" stroke="#b91c1c" stroke-width="1.2"></circle>
+</g><rect fill="#fff" fill-opacity=".16" height="70" width="192" x="124" y="170"></rect><rect fill="#fff" fill-opacity=".16" height="70" width="192" x="564" y="170"></rect><rect fill="#fff" fill-opacity=".16" height="62" width="192" x="124" y="178"></rect><rect fill="#fff" fill-opacity=".16" height="62" width="192" x="564" y="178"></rect><rect fill="#fff" fill-opacity=".16" height="54" width="192" x="124" y="186"></rect><rect fill="#fff" fill-opacity=".16" height="54" width="192" x="564" y="186"></rect><rect fill="#fff" fill-opacity=".16" height="46" width="192" x="124" y="194"></rect><rect fill="#fff" fill-opacity=".16" height="46" width="192" x="564" y="194"></rect><rect fill="#fff" fill-opacity=".16" height="38" width="192" x="124" y="202"></rect><rect fill="#fff" fill-opacity=".16" height="38" width="192" x="564" y="202"></rect><rect fill="#fff" fill-opacity=".16" height="30" width="192" x="124" y="210"></rect><rect fill="#fff" fill-opacity=".16" height="30" width="192" x="564" y="210"></rect><rect fill="#fff" fill-opacity=".16" height="22" width="192" x="124" y="218"></rect><rect fill="#fff" fill-opacity=".16" height="22" width="192" x="564" y="218"></rect><rect fill="#fff" fill-opacity=".16" height="14" width="192" x="124" y="226"></rect><rect fill="#fff" fill-opacity=".16" height="14" width="192" x="564" y="226"></rect><rect fill="#fff" fill-opacity=".16" height="6" width="192" x="124" y="234"></rect><rect fill="#fff" fill-opacity=".16" height="6" width="192" x="564" y="234"></rect><text fill="#475569" font-size="10.5" font-weight="800" letter-spacing="1" text-anchor="middle" x="220" y="236">ANTERIOR</text><text fill="#64748b" font-size="9.5" font-weight="800" text-anchor="middle" x="146" y="236">R</text><text fill="#64748b" font-size="9.5" font-weight="800" text-anchor="middle" x="294" y="236">L</text><text fill="#475569" font-size="10.5" font-weight="800" letter-spacing="1" text-anchor="middle" x="660" y="236">POSTERIOR</text><text fill="#64748b" font-size="9.5" font-weight="800" text-anchor="middle" x="586" y="236">L</text><text fill="#64748b" font-size="9.5" font-weight="800" text-anchor="middle" x="734" y="236">R</text><line stroke="#e2e8f0" stroke-width="1" x1="440" x2="440" y1="6" y2="226"></line></svg>
+<div class="row xs" style="gap:2mm;margin-top:.4mm;align-items:flex-start">
+<div style="flex:1;color:var(--mut)"><b style="color:var(--ink)">Mark on the chart:</b> shade = pain · //// = pins &amp; needles · ×× = numbness · → = radiation · write 0–10 beside each area</div>
+<div style="flex:1.25;padding:.4mm 1mm;border-radius:1mm;background:#fff7ed;color:#7c2d12;line-height:1.2"><b>Pain below the elbow, paraesthesia or pain changed by neck movement</b> → cervical screen (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wainner-cervical-radiculopathy-cluster" rel="noopener" target="_blank">Wainner</a>). <b>Pain not changed by shoulder movement</b> → red-flag screen (B).</div>
 </div>
 </div>
 </section>
