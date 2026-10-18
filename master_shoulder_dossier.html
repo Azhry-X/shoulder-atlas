@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoulder Complex Master Dossier</title>
+<meta name="description" content="9-page A4 master clinical assessment and rehabilitation dossier for the shoulder complex: triage and red flags, differential diagnosis, objective examination, special tests and clusters, PROMs, post-surgical rehab, electrophysical agents and injections, manual therapy, exercise and return to sport, and flowsheet. Companion Test Atlas: https://azhry-x.github.io/shoulder-atlas">
+<style>
+/* =====================================================================
+   HIP COMPLEX MASTER DOSSIER — design system
+   Mirrors the Knee Complex and Ankle & Foot dossiers so all read as one series.
+   Fonts are bundled locally; no CDN, no emoji fonts (icons are inline SVG).
+   ===================================================================== */
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-Semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: block; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: block; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-Bold.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: block; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/SourceSans3-Bold.ttf") format("truetype"); font-weight: 900; font-style: normal; font-display: block; }
+
+:root{
+  --ink:#0f172a; --navy:#1e3a8a; --crimson:#991b1b; --emerald:#065f46; --paper:#f8fafc;
+  --line:#cbd5e1; --line2:#e2e8f0; --mut:#475569;
+}
+
+/* ================= PRINT GEOMETRY ================= */
+@page { size: A4 portrait; margin: 0; }
+@media print {
+  html, body { width: 210mm; margin: 0; padding: 0; background: #FFFFFF !important; }
+  .clinical-page { page-break-after: always; break-after: page; margin: 0 !important; box-shadow: none !important; }
+  .clinical-page:last-child { page-break-after: auto; break-after: auto; }
+}
+
+*{ box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family: "Source Sans 3", sans-serif;
+  color:var(--ink); font-size:9px; line-height:1.26;
+  font-variant-numeric: tabular-nums;
+  background:linear-gradient(160deg,#0f172a 0%,#1e293b 45%,#1e3a8a 100%);
+  background-attachment:fixed;
+}
+@media screen { body{ padding:10mm 0; } }
+
+/* ================= PAGE SHELL ================= */
+.clinical-page{
+  width:210mm; height:297mm; max-height:297mm; box-sizing:border-box; padding:5mm 7mm;
+  overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;
+  background-color:#F8FAFC; position:relative; gap:1.5mm;
+  margin:0 auto 12mm auto; box-shadow:0 20px 60px rgba(2,6,23,.55);
+}
+.clinical-page:last-child{ margin-bottom:0; }
+.clinical-page{ --accent:#1E3A8A; --accent-soft:#eef2ff; --accent-line:#bfdbfe; }
+.clinical-page[data-accent="red"]{    --accent:#B42318; --accent-soft:#fef2f2; --accent-line:#fecaca; }
+.clinical-page[data-accent="blue"]{   --accent:#1E3A8A; --accent-soft:#eef2ff; --accent-line:#bfdbfe; }
+.clinical-page[data-accent="purple"]{ --accent:#6B21A8; --accent-soft:#faf5ff; --accent-line:#e9d5ff; }
+.clinical-page[data-accent="orange"]{ --accent:#C2410C; --accent-soft:#fff7ed; --accent-line:#fed7aa; }
+.clinical-page[data-accent="teal"]{   --accent:#0F766E; --accent-soft:#f0fdfa; --accent-line:#99f6e4; }
+.clinical-page[data-accent="green"]{  --accent:#15803D; --accent-soft:#f0fdf4; --accent-line:#bbf7d0; }
+.clinical-page[data-accent="slate"]{  --accent:#334155; --accent-soft:#f1f5f9; --accent-line:#cbd5e1; }
+.pg-body{ flex:1 1 auto; min-height:0; display:flex; flex-direction:column; gap:1.5mm; }
+
+/* ================= HEADER / FOOTER ================= */
+.pg-hdr{ display:flex; justify-content:space-between; align-items:flex-end; gap:3mm; border-bottom:2px solid var(--accent); padding-bottom:1.3mm; }
+.brand{ display:flex; align-items:center; gap:2mm; min-width:0; }
+.logo{ width:9.5mm; height:9.5mm; border-radius:2mm; flex:0 0 auto; background:linear-gradient(135deg,#1e3a8a 0%,#0f172a 100%); color:#fff;
+  display:flex; align-items:center; justify-content:center; font-weight:900; font-size:9.5px; letter-spacing:.02em; box-shadow:inset 0 0 0 1px rgba(255,255,255,.15); }
+.kicker{ font-size:6.8px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#64748b; }
+.pg-title{ font-size:12.5px; font-weight:900; letter-spacing:-.01em; color:var(--ink); line-height:1.1; margin:0; }
+.hdr-right{ display:flex; align-items:flex-end; gap:2.5mm; font-size:8px; white-space:nowrap; }
+.pgno{ background:var(--accent); color:#fff; font-weight:800; font-size:9px; padding:1mm 2.2mm; border-radius:1.4mm; letter-spacing:.06em; }
+
+.pg-ftr{ display:flex; flex-direction:column; align-items:stretch; gap:1mm;
+  border-top:1px solid var(--line); padding-top:1mm; font-size:7.2px; color:var(--mut); min-height:22px; }
+.ftr-top{ display:flex; justify-content:space-between; align-items:center; gap:2mm; white-space:nowrap; }
+.pg-ftr b{ color:var(--ink); }
+.pnav-wrap{ display:flex; align-items:center; justify-content:center; flex:0 0 auto; }
+.pnav{ display:flex; align-items:center; justify-content:center; gap:1.5pt; min-height:34pt; width:100%; padding:0;
+  background:#F1F5F9; border:1px solid #CBD5E1; border-radius:1.5mm; }
+.pnav .nl{ font-size:6.8px; font-weight:800; letter-spacing:.08em; color:#475569; text-transform:uppercase; margin-right:.8mm; line-height:1; }
+.ptab{ position:relative; display:inline-flex; align-items:center; justify-content:center;
+  width:34pt; height:34pt; min-width:34pt; border-radius:1mm; border:1px solid var(--line);
+  background:#fff; color:var(--navy); font-weight:800; font-size:11pt; text-decoration:none; line-height:1; }
+.ptab.on{ background:var(--accent); color:#fff; border-color:var(--accent); }
+
+/* ================= LINK BADGES & EVIDENCE MARKERS ================= */
+.ref-badge, .calc-badge, .guide-badge, .find-badge {
+  position: relative; display: inline-flex; align-items: center; gap: 2px;
+  font-size: 6.8pt; line-height: 1; padding: 1.5px 4px; border-radius: 3px;
+  text-decoration: none; font-weight: 700; white-space: nowrap; vertical-align: middle; letter-spacing: .02em;
+}
+.calc-badge { background-color: #ECFDF5; border: 1px solid #A7F3D0; color: #047857; }
+.guide-badge { background-color: #FFFBEB; border: 1px solid #FDE68A; color: #B45309; }
+.ref-badge { background-color: #F0F9FF; border: 1px solid #BAE6FD; color: #0369A1; }
+.badge-ico{ width:7.5px; height:7.5px; flex:0 0 auto; display:inline-block; }
+.card-h .calc-badge, .card-h .guide-badge{ font-size:6.4pt; text-transform:none; letter-spacing:.01em; }
+
+.eb{ font-size:6.2px; font-weight:800; padding:0.2px 1.8px; border-radius:1.5px; vertical-align:super; line-height:1; display:inline-block; margin-left:1px; text-transform:none; letter-spacing:0; }
+.eb-h{ color:#047857; background:#ecfdf5; border:0.6px solid #a7f3d0; }
+.eb-m{ color:#b45309; background:#fffbeb; border:0.6px solid #fde68a; }
+.eb-l{ color:#b91c1c; background:#fef2f2; border:0.6px solid #fecaca; }
+.eb-e{ color:#4338ca; background:#eef2ff; border:0.6px solid #c7d2fe; }
+
+/* Atlas test-name link (underline = Atlas card; ▸ = verified video) */
+.test-link{ color:inherit; text-decoration:underline; text-decoration-color:rgba(30,58,138,0.45); text-underline-offset:1.6px; font-weight:inherit; }
+.test-link.has-video::after{ content:"\00a0\25B8"; font-size:0.82em; color:#1e3a8a; text-decoration:none; font-weight:700; }
+.card-h .test-link, .card.red > .card-h .test-link{ text-decoration-color:rgba(255,255,255,0.7); }
+.card-h .test-link.has-video::after{ color:#fff; }
+
+/* Atlas info icon */
+.info-icon{ display:inline-flex; align-items:center; justify-content:center; width:3.8mm; height:3.8mm; min-width:3.8mm; text-decoration:none; vertical-align:middle; margin:0 0.2mm; color:var(--accent); }
+.card-h .info-icon{ color:#ffffff; }
+.sh.r .info-icon, .crit .info-icon{ color:var(--crimson); }
+.info-svg{ width:3.3mm; height:3.3mm; display:inline-block; pointer-events:none; }
+
+/* ================= CARDS ================= */
+.card{ border:1px solid var(--line); border-radius:1.6mm; overflow:hidden; background:#fff; }
+.card-h{ background:var(--accent); color:#fff; font-weight:800; font-size:8.4px; letter-spacing:.07em; text-transform:uppercase;
+  padding:1mm 2mm; display:flex; justify-content:space-between; align-items:center; gap:2mm; }
+.card-h > span:first-child{ display:inline-flex; align-items:center; gap:1.2mm; flex-wrap:wrap; }
+.card-b{ padding:1.2mm 2mm; }
+.card.red{ border:2px solid var(--crimson); }
+.card.red > .card-h{ background:linear-gradient(90deg,#991b1b,#7f1d1d); }
+.card.green{ border:2px solid var(--emerald); }
+.card.ink > .card-h{ background:var(--ink); }
+.card.soft{ background:var(--paper); }
+.tag{ font-size:6.8px; font-weight:800; letter-spacing:.08em; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.35);
+  padding:.2mm 1.5mm; border-radius:3mm; white-space:nowrap; }
+
+.sh{ font-weight:800; font-size:8px; text-transform:uppercase; letter-spacing:.05em; color:var(--accent); display:flex; justify-content:space-between;
+  align-items:center; gap:2mm; border-bottom:1px dashed var(--accent-line); padding-bottom:.4mm; margin:.8mm 0 .5mm; }
+.sh > span:first-child{ display:inline-flex; align-items:center; gap:1mm; flex-wrap:wrap; }
+.sh:first-child{ margin-top:0; }
+.sh.r{ color:var(--crimson); border-bottom-color:#fecaca; }
+.sh.g{ color:var(--emerald); border-bottom-color:#a7f3d0; }
+.sh.n{ color:var(--navy); border-bottom-color:#bfdbfe; }
+
+/* Pathway router */
+.router-row{ display:grid; grid-template-columns:minmax(0,25fr) minmax(0,45fr) minmax(0,30fr); gap:1.2mm; min-height:9.0mm; align-items:center; }
+.router-col{ display:flex; align-items:center; flex-wrap:nowrap; gap:0.4mm; min-height:9.0mm; white-space:nowrap; }
+.rchip{ display:inline-flex; align-items:center; justify-content:center; width:4.8mm; min-width:4.8mm; height:9.0mm; min-height:9.0mm;
+  position:relative; background:transparent; color:var(--navy); font-weight:800; font-size:7.4px; text-decoration:none; line-height:1;
+  isolation:isolate; z-index:1; }
+.rchip::before{ content:""; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:4.4mm; height:4.4mm; border-radius:1mm; border:1px solid #94a3b8; background:#fff; z-index:-1; box-sizing:border-box; }
+.router-col > span{ font-size:7.0px; color:#64748b; font-weight:700; }
+
+/* ================= FORM PRIMITIVES ================= */
+.cb{ display:inline-block; width:12px; height:12px; min-width:12px; border:1.5px solid #334155; border-radius:2.5px; background:#fff; vertical-align:middle; flex:0 0 auto; }
+.cb.sm{ width:9px; height:9px; min-width:9px; border-width:1.3px; border-radius:2px; }
+.cb.r{ border-color:var(--crimson); } .cb.g{ border-color:var(--emerald); } .cb.n{ border-color:var(--navy); } .cb.w{ border-color:#fff; background:transparent; }
+.ci{ display:flex; align-items:flex-start; gap:1.3mm; padding:.25mm 0; }
+.ci > .cb{ margin-top:-0.5px; }
+.cio{ display:inline-flex; align-items:center; gap:.8mm; margin-right:1.8mm; white-space:nowrap; }
+.row{ display:flex; align-items:flex-end; gap:3mm; }
+.fr{ display:flex; align-items:flex-end; gap:1.2mm; white-space:nowrap; min-height:14px; }
+.fr .fl{ flex:1 1 auto; }
+.fl{ display:inline-block; border-bottom:1px solid #94a3b8; min-width:9mm; height:12px; vertical-align:bottom; }
+.fl.s{ min-width:7mm; width:7mm; flex:0 0 auto; } .fl.m{ min-width:12mm; width:12mm; flex:0 0 auto; } .fl.l{ min-width:20mm; width:20mm; flex:0 0 auto; }
+.lb{ font-weight:700; color:#334155; font-size:8px; }
+.mut{ color:var(--mut); } .xs{ font-size:7.4px; } .xxs{ font-size:6.8px; } .b{ font-weight:700; }
+.crim{ color:var(--crimson); } .emer{ color:var(--emerald); } .nav{ color:var(--navy); } .acc{ color:var(--accent); }
+.stat{ display:inline-block; font-size:7px; font-weight:800; padding:.2mm 1.2mm; border-radius:2mm; background:#eff6ff; color:var(--navy); border:1px solid #bfdbfe; white-space:nowrap; text-transform:none; letter-spacing:0; }
+.stat.r{ background:#fef2f2; color:var(--crimson); border-color:#fecaca; }
+.stat.g{ background:#ecfdf5; color:var(--emerald); border-color:#a7f3d0; }
+.stat.w{ background:rgba(255,255,255,.14); color:#fff; border-color:rgba(255,255,255,.4); }
+.lr{ display:inline-flex; align-items:flex-end; gap:.8mm; white-space:nowrap; font-weight:700; color:#64748b; font-size:7.4px; }
+.circ{ display:inline-flex; gap:1.2mm; font-weight:700; color:#334155; font-size:7.8px; }
+.circ span{ border:1px solid var(--line); border-radius:3mm; padding:0 1.3mm; background:#fff; }
+.nprs{ display:inline-flex; gap:2px; }
+.nprs span{ width:14px; height:14px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:7.4px; font-weight:800; border:1.3px solid; background:#fff; }
+.mini{ border:1px solid var(--line2); border-radius:1.2mm; padding:.7mm 1.3mm; background:#fff; }
+.box{ border:1.2px solid var(--line); border-radius:1.2mm; padding:.6mm 1.2mm; background:#fff; }
+.box.r{ border-color:#b91c1c; background:#fff5f5; }
+.box.n{ border-color:#93c5fd; background:#f8fbff; }
+.box.g{ border-color:#10b981; background:#f0fdf4; }
+.box.a{ border-color:var(--accent-line); background:var(--accent-soft); }
+
+/* ================= TABLES ================= */
+.t{ width:100%; border-collapse:collapse; font-size:8.6px; font-variant-numeric:tabular-nums; }
+.t th{ background:var(--accent-soft); color:var(--accent); font-weight:800; text-align:left; padding:.7mm 1.1mm; border:1px solid var(--line); font-size:7.1px; text-transform:uppercase; letter-spacing:.04em; line-height:1.15; }
+.t td{ border:1px solid var(--line); padding:.55mm 1.1mm; vertical-align:middle; background:#fff; line-height:1.18; }
+.t tr:nth-child(even) td{ background:#fbfdff; }
+.t td.k{ font-weight:700; } .t td.w{ background:#fff !important; }
+.t.dense td{ font-size:8.2px; padding:.45mm 1mm; }
+.t.red th{ background:#fef2f2; color:var(--crimson); }
+.t.green th{ background:#ecfdf5; color:var(--emerald); }
+.t.navy th{ background:#eef2ff; color:var(--navy); }
+.t td.c, .t th.c{ text-align:center; }
+.t.ink th{ background:var(--ink); color:#fff; border-color:#334155; }
+.t.slate th{ background:#e2e8f0; color:#334155; border-color:#cbd5e1; }
+.t tr.sub td{ background:var(--accent-soft) !important; color:var(--accent); font-weight:800; font-size:7.4px; text-transform:uppercase; letter-spacing:.05em; padding:.4mm 1.1mm; }
+.t tr.redrow td:first-child{ border-left:3px solid #991b1b; }
+
+/* ================= HANDWRITING ZONES ================= */
+.dots{ position:relative; border:1px solid var(--line); border-radius:1.6mm; background-color:#fff;
+  background-image:radial-gradient(circle, #64748b 0.85px, transparent 1.05px); background-size:5mm 5mm; background-position:2.5mm 2.5mm; }
+.dots-l{ position:absolute; top:1mm; left:1.6mm; font-size:7.2px; font-weight:800; color:var(--accent); background:#fff; padding:.2mm 1.2mm;
+  text-transform:uppercase; letter-spacing:.07em; border-radius:1mm; border:1px solid var(--line2); }
+.fill{ flex:1 1 auto; min-height:10mm; }
+
+.crit{ display:flex; align-items:center; gap:1.4mm; border:2px solid var(--crimson); background:repeating-linear-gradient(135deg,#fef2f2 0 6px,#fff 6px 12px);
+  border-radius:1.4mm; padding:.6mm 1.6mm; color:var(--crimson); font-weight:800; font-size:8px; line-height:1.15; }
+.crit svg.stop{ width:10px; height:10px; flex:0 0 auto; }
+.ok{ border:1.5px solid var(--emerald); background:#ecfdf5; border-radius:1.4mm; padding:.6mm 1.6mm; color:var(--emerald); font-weight:700; }
+.note{ border-left:3px solid var(--accent); background:#fff; padding:.7mm 2mm; border-radius:0 1.2mm 1.2mm 0; }
+.divider-v{ border-left:1px dashed #fecaca; padding-left:2mm; }
+
+/* ================= ANATOMICAL WIREFRAMES ================= */
+.bm{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1.4mm; }
+.bm figure{ margin:0; border:1px solid var(--line2); border-radius:1.2mm; background:#fff; padding:.8mm .8mm .4mm; display:flex; flex-direction:column; align-items:center; }
+.bm svg{ width:100%; height:auto; display:block; }
+.bm figcaption{ font-size:6.8px; font-weight:800; letter-spacing:.12em; color:var(--navy); text-transform:uppercase; margin-top:.3mm; }
+.bm .o{ fill:#F8FAFC; stroke:#64748B; stroke-width:1.1; stroke-linejoin:round; stroke-linecap:round; }
+.bm .b{ fill:#eef2ff; stroke:#64748B; stroke-width:.9; }
+.bm .d{ fill:none; stroke:#94a3b8; stroke-width:.7; stroke-dasharray:2 1.6; }
+.bm .lm{ fill:none; stroke:#1e3a8a; stroke-width:.85; stroke-dasharray:2 1.3; }
+.bm .pt{ fill:#1e3a8a; }
+.bm text{ font-family:"Source Sans 3", sans-serif; font-size:5.2px; font-weight:700; fill:#64748B; }
+.bm text.k{ fill:#1e3a8a; }
+
+/* ================= FLOWSHEET ================= */
+.flow td{ vertical-align:top; }
+.flow .p{ font-size:5.6pt; color:#64748b; font-weight:600; line-height:1.05; white-space:nowrap; }
+.vnum{ font-size:10px; font-weight:800; color:var(--navy); text-align:center; vertical-align:middle !important; background:#f8fafc; }
+.bm .mk circle{ fill:#1e3a8a; }
+.bm .mk text{ fill:#fff; font-size:5.4px; font-weight:800; }
+.bm text.s{ font-size:5px; font-weight:800; fill:#94a3b8; letter-spacing:.04em; }
+.sh .calc-badge, .sh .guide-badge{ text-transform:none; letter-spacing:.01em; }
+.t tr.sub .calc-badge, .t tr.sub .guide-badge{ text-transform:none; letter-spacing:.01em; }
+
+/* ---- compiled utility classes (Tailwind v3, generated at build) ---- */
+.col-span-2{grid-column:span 2/span 2}.col-span-5{grid-column:span 5/span 5}.col-span-7{grid-column:span 7/span 7}.mb-0\.5{margin-bottom:.125rem}.mb-\[2px\]{margin-bottom:2px}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-0\.5{margin-top:.125rem}.mt-\[1px\]{margin-top:1px}.mt-\[2px\]{margin-top:2px}.flex{display:flex}.table{display:table}.grid{display:grid}.h-auto{height:auto}.w-full{width:100%}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-\[1\.5mm\]{gap:1.5mm}.gap-\[1\.5px\]{gap:1.5px}.gap-\[1px\]{gap:1px}.gap-\[2px\]{gap:2px}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.pl-2{padding-left:.5rem}.pt-\[1px\]{padding-top:1px}.text-\[6\.5px\]{font-size:6.5px}.text-\[7px\]{font-size:7px}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<!-- ===================== PAGE 1 ===================== -->
+<div class="clinical-page" id="page-1" data-accent="red">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Emergency Triage, Red Flags, Cervical Screen &amp; Subjective</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">MRN</span><span class="fl l"></span></div>
+      <div class="pgno">01 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <!-- A : Demographics -->
+<section class="card" id="p1-demographics">
+<div class="card-h"><span>A · Patient Demographics &amp; Shoulder Complex Presentation Profile</span><span class="tag">INTAKE</span></div>
+<div class="card-b flex flex-col gap-[1.5px]">
+<div class="row">
+<div class="fr" style="flex:3.2"><span class="lb">Patient Name</span><span class="fl"></span></div>
+<div class="fr" style="flex:.8"><span class="lb">Age</span><span class="fl"></span></div>
+<div class="fr"><span class="lb">Sex</span><span class="cio"><span class="cb"></span>M</span><span class="cio"><span class="cb"></span>F</span></div>
+<div class="fr" style="flex:1.4"><span class="lb">Date</span><span class="fl"></span></div>
+</div>
+<div class="row">
+<div class="fr" style="flex:2"><span class="lb">Occupation / Overhead Sport</span><span class="fl"></span></div>
+<div class="fr"><span class="lb">Dominant Arm</span><span class="cio"><span class="cb"></span>R</span><span class="cio"><span class="cb"></span>L</span></div>
+<div class="fr"><span class="lb">Affected Side</span><span class="cio"><span class="cb"></span>R</span><span class="cio"><span class="cb"></span>L</span><span class="cio"><span class="cb"></span>Bilat</span></div>
+<div class="fr"><span class="lb">Onset</span><span class="cio"><span class="cb"></span>Traumatic</span><span class="cio"><span class="cb"></span>Insidious</span></div>
+</div>
+<div class="row">
+<div class="fr"><span class="lb"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#nprs" rel="noopener" target="_blank">NPRS</a> Now (circle)</span>
+<span class="nprs">
+<span style="border-color:var(--emerald);color:var(--emerald)">0</span><span style="border-color:var(--emerald);color:var(--emerald)">1</span><span style="border-color:var(--emerald);color:var(--emerald)">2</span><span style="border-color:var(--emerald);color:var(--emerald)">3</span><span style="border-color:var(--navy);color:var(--navy)">4</span><span style="border-color:var(--navy);color:var(--navy)">5</span><span style="border-color:var(--navy);color:var(--navy)">6</span><span style="border-color:var(--crimson);color:var(--crimson)">7</span><span style="border-color:var(--crimson);color:var(--crimson)">8</span><span style="border-color:var(--crimson);color:var(--crimson)">9</span><span style="border-color:var(--crimson);color:var(--crimson)">10</span>
+</span>
+</div>
+<div class="fr" style="flex:1"><span class="lb">Night Pain</span><span class="cio"><span class="cb sm"></span>No</span><span class="cio"><span class="cb sm r"></span>Yes</span><span class="lb">Best</span><span class="fl"></span><span class="lb">Worst</span><span class="fl"></span></div>
+</div>
+</div>
+</section>
+<!-- B : Red Flags -->
+<section class="card red" id="p1-redflags">
+<div class="card-h"><span>B · BESS/BOA Red-Flag Triage, Dislocation &amp; Systemic Screening</span><span class="tag">TRIAGE GATE</span></div>
+<div class="card-b grid grid-cols-2 gap-x-2">
+<div>
+<div class="sh r" style="margin:0 0 .5px;"><span>BESS/BOA Pathway Red Flags (Kulkarni 2015)</span><a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4935112/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>BESS/BOA</a></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bess-boa-red-flags" rel="noopener" target="_blank"><b>Infection:</b></a> <b class="crim">“A suspected infected joint needs same day emergency referral.”</b> (Guideline)</div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bess-boa-red-flags" rel="noopener" target="_blank"><b>Dislocation:</b></a> <b class="crim">“An unreduced dislocation needs same day emergency referral.”</b> (Guideline)</div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bess-boa-red-flags" rel="noopener" target="_blank"><b>Tumour / malignancy:</b></a> <b class="crim">“Suspected tumour and malignancy will need urgent referral following the local 2-week cancer referral pathway.”</b> (Guideline)</div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bess-boa-red-flags" rel="noopener" target="_blank"><b>Traumatic cuff tear:</b></a> <b class="crim">“An acute cuff tear as a result of a traumatic event needs urgent referral and ideally should be seen in the next available outpatient clinic.”</b> (Guideline)</div></div>
+<div class="sh r" style="margin:.8mm 0 .5px;"><span>Septic Arthritis &amp; Posterior Dislocation</span><span class="stat r">Emergency</span></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#septic-arthritis-shoulder" rel="noopener" target="_blank"><b>Septic arthritis — synovial fluid</b></a> (Margaretten 2007 JAMA) <span class="eb eb-m">M</span>: <b class="crim">WBC &gt; 25,000/µL: LR 2.9 (2.5–3.4); &gt; 50,000/µL: LR 7.7 (5.7–11.0)</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#posterior-shoulder-dislocation" rel="noopener" target="_blank"><b>Posterior dislocation</b></a> (Xu 2015 J Orthop Translat) <span class="eb eb-l">L</span>: <b class="crim">rare (&lt; 4% of all shoulder dislocations); initial diagnosis missed in 150 patients (73.2%); AP radiograph alone gave the right diagnosis in only 19 of 166 (11.4%); axillary / Y view / CT confirmed all 205</b></div></div>
+</div>
+<div class="divider-v">
+<div class="sh r" style="margin:0 0 .5px;"><span>Traumatic Anterior Dislocation Associated Injuries</span><a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4935160/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Brownson 2015</a></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#traumatic-anterior-dislocation-injuries" rel="noopener" target="_blank"><b>Associated injury rates</b></a> (Brownson 2015 BESS/BOA) (Guideline): <b class="crim">clinically apparent neurological injury ≈ 13.5% of dislocations (axillary nerve two-thirds); EMG shows nerve injury in 48%; greater-tuberosity fracture ≈ 16%; rotator cuff tears 41% (40–55 y), 71% (56–70 y), 100% (&gt; 70 y)</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#traumatic-anterior-dislocation-injuries" rel="noopener" target="_blank"><b>Nerve injury follow-up</b></a> (Brownson 2015) (Guideline): <b class="crim">“EMG studies should be performed at 6 weeks if no clinical recovery is seen”</b> → nerve-injury centre referral if no recovery</div></div>
+<div class="sh r" style="margin:.8mm 0 .5px;"><span>Pancoast, PMR, Visceral &amp; Cervical Screen</span><span class="stat r">Systemic &amp; Neck</span></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#pancoast-tumour" rel="noopener" target="_blank"><b>Pancoast tumour</b></a> (Bisbinas 1999 Ann R Coll Surg Engl) <span class="eb eb-l">L</span>: <b class="crim">4 cases presenting to orthopaedics: mean diagnostic delay 18.5 months</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#polymyalgia-rheumatica-eular-acr" rel="noopener" target="_blank"><b>Polymyalgia rheumatica (EULAR/ACR 2012)</b></a> (Dasgupta 2012 Ann Rheum Dis) <span class="eb eb-m">M</span>: <b class="crim">score ≥ 4 (no ultrasound): Sn 68%, Sp 78%; score ≥ 5 with ultrasound: Sn 66%, Sp 81%</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cardiac-visceral-shoulder-referral" rel="noopener" target="_blank"><b>Cardiac / visceral referral:</b></a> myocardial ischaemia, diaphragmatic, hepatobiliary or pulmonary referral (non-mechanical shoulder pain) <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wainner-cervical-radiculopathy-cluster" rel="noopener" target="_blank"><b>Cervical radiculopathy screen</b></a> (Wainner 2003 Spine) <span class="eb eb-m">M</span>: <b class="nav">4-item test cluster LR+ 30.3 (wide CI);</b> <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#ultt-a" rel="noopener" target="_blank"><b>ULTT A</b></a> <b class="nav">most useful to rule out</b></div></div>
+</div>
+<div class="col-span-2 flex flex-wrap items-center gap-x-1 mt-[1px] pt-[1px] border-t border-dashed" style="border-color:var(--accent-line)">
+<span class="lb crim">TRIAGE DISPOSITION:</span>
+<span class="cio"><span class="cb g"></span><b class="emer">Cleared — proceed with clinical dossier</b></span>
+<span class="cio"><span class="cb r"></span>Next available outpatient clinic (acute cuff tear)</span>
+<span class="cio"><span class="cb r"></span>2-week cancer referral pathway</span>
+<span class="cio"><span class="cb r"></span><b class="crim">Same day emergency referral (infected joint / unreduced dislocation)</b></span>
+</div>
+</div>
+</section>
+<!-- C : Pathway Router -->
+<section class="card green" id="p1-fasttrack">
+<div class="card-h"><span>C · Clinical Pathway Router &amp; Rapid Cervical / Scapular Screen</span><span class="tag">RAPID</span></div>
+<div class="card-b flex flex-col gap-[1.5px]">
+<div class="box g" style="padding:.4mm 1.2mm;">
+<div class="flex items-center justify-between" style="font-size:7px; font-weight:bold; color:var(--emerald); text-transform:uppercase;">
+<span>Clinical Pathway Router</span>
+<span class="mut" style="font-weight:bold; text-transform:none; font-size:6.8px;">Tick route → jump to matching pages</span>
+</div>
+<div class="router-row">
+<div class="router-col">
+<span class="cb sm g"></span>
+<b class="emer" style="font-size:7px;">A · CUFF:</b>
+<a class="rchip" href="#page-1">1</a><span>→</span><a class="rchip" href="#page-3">3</a><span>→</span><a class="rchip" href="#page-4">4</a><span>→</span><a class="rchip" href="#page-8">8</a><span>→</span><a class="rchip" href="#page-9">9</a>
+</div>
+<div class="router-col">
+<span class="cb sm g"></span>
+<b class="nav" style="font-size:7px;">B · FROZEN / RCRSP:</b>
+<a class="rchip" href="#page-1">1</a><span>→</span><a class="rchip" href="#page-2">2</a><span>→</span><a class="rchip" href="#page-3">3</a><span>→</span><a class="rchip" href="#page-6">6</a><span>→</span><a class="rchip" href="#page-7">7</a><span>→</span><a class="rchip" href="#page-8">8</a><span>→</span><a class="rchip" href="#page-9">9</a>
+</div>
+<div class="router-col">
+<span class="cb sm g"></span>
+<b class="crim" style="font-size:7px;">C · POST-OP:</b>
+<a class="rchip" href="#page-1">1</a><span>→</span><a class="rchip" href="#page-3">3</a><span>→</span><a class="rchip" href="#page-5">5</a><span>→</span><a class="rchip" href="#page-8">8</a><span>→</span><a class="rchip" href="#page-9">9</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- D : Subjective History & Pain Map (Shoulder + Neck + Arm) -->
+<section class="card flex flex-col" id="p1-subjective">
+<div class="card-h"><span>D · Subjective History, Symptom Behaviour &amp; Shoulder / Neck / Arm Pain Map</span><span class="tag">SUBJECTIVE</span></div>
+<div class="card-b grid grid-cols-12 gap-2" style="padding:.6mm 1.2mm;">
+<div class="col-span-7 flex flex-col gap-[1.5px]">
+<div class="sh" style="margin:0 0 1px;"><span>Symptom Location &amp; Clinical Pattern</span><span class="stat">Clinical Signpost</span></div>
+<div class="ci"><span class="cb"></span><div><b>Anterolateral / Deltoid Pain on Overhead Activity:</b> full passive ER → <span class="nav b">Subacromial pain / RCRSP (p2/p4)</span></div></div>
+<div class="ci"><span class="cb"></span><div><b>Global Stiffness &amp; Severe Night Pain:</b> passive ER loss → <span class="nav b">Frozen shoulder / GH OA (p2/p6)</span></div></div>
+<div class="ci"><span class="cb"></span><div><b>Superior AC Joint Pain &amp; High-Arc Provocation:</b> local tenderness → <span class="nav b">AC joint pathology (p2/p4)</span></div></div>
+<div class="ci"><span class="cb"></span><div><b>Apprehension or Slipping in Abduction + ER:</b> trauma or hyperlaxity → <span class="nav b">Traumatic or Stanmore II/III instability (p2/p4)</span></div></div>
+<div class="ci"><span class="cb"></span><div><b>Neck Pain Radiating Distal to Elbow with Paresthesia:</b> (+) <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wainner-cervical-radiculopathy-cluster" rel="noopener" target="_blank">Wainner cluster</a> / <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#ultt-a" rel="noopener" target="_blank">ULTT A</a> → <span class="nav b">Cervical radiculopathy (p1/p3)</span></div></div>
+<div class="sh" style="margin:.8mm 0 1px;"><span>Aggravating, Easing &amp; Irritability Profile</span><span class="stat">Behaviour</span></div>
+<div class="row xs">
+<div class="fr" style="flex:1"><span class="lb">Aggravating</span><span class="fl"></span></div>
+<div class="fr" style="flex:1"><span class="lb">Easing</span><span class="fl"></span></div>
+</div>
+<div class="fr flex-wrap xs">
+<span class="lb">Irritability:</span>
+<span class="cio"><span class="cb sm g"></span>Low</span>
+<span class="cio"><span class="cb sm"></span>Moderate</span>
+<span class="cio"><span class="cb sm r"></span>High (rest/night pain)</span>
+</div>
+</div>
+<div class="col-span-5 flex flex-col items-center justify-center border-l pl-2" style="border-color:var(--line)">
+<div class="text-[7px] font-bold uppercase mb-0.5" style="color:var(--ink)">Shoulder, Neck &amp; Arm Pain Map</div>
+<svg aria-label="Shoulder, neck and arm pain map" class="w-full h-auto" style="max-height:24mm;" viewbox="0 0 100 80">
+<!-- Neck, Shoulder & Arm Outline -->
+<path d="M 38 5 L 61 5 L 64 16 L 82 21 C 91 26 91 40 82 53 L 78 76 L 66 76 L 70 50 L 65 50 L 65 76 L 34 76 L 34 50 L 28 50 L 32 76 L 21 76 L 17 53 C 8 40 8 26 17 21 L 34 16 Z" fill="var(--paper)" stroke="var(--mut)" stroke-width="1.2"></path>
+<!-- Cervical Spine Zone -->
+<ellipse cx="50" cy="12" fill="var(--accent-soft)" rx="8" ry="5" stroke="var(--crimson)" stroke-width="1"></ellipse>
+<text fill="var(--crimson)" font-size="3.2" font-weight="bold" text-anchor="middle" x="50" y="14">NECK</text>
+<!-- Superior AC Joint Zone -->
+<ellipse cx="72" cy="21" fill="var(--paper)" rx="5" ry="3" stroke="var(--emerald)" stroke-width="1"></ellipse>
+<text fill="var(--emerald)" font-size="3.1" font-weight="bold" text-anchor="middle" x="72" y="22">ACJ</text>
+<!-- Lateral Deltoid / Subacromial Zone -->
+<ellipse cx="79" cy="32" fill="var(--paper)" rx="7" ry="8" stroke="var(--navy)" stroke-width="1.1"></ellipse>
+<text fill="var(--navy)" font-size="3.1" font-weight="bold" text-anchor="middle" x="79" y="34">DELTOID</text>
+<!-- Distal Arm / Radicular Tract -->
+<path d="M 79 41 Q 81 56 75 74" fill="none" stroke="var(--crimson)" stroke-linecap="round" stroke-width="2"></path>
+<text fill="var(--crimson)" font-size="3.1" font-weight="bold" text-anchor="middle" x="74" y="63">ARM</text>
+</svg>
+<div class="flex flex-wrap justify-center gap-x-2 text-[6.5px] font-bold mt-0.5">
+<span class="nav">Deltoid/Cuff</span>
+<span class="emer">AC Joint</span>
+<span class="crim">Cervical/Arm</span>
+</div>
+</div>
+</div>
+</section>
+<div class="dots fill" id="p1-notes"><span class="dots-l">Subjective History · Mechanism · Patient Goals (PSFS)</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab on" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 2 ===================== -->
+<div class="clinical-page" id="page-2" data-accent="blue">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Differential Diagnosis, Frozen Shoulder &amp; Clinical Clusters</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">02 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <div class="note xs"><b class="nav">Differential &amp; stiff-vs-mobile stratification:</b> first compare passive external rotation (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cadogan-subacromial-cluster" rel="noopener" target="_blank">Cadogan 2016</a> / <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank">Kelley 2013</a>), classify instability (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#traumatic-instability-recurrence" rel="noopener" target="_blank">Brownson 2015</a> / <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#stanmore-atraumatic-instability" rel="noopener" target="_blank">Noorani 2019</a>), and clear the cervical spine and thoracic outlet.</div>
+<!-- 1 : Differential Diagnosis Matrix (10 categories across 2 columns) -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p2-diff-cuff">
+<div class="card-h"><span>1 · RCRSP, Rotator Cuff Tear, Frozen Shoulder &amp; GH OA</span><span class="tag">MATRIX A</span></div>
+<div class="card-b flex flex-col gap-[1.5px]">
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rcrsp-subacromial-pain" rel="noopener" target="_blank"><b>Subacromial pain — definition</b></a> <a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4935112/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Kulkarni 2015</a> (Guideline): <b class="nav">“commonly located to the top and lateral side of the shoulder … exaggerated by overhead activity … can be associated with night pain … usually associated with full passive range of movement”</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rcrsp-subacromial-pain" rel="noopener" target="_blank"><b>RCRSP terminology &amp; burden:</b></a> umbrella term for subacromial pain, RC tendinopathy, partial and full-thickness tears; exercise ≈ surgery (Lewis 2016 Man Ther) <span class="eb eb-e">E</span> • <b class="nav">2.4% of UK primary care consultations; subacromial pain up to 70% of shoulder-pain problems</b> (Beard 2018 Lancet CSAW) <span class="eb eb-m">M</span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rcrsp-subacromial-pain" rel="noopener" target="_blank"><b>Full-thickness rotator cuff tear:</b></a> <b class="nav">“overall prevalence of rotator cuff tears is 34% and … risk increases significantly with age”</b> (Kulkarni 2015, Guideline); US cluster <b class="nav">Sp 98% (94–100), LR+ 6.2 (1.5–25.7)</b> (Cadogan 2016) <span class="eb eb-m">M</span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank"><b>Frozen shoulder (adhesive capsulitis):</b></a> global active &amp; passive restriction; <b class="nav">ROM loss &gt; 25% in at least 2 planes AND passive ER loss &gt; 50% of the other side or &lt; 30° ER</b> (Kelley 2013 JOSPT CPG, Guideline)</div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cadogan-subacromial-cluster" rel="noopener" target="_blank"><b>Glenohumeral osteoarthritis (GH OA):</b></a> <b class="nav">those with ER loss had more GH arthropathy on X-ray (17% vs 3%)</b> (Cadogan 2016 PLoS One) <span class="eb eb-m">M</span></div></div>
+</div>
+</section>
+<section class="card" id="p2-diff-instab">
+<div class="card-h"><span>2 · Instability, AC Joint, SLAP/Biceps, Calcific &amp; Cervical/TOS</span><span class="tag">MATRIX B</span></div>
+<div class="card-b flex flex-col gap-[1.5px]">
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#traumatic-instability-recurrence" rel="noopener" target="_blank"><b>Traumatic instability — recurrence</b></a> <a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4935160/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Brownson 2015</a> (Guideline): <b class="crim">almost 90% of recurrences within 2 years; males under 20 ≈ 72% chance of recurrent instability; immobilisation &gt; 1 week does not reduce recurrence</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#stanmore-atraumatic-instability" rel="noopener" target="_blank"><b>Atraumatic instability (Stanmore II/III)</b></a> <a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6348586/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Noorani 2019</a> (Guideline): <b class="nav">Stanmore polar types II (hyperlaxity) and III (muscle patterning, structurally normal)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#physical-tests-cochrane-hanchard" rel="noopener" target="_blank"><b>AC joint pathology:</b></a> superior AC pain &amp; high-arc provocation; <b class="crim">no impingement or AC-joint test showed significant diagnostic accuracy (2008 meta-analysis)</b> (Hegedus 2008 BJSM) <span class="eb eb-m">M</span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#physical-tests-cochrane-hanchard" rel="noopener" target="_blank"><b>SLAP / long head of biceps:</b></a> deep mechanical clicking/pain; <b class="crim">pooled DOR of physical tests 1.38 (1.13–1.69) — poor</b> (Gismervik 2017 BMC Musculoskelet Disord) <span class="eb eb-m">M</span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#tos-calcific-differential" rel="noopener" target="_blank"><b>Calcific tendinopathy:</b></a> acute or chronic calcific tendinitis of the rotator cuff with severe flare pain (see ESWT &amp; barbotage on p6) <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#tos-calcific-differential" rel="noopener" target="_blank"><b>Cervical radiculopathy / Thoracic Outlet Syndrome (TOS):</b></a> cervical screen (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wainner-cervical-radiculopathy-cluster" rel="noopener" target="_blank">Wainner cluster</a>, p1) <span class="eb eb-m">M</span> and TOS neurovascular upper-limb symptoms <span class="eb eb-e">E</span></div></div>
+</div>
+</section>
+</div>
+<!-- 2 : Frozen Shoulder Box (Kelley 2013 CPG) & Cadogan Rule / Cluster + Hanchard Cochrane -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p2-frozen-box">
+<div class="card-h"><span>3 · Frozen Shoulder Box (Kelley 2013 JOSPT CPG) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a> <a class="guide-badge" href="https://doi.org/10.2519/jospt.2013.0302" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Kelley 2013</a></span><span class="tag">GUIDELINE</span></div>
+<div class="card-b flex flex-col gap-[1.5px]">
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank"><b>Definition used</b></a> (Guideline): <b class="nav">ROM loss &gt; 25% in at least 2 planes AND passive ER loss &gt; 50% of the other side or &lt; 30° ER</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank"><b>Prevalence &amp; risk factors</b></a> (Guideline): <b class="nav">shoulder pain 2.4–26%; primary adhesive capsulitis 2% to 5.3%; secondary (diabetes/thyroid) 4.3%–38%; diabetes in women 23.7% vs 4.7% and men 38.0% vs 6.5%; hypothyroidism (women) 21.1% vs 7.9%; age 40–65, peak 51–55; contralateral risk 5%–34%, bilateral simultaneous up to 14%</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank"><b>4 clinical stages</b></a> (Guideline): <b class="nav">stage 1 up to 3 months; stage 2 “freezing” 3–9 months; stage 3 “frozen” 9–15 months; stage 4 “thawing” 15–24 months; mild symptoms may persist for years</b></div></div>
+<div class="box flex flex-wrap items-center justify-between xs mt-[1px]" style="padding:.4mm 1mm;">
+<span><b>Stage:</b> <span class="cio"><span class="cb sm"></span>1 (up to 3 m)</span><span class="cio"><span class="cb sm"></span>2 (3–9 m)</span><span class="cio"><span class="cb sm"></span>3 (9–15 m)</span><span class="cio"><span class="cb sm"></span>4 (15–24 m)</span></span>
+<span><span class="cio"><span class="cb sm r"></span>Diabetes / Thyroid</span></span>
+</div>
+</div>
+</section>
+<section class="card" id="p2-cadogan-hanchard">
+<div class="card-h"><span>4 · Cadogan Passive ER Rule &amp; Cluster · Hanchard Cochrane</span><span class="tag">PRIMARY CARE</span></div>
+<div class="card-b flex flex-col gap-[1.5px]">
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cadogan-subacromial-cluster" rel="noopener" target="_blank"><b>Subacromial pain vs stiff shoulder</b></a> (Cadogan 2016 PLoS One) <span class="eb eb-m">M</span>: <b class="nav">full passive ER: Sn 99%, LR− 0.14 → loss of passive ER argues against subacromial pain; those with ER loss had more GH arthropathy on X-ray (17% vs 3%)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cadogan-subacromial-cluster" rel="noopener" target="_blank"><b>Cadogan subacromial pain cluster</b></a> (Cadogan 2016) <span class="eb eb-m">M</span>: <b class="nav">anterior shoulder pain + strain injury + no symptoms at end-range ER in abduction: Sp 100% (LR+ ∞, 2.9–∞); full-thickness supraspinatus tear on US: Sp 98% (94–100), LR+ 6.2 (1.5–25.7); 34% had a positive subacromial anaesthetic response</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#physical-tests-cochrane-hanchard" rel="noopener" target="_blank"><b>Physical tests in general (Cochrane)</b></a> (Hanchard 2013 Cochrane) <span class="eb eb-h">H</span>: <b class="crim">insufficient evidence to base selection of physical tests in primary care</b></div></div>
+<div class="box flex flex-wrap items-center justify-between xs mt-[1px]" style="padding:.4mm 1mm;">
+<span><b>Passive ER Status:</b> <span class="cio"><span class="cb sm g"></span>Full passive ER (Sn 99%)</span><span class="cio"><span class="cb sm r"></span>Passive ER loss (&gt; 50% or &lt; 30°)</span></span>
+</div>
+</div>
+</section>
+</div>
+<!-- 3 : Working Hypothesis & Stanmore / Instability Synthesis -->
+<section class="card" id="p2-synthesis">
+<div class="card-h"><span>5 · Working Diagnostic Synthesis &amp; Pathway Classification</span><span class="tag">SYNTHESIS</span></div>
+<div class="card-b flex flex-col gap-[2px]" style="padding:.8mm 1.2mm;">
+<div class="row">
+<div class="fr" style="flex:2"><span class="lb nav">Primary Working Diagnosis</span><span class="fl"></span></div>
+<div class="fr" style="flex:1.5"><span class="lb">Secondary / Scapular / Neck Driver</span><span class="fl"></span></div>
+<div class="fr"><span class="lb">Stanmore Polar Type</span><span class="cio"><span class="cb sm"></span>I</span><span class="cio"><span class="cb sm"></span>II</span><span class="cio"><span class="cb sm"></span>III</span></div>
+</div>
+<div class="fr flex-wrap xs">
+<span class="lb">Primary Subgrouping:</span>
+<span class="cio"><span class="cb sm"></span>RCRSP / Subacromial</span>
+<span class="cio"><span class="cb sm"></span>Full-Thickness Cuff Tear</span>
+<span class="cio"><span class="cb sm"></span>Frozen shoulder</span>
+<span class="cio"><span class="cb sm"></span>GH OA</span>
+<span class="cio"><span class="cb sm"></span>Traumatic Instability</span>
+<span class="cio"><span class="cb sm"></span>Atraumatic (Stanmore II/III)</span>
+<span class="cio"><span class="cb sm"></span>AC Joint / SLAP / Calcific</span>
+</div>
+</div>
+</section>
+<div class="dots fill" id="p2-notes"><span class="dots-l">Differential Reasoning · Passive ER Gate · Imaging &amp; Pathway Notes</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab on" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 3 ===================== -->
+<div class="clinical-page" id="page-3" data-accent="blue">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Objective Examination, Scapular Assessment, Strength &amp; Neuro</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">03 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <!-- 1 : Shoulder Active & Passive ROM Table (Blank write-in fields, no norms) -->
+<section class="card" id="p3-rom">
+<div class="card-h"><span>1 · Shoulder Active &amp; Passive Range of Motion <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">BLANK WRITE-IN FIELDS · NO NORMS</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<table class="t dense">
+<thead>
+<tr>
+<th style="width:28%">Shoulder Motion</th>
+<th class="c" style="width:12%">Active L</th>
+<th class="c" style="width:12%">Active R</th>
+<th class="c" style="width:12%">Passive L</th>
+<th class="c" style="width:12%">Passive R</th>
+<th style="width:24%">Symptom Reproduction &amp; End-Feel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank">Flexion / Scaption / Abduction</a></td>
+<td></td><td></td><td></td><td></td>
+<td><span class="cio"><span class="cb sm"></span>Painful arc</span><span class="cio"><span class="cb sm r"></span>Capsular</span></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank">External Rotation (ER) at 0°</a></td>
+<td></td><td></td><td></td><td></td>
+<td><span class="cio"><span class="cb sm g"></span>Full passive ER</span><span class="cio"><span class="cb sm r"></span>ER loss (&gt; 50% or &lt; 30°)</span></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank">External Rotation (ER) at 90°</a></td>
+<td></td><td></td><td></td><td></td>
+<td><span class="cio"><span class="cb sm"></span>Pain</span><span class="cio"><span class="cb sm r"></span>Apprehension</span></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank">Internal Rotation (IR) at 90° / Hand-Behind-Back</a></td>
+<td></td><td></td><td></td><td></td>
+<td><span class="cio"><span class="cb sm"></span>Symmetric</span><span class="cio"><span class="cb sm r"></span>GIRD / restricted</span></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank">Total Rotational Motion Arc (ER + IR at 90°)</a></td>
+<td></td><td></td><td></td><td></td>
+<td><span class="cio"><span class="cb sm"></span>Symmetric</span><span class="cio"><span class="cb sm r"></span>Deficit &gt; 5° (p8)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="xs mt-[1px]"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank"><b>ROM — goniometer vs digital inclinometer</b></a> (Kolber 2012 IJSPT) <span class="eb eb-m">M</span>: <b class="nav">intrarater ICC ≥ 0.94 (goniometer), ≥ 0.95 (inclinometer); limits of agreement 2°–20° → do not swap instruments between visits</b>.</div>
+</div>
+</section>
+<!-- 2 : Scapular Assessment & Symptom Modification (SSMP, SAT, SRT) -->
+<section class="card" id="p3-scapular">
+<div class="card-h"><span>2 · Scapular Dyskinesis &amp; Symptom Modification Battery</span><span class="tag">MCCLURE · SAT · SRT · SSMP</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#scapular-dyskinesis-test" rel="noopener" target="_blank"><b>Scapular dyskinesis test (McClure)</b></a> (McClure 2009 J Athl Train) <span class="eb eb-m">M</span>: <b class="nav">5 reps weighted flexion + abduction (1.4 kg or 2.3 kg); agreement 75–82%, κw 0.48–0.61</b> • <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#scapular-dyskinesis-test" rel="noopener" target="_blank"><b>SDT in rugby players</b></a> (Singh 2021 S Afr J Sports Med) <span class="eb eb-l">L</span>: <b class="crim">slight reliability (κ 0.16; 41%)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#scapular-assistance-test" rel="noopener" target="_blank"><b>Scapular Assistance Test (SAT)</b></a> <span class="eb eb-e">E</span> &amp; <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#scapular-retraction-test" rel="noopener" target="_blank"><b>Scapular Retraction Test (SRT)</b></a> <span class="eb eb-e">E</span>: manual upward rotation / posterior tilt (SAT) or scapular stabilisation (SRT) during provocative elevation or Jobe testing — no verified numbers</div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ssmp" rel="noopener" target="_blank"><b>Shoulder Symptom Modification Procedure (SSMP)</b></a> <span class="eb eb-e">E</span>: systematic thoracic, scapular, and humeral head symptom modification manoeuvres during provocative movement — no verified numbers</div></div>
+<div class="box flex flex-wrap items-center justify-between xs mt-[1px]" style="padding:.4mm 1mm;">
+<span><b>SDT Rating:</b> <span class="cio"><span class="cb sm"></span>Normal</span><span class="cio"><span class="cb sm"></span>Subtle</span><span class="cio"><span class="cb sm r"></span>Obvious</span></span>
+<span><b>Symptom Modification:</b> <span class="cio"><span class="cb sm g"></span>SAT (+)</span><span class="cio"><span class="cb sm g"></span>SRT (+)</span><span class="cio"><span class="cb sm g"></span>SSMP Responder</span></span>
+</div>
+</div>
+</section>
+<!-- 3 : Strength / HHD Write-In Table (No Norms), CKCUEST & YBT-UQ -->
+<section class="card" id="p3-strength">
+<div class="card-h"><span>3 · Isometric Strength / HHD Write-In Table &amp; Upper-Quarter Performance</span><span class="tag">NO NORMS · CKCUEST · YBT-UQ</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<table class="t dense">
+<thead>
+<tr>
+<th style="width:28%">Muscle Group / Test (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">HHD</a> <span class="eb eb-e">E</span>)</th>
+<th class="c" style="width:14%">Left</th>
+<th class="c" style="width:14%">Right</th>
+<th class="c" style="width:16%">Symmetry / Ratio</th>
+<th style="width:28%">Pain Reproduction &amp; Notes (No Norms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">External Rotation (ER at 0° / 90°)</a> <span class="eb eb-e">E</span></td>
+<td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">Internal Rotation (IR at 0° / 90°)</a> <span class="eb eb-e">E</span></td>
+<td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">Scaption / Abduction &amp; ER:IR Ratio</a> <span class="eb eb-e">E</span></td>
+<td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+</table>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ckcuest" rel="noopener" target="_blank"><b>Closed Kinetic Chain Upper Extremity Stability Test (CKCUEST)</b></a> (Tucci 2014 BMC Musculoskelet Disord) <span class="eb eb-m">M</span>: <b class="nav">MDC 2.05–3.91 touches; at least 3 touches = real improvement</b> • Baseline: <span class="fl s"></span> Follow-up: <span class="fl s"></span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ybt-uq" rel="noopener" target="_blank"><b>Upper Quarter Y-Balance Test (YBT-UQ)</b></a> <span class="eb eb-e">E</span>: no verified numbers — write-in reach L: <span class="fl m"></span> R: <span class="fl m"></span></div></div>
+</div>
+</section>
+<!-- 4 : Upper-Limb Neurological Screen C5–T1 -->
+<section class="card" id="p3-neuro">
+<div class="card-h"><span>4 · Upper-Limb Neurological Screen (C5–T1) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#upper-limb-neuro-screen" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">DERMATOME · MYOTOME · REFLEX</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<table class="t dense">
+<thead>
+<tr>
+<th style="width:10%">Root</th>
+<th style="width:28%">Dermatome (Light Touch / Pinprick)</th>
+<th style="width:30%">Myotome (Key Muscle Action)</th>
+<th style="width:16%">Reflex</th>
+<th class="c" style="width:8%">Left</th>
+<th class="c" style="width:8%">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#upper-limb-neuro-screen" rel="noopener" target="_blank">C5</a></td>
+<td>Lateral arm (axillary nerve badge area) <span class="eb eb-e">E</span></td>
+<td>Shoulder abduction (Deltoid)</td>
+<td>Biceps (C5–C6)</td>
+<td></td><td></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#upper-limb-neuro-screen" rel="noopener" target="_blank">C6</a></td>
+<td>Lateral forearm, thumb &amp; index finger <span class="eb eb-e">E</span></td>
+<td>Elbow flexion &amp; wrist extension</td>
+<td>Brachioradialis (C6)</td>
+<td></td><td></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#upper-limb-neuro-screen" rel="noopener" target="_blank">C7</a></td>
+<td>Middle finger &amp; central palm <span class="eb eb-e">E</span></td>
+<td>Elbow extension &amp; wrist flexion</td>
+<td>Triceps (C7)</td>
+<td></td><td></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#upper-limb-neuro-screen" rel="noopener" target="_blank">C8</a></td>
+<td>Ring &amp; little fingers, medial forearm <span class="eb eb-e">E</span></td>
+<td>Finger flexion &amp; thumb extension</td>
+<td>—</td>
+<td></td><td></td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#upper-limb-neuro-screen" rel="noopener" target="_blank">T1</a></td>
+<td>Medial arm &amp; epicondylar region <span class="eb eb-e">E</span></td>
+<td>Finger abduction / adduction (Interossei)</td>
+<td>—</td>
+<td></td><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<div class="dots fill" id="p3-notes"><span class="dots-l">Objective Examination Notes · Scapular Modification · Strength Observations</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab on" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 4 ===================== -->
+<div class="clinical-page" id="page-4" data-accent="blue">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Special Tests, Diagnostic Clusters &amp; Validated PROMs</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">04 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <div class="note xs"><b class="nav">How to read:</b> interpret single tests in clusters (<a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#michener-saps-cluster" rel="noopener" target="_blank">Michener 2009</a>, <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#park-clusters" rel="noopener" target="_blank">Park 2005</a>, <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#murrell-cuff-tear-cluster" rel="noopener" target="_blank">Murrell 2001</a>). <u>Underline</u> = Atlas card · <b class="nav">▸</b> = verified video · <span class="calc-badge">Calc</span> = interactive calculator.</div>
+<!-- 1 : Impingement / RCRSP & Rotator Cuff Tear + Subscapularis -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p4-impingement">
+<div class="card-h"><span>1 · Impingement / RCRSP Tests &amp; Clusters</span><span class="tag">MICHENER · PARK · HEGEDUS</span></div>
+<div class="card-b flex flex-col gap-[1px]" style="padding:.6mm 1mm;">
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#neer-test" rel="noopener" target="_blank"><b>Neer</b></a> (Hegedus 2012 / Michener 2009) <span class="eb eb-m">M</span>: <b class="nav">Sn 72%, Sp 60%; LR− 0.35 (0.12–0.97)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#hawkins-kennedy-test" rel="noopener" target="_blank"><b>Hawkins-Kennedy</b></a> (Hegedus 2012 / Gismervik 2017) <span class="eb eb-m">M</span>: <b class="nav">Sn 79%, Sp 59%</b> • SIS MA: <b class="nav">DOR 2.86 (1.14–7.17); Sn 0.58, Sp 0.67</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#painful-arc-test" rel="noopener" target="_blank"><b>Painful arc</b></a> (Hegedus 2012 / Michener 2009) <span class="eb eb-m">M</span>: <b class="nav">Sn 53%, Sp 76%; LR+ 2.25 (1.33–3.81), LR− 0.38 (0.16–0.90)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#empty-can-jobe-test" rel="noopener" target="_blank"><b>Empty can (Jobe)</b></a> <span class="eb eb-m">M</span> &amp; <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#full-can-test" rel="noopener" target="_blank"><b>Full can</b></a> <span class="eb eb-e">E</span>: SIS <b class="nav">LR+ 3.90 (1.5–10.12)</b> (Michener 2009); full-thickness tear <b class="nav">DOR 9.24 (1.99–42.84); Sn 0.74, Sp 0.77</b> (Gismervik 2017)</div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#er-resistance-test" rel="noopener" target="_blank"><b>ER resistance (infraspinatus)</b></a> (Michener 2009) <span class="eb eb-m">M</span>: <b class="nav">LR+ 4.39 (1.74–11.07), LR− 0.50 (0.28–0.89)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#michener-saps-cluster" rel="noopener" target="_blank"><b>Michener cluster</b></a> (Michener 2009) <span class="eb eb-m">M</span>: <b class="nav">≥ 3 of 5 positive (Neer, Hawkins-Kennedy, painful arc, empty can, ER resistance) confirms; &lt; 3 rules out; AUC 0.79; κ 0.45–0.67 (painful arc, empty can, ER resistance), 0.39–0.40 (Neer, HK)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#park-clusters" rel="noopener" target="_blank"><b>Park clusters</b></a> (Park 2005 JBJS Am) <span class="eb eb-m">M</span>: <b class="nav">HK + painful arc + infraspinatus test → 95% post-test probability of any impingement; painful arc + drop-arm + infraspinatus test → 91% for full-thickness tear</b></div></div>
+</div>
+</section>
+<section class="card" id="p4-cuff-subscap">
+<div class="card-h"><span>2 · Cuff Tear Lag Signs, Murrell Cluster &amp; Subscapularis</span><span class="tag">TEAR · SUBSCAPULARIS</span></div>
+<div class="card-b flex flex-col gap-[1px]" style="padding:.6mm 1mm;">
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#drop-arm-test" rel="noopener" target="_blank"><b>Drop-arm test</b></a> (Park 2005) <span class="eb eb-m">M</span> &amp; <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#hornblower-sign" rel="noopener" target="_blank"><b>Hornblower sign</b></a> <span class="eb eb-e">E</span>: posterosuperior cuff integrity screen</div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#er-lag-sign" rel="noopener" target="_blank"><b>ER lag sign (ERLS)</b></a>: <b class="nav">Sp 97% for subacromial pain (injection-confirmed), highest of all tests</b> (Cadogan 2016) <span class="eb eb-m">M</span>; <b class="nav">ERLS less sensitive but more specific than Jobe; lag size correlates with tear size</b> (Hertel 1996) <span class="eb eb-l">L</span></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#ir-lag-sign" rel="noopener" target="_blank"><b>IR lag sign (IRLS)</b></a> (Hertel 1996) <span class="eb eb-l">L</span>: <b class="nav">IRLS more sensitive than lift-off; lag size correlates with tear size</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#murrell-cuff-tear-cluster" rel="noopener" target="_blank"><b>Murrell cuff-tear cluster</b></a> (Murrell &amp; Walton 2001 Lancet) <span class="eb eb-l">L</span>: <b class="nav">supraspinatus weakness + ER weakness + impingement sign all positive (or 2 positive and age ≥ 60) → 98% chance of cuff tear</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#bear-hug-test" rel="noopener" target="_blank"><b>Bear-hug</b></a> (Barth 2006 Arthroscopy) <span class="eb eb-l">L</span>: <b class="nav">Sn 60%, Sp 91.7%</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#belly-press-test" rel="noopener" target="_blank"><b>Belly-press / Napoleon</b></a> (Barth 2006) <span class="eb eb-l">L</span>: <b class="nav">belly-press Sn 40%, Sp 97.9%; Napoleon Sn 25%, Sp 97.9%</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#lift-off-test" rel="noopener" target="_blank"><b>Lift-off test</b></a> (Barth 2006) <span class="eb eb-l">L</span>: <b class="nav">Sn 17.6%, Sp 100%</b></div></div>
+</div>
+</section>
+</div>
+<!-- 2 : Instability, AC Joint & SLAP / Biceps -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p4-instability">
+<div class="card-h"><span>3 · Glenohumeral Instability Tests</span><span class="tag">FARBER · LO</span></div>
+<div class="card-b flex flex-col gap-[1px]" style="padding:.6mm 1mm;">
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#apprehension-test" rel="noopener" target="_blank"><b>Apprehension test</b></a> (Farber 2006 JBJS Am) <span class="eb eb-m">M</span>: <b class="nav">Sn 72%, Sp 96%, LR 20.2 (apprehension as criterion, not pain)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#relocation-test" rel="noopener" target="_blank"><b>Relocation test</b></a> (Farber 2006) <span class="eb eb-m">M</span>: <b class="nav">Sn 81%, Sp 92%, LR 10.4 (apprehension as criterion, not pain)</b> • SLAP Sn <b class="nav">52%</b> (Hegedus 2012)</div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#surprise-release-test" rel="noopener" target="_blank"><b>Surprise (release) test</b></a> (Lo 2004 Am J Sports Med) <span class="eb eb-l">L</span>: <b class="nav">Sn 63.89%, Sp 98.91%; all three tests positive: PPV 93.6%, NPV 71.9%</b></div></div>
+<div class="ci"><span class="cb n"></span><div>Anterior drawer (Farber 2006) <span class="eb eb-m">M</span>: <b class="nav">Sn 53%, Sp 85%, LR 3.6</b> • <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#load-and-shift-test" rel="noopener" target="_blank"><b>Load-and-shift</b></a> <span class="eb eb-e">E</span> • <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#sulcus-sign" rel="noopener" target="_blank"><b>Sulcus sign</b></a> <span class="eb eb-e">E</span> (inferior laxity)</div></div>
+</div>
+</section>
+<section class="card" id="p4-ac-slap">
+<div class="card-h"><span>4 · AC Joint &amp; SLAP / Biceps Tests</span><span class="tag">CHRONOPOULOS · KIM · HOLTBY</span></div>
+<div class="card-b flex flex-col gap-[1px]" style="padding:.6mm 1mm;">
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#cross-body-adduction-test" rel="noopener" target="_blank"><b>Cross-body adduction</b></a> &amp; <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#obrien-active-compression-test" rel="noopener" target="_blank"><b>O’Brien active compression</b></a> (Chronopoulos 2004) <span class="eb eb-l">L</span>: <b class="nav">cross-body Sn 77%; AC resisted extension Sn 72%; O’Brien Sn 41%, Sp 95%; all NPV &gt; 94%, PPV &lt; 30%</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#paxinos-ac-tenderness" rel="noopener" target="_blank"><b>AC tenderness &amp; Paxinos</b></a> (Walton 2004 JBJS Am) <span class="eb eb-l">L</span>: <b class="nav">AC tenderness Sn 96%; Paxinos Sn 79% — both low specificity</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#biceps-load-ii-test" rel="noopener" target="_blank"><b>Biceps load II (SLAP)</b></a> (Kim 2001) <span class="eb eb-l">L</span>: <b class="nav">Sn 89.7%, Sp 96.9%, κ 0.815 (single-surgeon study)</b></div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#speeds-test" rel="noopener" target="_blank"><b>Speed</b></a> &amp; <a class="test-link has-video" href="https://azhry-x.github.io/shoulder-atlas/#yergasons-test" rel="noopener" target="_blank"><b>Yergason</b></a> (Holtby 2004) <span class="eb eb-l">L</span>: <b class="nav">Speed Sn 32%, Sp 75%, LR+ 1.28, LR− 0.91; Yergason Sn 43%, Sp 79%, LR+ 2.05, LR− 0.72</b> (SLAP MA Sp <b class="nav">95%</b>, Hegedus 2012 <span class="eb eb-m">M</span>)</div></div>
+<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#compression-rotation-test" rel="noopener" target="_blank"><b>Compression-rotation (SLAP)</b></a> <span class="eb eb-m">M</span>: <b class="nav">LR+ 2.81; passive distraction highly specific</b> (Hegedus 2012); <b class="nav">DOR 6.36 (1.41–28.59); Sp 0.89, Sn 0.43</b> (Gismervik 2017)</div></div>
+</div>
+</section>
+</div>
+<!-- 3 : Validated PROMs Dashboard Table -->
+<section class="card" id="p4-proms">
+<div class="card-h"><span>5 · Validated Shoulder Outcome Measures (PROMs Dashboard)</span><span class="tag">PROMS · VERIFIED MCIDS ONLY</span></div>
+<div class="card-b" style="padding:.6mm 1mm;">
+<table class="t dense">
+<thead>
+<tr>
+<th style="width:28%">Instrument &amp; Calculator</th>
+<th class="c" style="width:8%">Base</th>
+<th class="c" style="width:8%">Follow</th>
+<th style="width:56%">Verified Reliability, MDC &amp; MCID Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#spadi" rel="noopener" target="_blank">SPADI</a> <a class="calc-badge" href="https://azhry-x.github.io/shoulder-atlas/#spadi" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><rect fill="none" height="8.8" rx="1.4" stroke="currentColor" stroke-width="1.1" width="8.8" x=".6" y=".6"></rect><rect fill="currentColor" height="1.7" rx=".3" width="5.6" x="2.2" y="2.1"></rect><circle cx="2.9" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="2.9" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="7.6" fill="currentColor" r=".62"></circle></svg>Calc</a> (Guideline)</td>
+<td></td><td></td>
+<td><b>MDC90 18.1; MCID 8.0 and 13.1 points (two studies)</b> (Kelley 2013 JOSPT CPG)</td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#quickdash" rel="noopener" target="_blank">QuickDASH / DASH</a> <a class="calc-badge" href="https://azhry-x.github.io/shoulder-atlas/#quickdash" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><rect fill="none" height="8.8" rx="1.4" stroke="currentColor" stroke-width="1.1" width="8.8" x=".6" y=".6"></rect><rect fill="currentColor" height="1.7" rx=".3" width="5.6" x="2.2" y="2.1"></rect><circle cx="2.9" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="2.9" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="7.6" fill="currentColor" r=".62"></circle></svg>Calc</a> <span class="eb eb-h">H</span></td>
+<td></td><td></td>
+<td><b>QuickDASH test-retest 0.90, MCID 8.0 points</b> (Mintken 2009) <span class="eb eb-m">M</span> • <b>DASH / QuickDASH ICC 0.93 / 0.91; MDC90 10.81 / 12.85; MCID 10.83 / 15.91</b> (Franchignoni 2014) <span class="eb eb-m">M</span> • MA: <b>pooled MCID 11.00 (8.59–13.41) / 11.97 (9.60–14.33); MDC90 9.04 / 9.03</b> (Galardini 2024) <span class="eb eb-h">H</span> • Frozen shoulder DASH: <b>MDC 6.6–12.2 (weighted average 10.5); MCID 10.2</b> (Kelley 2013)</td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ases" rel="noopener" target="_blank">ASES Shoulder Score</a> <a class="calc-badge" href="https://azhry-x.github.io/shoulder-atlas/#ases" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><rect fill="none" height="8.8" rx="1.4" stroke="currentColor" stroke-width="1.1" width="8.8" x=".6" y=".6"></rect><rect fill="currentColor" height="1.7" rx=".3" width="5.6" x="2.2" y="2.1"></rect><circle cx="2.9" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="2.9" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="7.6" fill="currentColor" r=".62"></circle></svg>Calc</a> <span class="eb eb-m">M</span></td>
+<td></td><td></td>
+<td><b>ICC 0.84; MDC 9.7; MCID 6.4 points</b> (Michener 2002 J Shoulder Elbow Surg)</td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#constant-score" rel="noopener" target="_blank">Constant Score (cuff surgery)</a> <span class="eb eb-m">M</span></td>
+<td></td><td></td>
+<td><b>MCID 10.4 points</b> (Kukkonen 2013 J Shoulder Elbow Surg)</td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#oxford-shoulder-score" rel="noopener" target="_blank">Oxford Shoulder Score (OSS)</a> <a class="calc-badge" href="https://azhry-x.github.io/shoulder-atlas/#oxford-shoulder-score" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><rect fill="none" height="8.8" rx="1.4" stroke="currentColor" stroke-width="1.1" width="8.8" x=".6" y=".6"></rect><rect fill="currentColor" height="1.7" rx=".3" width="5.6" x="2.2" y="2.1"></rect><circle cx="2.9" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="2.9" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="7.6" fill="currentColor" r=".62"></circle></svg>Calc</a> <span class="eb eb-m">M</span></td>
+<td></td><td></td>
+<td><b>MCIC 6.50 (4.41–8.61) mean-change; 8.42 predictive; “at least eight points” meaningful</b> (Fang 2024 Arthritis Care Res)</td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#wosi" rel="noopener" target="_blank">WOSI</a> <span class="eb eb-m">M</span></td>
+<td></td><td></td>
+<td><b>instability-specific QoL tool, 21 items, 4 domains — no MCID in source</b> (Kirkley 1998 Am J Sports Med)</td>
+</tr>
+<tr>
+<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#nprs" rel="noopener" target="_blank">NPRS</a> <a class="calc-badge" href="https://azhry-x.github.io/shoulder-atlas/#nprs" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><rect fill="none" height="8.8" rx="1.4" stroke="currentColor" stroke-width="1.1" width="8.8" x=".6" y=".6"></rect><rect fill="currentColor" height="1.7" rx=".3" width="5.6" x="2.2" y="2.1"></rect><circle cx="2.9" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="2.9" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="7.6" fill="currentColor" r=".62"></circle></svg>Calc</a> <span class="eb eb-m">M</span> &amp; <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#psfs" rel="noopener" target="_blank">PSFS</a> <a class="calc-badge" href="https://azhry-x.github.io/shoulder-atlas/#psfs" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><rect fill="none" height="8.8" rx="1.4" stroke="currentColor" stroke-width="1.1" width="8.8" x=".6" y=".6"></rect><rect fill="currentColor" height="1.7" rx=".3" width="5.6" x="2.2" y="2.1"></rect><circle cx="2.9" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="5.6" fill="currentColor" r=".62"></circle><circle cx="2.9" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="5" cy="7.6" fill="currentColor" r=".62"></circle><circle cx="7.1" cy="7.6" fill="currentColor" r=".62"></circle></svg>Calc</a> <span class="eb eb-e">E</span></td>
+<td></td><td></td>
+<td><b>NPRS test-retest 0.74; MCID 1.1</b> (Mintken 2009) • <b>PSFS: no shoulder-specific number in this file</b> <span class="eb eb-e">E</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<div class="dots fill" id="p4-notes"><span class="dots-l">Special Test Cluster Synthesis · Baseline PROM Scores · Target MCID Goals</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab on" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 5 ===================== -->
+<div class="clinical-page" id="page-5" data-accent="purple">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Post-Surgical Rehabilitation, Landmark Trials &amp; Red-Flag Re-Check</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">05 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <!-- Top Mandate -->
+<div class="crit flex-col items-start gap-[1px]" style="font-size:7.1px;">
+<div class="flex items-center gap-1.5"><svg aria-hidden="true" class="stop" viewbox="0 0 12 12"><path d="M3.5 .5h5l3 3v5l-3 3h-5l-3-3v-5z" fill="#991b1b"></path><rect fill="#fff" height="1.6" width="6" x="3" y="5.2"></rect></svg><span><b>POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span> — follow the operating surgeon’s individualised protocol for all movement, loading, and protection parameters.</span></div>
+</div>
+<!-- 1 : Wound, Neurological & Infection Re-Check Gate -->
+<section class="card red" id="p5-recheck">
+<div class="card-h"><span>1 · Post-Operative Wound, Neurological &amp; Infection Re-Check Gate</span><span class="tag">MANDATORY EVERY VISIT</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cuff-repair-early-vs-delayed-prom" rel="noopener" target="_blank"><b>Injection before cuff repair</b></a> (Forsythe 2019 JBJS Am) <span class="eb eb-m">M</span>: <b class="crim">injection within 1 month before arthroscopic cuff repair: infection 1.3% vs 0.8% (OR 1.7, 1.0–2.9)</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bess-boa-red-flags" rel="noopener" target="_blank"><b>Suspected post-op joint infection:</b></a> <b class="crim">“A suspected infected joint needs same day emergency referral.”</b> (Kulkarni 2015 BESS/BOA, Guideline) • screen for erythema, purulent drainage, fever, or escalating rest pain <span class="eb eb-e">E</span></div></div>
+<div class="flex flex-wrap items-center gap-x-2 xs mt-[1px] pt-[1px] border-t border-dashed" style="border-color:var(--accent-line)">
+<span class="lb crim">VISIT RE-CHECK:</span>
+<span class="cio"><span class="cb sm g"></span>Portals / wound clean &amp; dry (no infection)</span>
+<span class="cio"><span class="cb sm g"></span>Axillary &amp; distal neurovascular status intact</span>
+<span class="cio"><span class="cb sm g"></span>No DVT / systemic fever signs</span>
+<span class="cio"><span class="cb sm g"></span>Surgeon restrictions verified</span>
+</div>
+</div>
+</section>
+<!-- 2 : Rotator Cuff Repair (Kluczynski) & Bankart vs Latarjet / RTS (Hossein Zadeh, Memon) -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p5-cuff-repair">
+<div class="card-h"><span>2 · Rotator Cuff Repair PROM Timing <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#cuff-repair-early-vs-delayed-prom" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">KLUCZYNSKI 2015</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cuff-repair-early-vs-delayed-prom" rel="noopener" target="_blank"><b>Cuff repair: early vs delayed PROM (MA, 28 studies, 1,729 repairs)</b></a> (Kluczynski 2015 Am J Sports Med) <span class="eb eb-m">M</span>: <b class="nav">level 1 studies: retear 13.7% early vs 10.5% delayed, RR 1.30 (0.74–2.30), P = .36; tears ≤ 3 cm (TO + single-row): 18.7% vs 28.2%, RR 0.66 (0.47–0.95); tears &gt; 5 cm (double-row): 56.4% vs 20%, RR 2.82 (1.31–6.07) → tear size matters</b></div></div>
+<div class="ci"><span class="cb"></span><div><b>Restrictions:</b> <b>POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
+</div>
+</section>
+<section class="card" id="p5-instability-surg">
+<div class="card-h"><span>3 · Bankart vs Latarjet &amp; Return to Sport <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">HOSSEIN ZADEH · MEMON</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><b>Bankart vs Latarjet (MA, 21 studies, 13,176 shoulders)</b></a> (Hossein Zadeh 2024 J Shoulder Elbow Surg) <span class="eb eb-m">M</span>: <b class="nav">arthroscopic Bankart RR 3.08 (2.03–4.68) for recurrence/revision vs Latarjet; Rowe +4.55 for Latarjet; total complications ≈ 47% lower with Bankart (RR 0.53, 0.31–0.90)</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><b>Return to sport after arthroscopic Bankart (SR, 34 studies)</b></a> (Memon 2018 J Shoulder Elbow Surg) <span class="eb eb-m">M</span>: <b class="nav">any sport 81% (74–87%); pre-injury level 66% (57–74%); ≈ one-third do not return to pre-injury level</b></div></div>
+<div class="ci"><span class="cb"></span><div><b>Restrictions:</b> <b>POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
+</div>
+</section>
+</div>
+<!-- 3 : Subacromial Decompression Trials (CSAW, FIMPACT, Ketola, Kanto) & Frozen Shoulder Trials (UK FROST, Kivimäki) -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p5-decompression">
+<div class="card-h"><span>4 · Subacromial Decompression &amp; MID / PASS <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#subacromial-decompression-trials" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">CSAW · FIMPACT · KANTO</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#subacromial-decompression-trials" rel="noopener" target="_blank"><b>CSAW (n = 313)</b></a> (Beard 2018 Lancet) <span class="eb eb-h">H</span>: <b class="nav">OSS at 6 months: decompression 32.7 vs arthroscopy only 34.2, MD −1.3 (−3.9 to 1.3); both surgical groups only a small benefit over no treatment (2.8 points vs decompression)</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#subacromial-decompression-trials" rel="noopener" target="_blank"><b>FIMPACT (24 months)</b></a> (Paavola 2018 BMJ) <span class="eb eb-h">H</span>: <b class="nav">ASD vs diagnostic arthroscopy: pain VAS −4.6 (−11.3 to 2.1) at rest, −9.0 (−18.1 to 0.2) on activity — no clinically relevant difference</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#subacromial-decompression-trials" rel="noopener" target="_blank"><b>Decompression vs exercise — 12 years</b></a> (Ketola 2017 Bone Joint J) <span class="eb eb-m">M</span>: <b class="nav">no significant difference in pain between surgery and exercise</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#subacromial-decompression-trials" rel="noopener" target="_blank"><b>MID / PASS after subacromial surgery</b></a> (Kanto 2021 BMC Med Res Methodol) <span class="eb eb-m">M</span>: <b class="nav">MID: pain on activity 20 mm, Constant 10 points, SST 1.5; PASS: Constant 80, SST 11</b></div></div>
+</div>
+</section>
+<section class="card" id="p5-uk-frost">
+<div class="card-h"><span>5 · Frozen Shoulder Surgical Trials (UK FROST &amp; Kivimäki) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#uk-frost-frozen-shoulder" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">RANGAN 2020 LANCET</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#uk-frost-frozen-shoulder" rel="noopener" target="_blank"><b>Frozen shoulder — UK FROST (n = 503)</b></a> (Rangan 2020 Lancet) <span class="eb eb-h">H</span>: <b class="nav">12-month OSS: capsular release 40.3, MUA 38.3, early structured physio 37.2; all differences below target → none clinically superior; capsular release 8 serious adverse events, MUA 2; MUA most cost-effective</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#uk-frost-frozen-shoulder" rel="noopener" target="_blank"><b>MUA + home exercise vs home exercise</b></a> (Kivimäki 2007 J Shoulder Elbow Surg) <span class="eb eb-m">M</span>: <b class="nav">no difference in pain or working ability at any time; small ROM gains with MUA</b></div></div>
+<div class="ci"><span class="cb"></span><div><b>Arthroplasty &amp; surgical precautions:</b> <b>POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
+</div>
+</section>
+</div>
+<!-- 4 : Operative Log (Blank Write-In Fields) -->
+<section class="card" id="p5-op-details">
+<div class="card-h"><span>6 · Operative Procedure &amp; Surgeon-Directed Protocol Log</span><span class="tag">WRITE-IN</span></div>
+<div class="card-b flex flex-col gap-[2px]" style="padding:.8mm 1.2mm;">
+<div class="row">
+<div class="fr" style="flex:2"><span class="lb">Procedure / Tear Size / Fixation</span><span class="fl"></span></div>
+<div class="fr" style="flex:1.2"><span class="lb">Surgery Date</span><span class="fl"></span></div>
+<div class="fr" style="flex:1.4"><span class="lb">Operating Surgeon</span><span class="fl"></span></div>
+<div class="fr"><span class="lb">Prior Injection &lt; 1 m?</span><span class="cio"><span class="cb sm"></span>No</span><span class="cio"><span class="cb sm r"></span>Yes</span></div>
+</div>
+<div class="row">
+<div class="fr" style="flex:1"><span class="lb">Surgeon-Directed Restrictions &amp; Milestones</span><span class="fl"></span></div>
+</div>
+</div>
+</section>
+<div class="dots fill" id="p5-notes"><span class="dots-l">Operative Findings · Surgeon-Directed Restrictions · Post-Surgical Rehabilitation Notes</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab on" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 6 ===================== -->
+<div class="clinical-page" id="page-6" data-accent="orange">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Electrophysical Agents, Corticosteroid Injections &amp; Barbotage</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">06 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <!-- 1 : ESWT, Barbotage & Electrotherapy (Calcific vs Non-Calcific) -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p6-eswt-barbotage">
+<div class="card-h"><span>1 · ESWT &amp; Barbotage (Calcific vs Non-Calcific) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#eswt-barbotage-calcific" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">BANNURU · SURACE · MOOSMAYER</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#eswt-barbotage-calcific" rel="noopener" target="_blank"><b>BESS on ESWT</b></a> <a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4935112/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Kulkarni 2015</a> (Guideline): <b class="nav">“Extracorporeal shock wave therapy may improve pain in calcific tendonitis.”</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#eswt-barbotage-calcific" rel="noopener" target="_blank"><b>ESWT, calcific tendinitis (MA, 28 RCTs)</b></a> (Bannuru 2014 Ann Intern Med) <span class="eb eb-m">M</span>: <b class="nav">high-energy ESWT better than placebo for pain, function and calcium resorption in calcific tendinitis; no difference vs placebo in non-calcific tendinitis</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#eswt-barbotage-calcific" rel="noopener" target="_blank"><b>ESWT (Cochrane, 32 trials)</b></a> (Surace 2020 Cochrane) <span class="eb eb-m">M</span>: <b class="crim">vs placebo at 3 months: pain 0.78 better (0.17–1.4) on 0–10, below the 1.5 clinically important change; function 7.9 better (1.6–14), below 10 → benefit may not be clinically important</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#eswt-barbotage-calcific" rel="noopener" target="_blank"><b>Barbotage (lavage) for calcific tendinopathy (RCT, n = 218)</b></a> (Moosmayer 2023 BMJ) <span class="eb eb-h">H</span>: <b class="crim">OSS at 4 months: lavage + steroid vs sham 0.2 (−2.3 to 2.8); none superior to sham at 24 months</b></div></div>
+</div>
+</section>
+<section class="card" id="p6-electro-cpg">
+<div class="card-h"><span>2 · Electrotherapy (Cochrane) &amp; Lafrance 2022 CPG <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#electrotherapy-cochrane-page" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">PAGE 2016 · LAFRANCE 2022</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#electrotherapy-cochrane-page" rel="noopener" target="_blank"><b>Electrotherapy (Cochrane, 47 trials)</b></a> (Page 2016 Cochrane) <span class="eb eb-l">L</span>: <b class="crim">no meta-analysis possible; pulsed ultrasound for calcific tendinitis (1 trial, 61 participants, low quality): pain MD −8.60 (−13.48 to −3.72) on a 52-point scale</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><b>JOSPT/Quebec CPG 2022 (cuff disorders)</b></a> <a class="guide-badge" href="https://doi.org/10.2519/jospt.2022.11306" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Lafrance 2022</a> (Guideline): <b class="nav">“Clinicians should prescribe an active and task-oriented rehabilitation program (exercises and education)”</b>; <b class="crim">“Subacromial decompression is not recommended to treat rotator cuff tendinopathy”</b>; injections <b class="nav">“may be useful to reduce pain in the short term”</b></div></div>
+</div>
+</section>
+</div>
+<!-- 2 : Corticosteroid Injections & Hydrodilatation (Cuff Tendinosis vs Frozen Shoulder) -->
+<section class="card" id="p6-injections">
+<div class="card-h"><span>3 · Corticosteroid Injections &amp; Hydrodilatation (Cuff Tendinosis vs Frozen Shoulder) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">MOHAMADI · CHALLOUMAS · CARETTE · KELLEY · BUCHBINDER</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><b>Corticosteroid injection, cuff tendinosis (MA)</b></a> (Mohamadi 2017 Clin Orthop Relat Res) <span class="eb eb-m">M</span>: <b class="crim">no better than placebo at 3 months; small transient relief at 4–8 weeks (SMD 0.52); at least 5 treated for 1 to benefit</b> (see p5 Forsythe 2019 if repair planned within 1 month: infection <b class="crim">1.3% vs 0.8%, OR 1.7, 1.0–2.9</b>)</div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><b>Frozen shoulder treatments (NMA, 65 studies)</b></a> (Challoumas 2020 JAMA Netw Open) <span class="eb eb-m">M</span>: <b class="nav">only intra-articular corticosteroid clinically superior short term: pain vs placebo MD −1.0 (−1.5 to −0.5), vs physio −1.1 (−1.7 to −0.5) VAS</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><b>Frozen shoulder: injection ± physio (RCT)</b></a> (Carette 2003 Arthritis Rheum) <span class="eb eb-m">M</span>: <b class="nav">injection + home exercise effective; adding supervised physio gives faster ROM gain; physio alone of limited efficacy; all groups similar at 12 months</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><b>JOSPT CPG — injection</b></a> <a class="guide-badge" href="https://doi.org/10.2519/jospt.2013.0302" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Kelley 2013</a> (Guideline): <b class="nav">“Intra-articular corticosteroid injections combined with shoulder mobility and stretching exercises are more effective in providing short-term (4-6 weeks) pain relief and improved function compared to shoulder mobility and stretching exercises alone.” (strong evidence)</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#corticosteroid-injections-hydrodilatation" rel="noopener" target="_blank"><b>Hydrodilatation / arthrographic distension (Cochrane)</b></a> (Buchbinder 2008 Cochrane) <span class="eb eb-l">L</span>: <b class="nav">1 low-risk-of-bias trial: distension with saline + steroid better than placebo at 3 weeks (NNTB 2 pain, 3 function)</b></div></div>
+</div>
+</section>
+<!-- 3 : Parameter Log (Blank Write-In Fields) -->
+<section class="card" id="p6-dosing-log">
+<div class="card-h"><span>4 · Electrophysical Agent &amp; Injection Parameter Log (Blank Write-In Fields)</span><span class="tag">PARAMETER LOG</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<table class="t dense">
+<thead>
+<tr>
+<th class="c" style="width:5%">Rx</th>
+<th style="width:24%">Modality / Injection Type</th>
+<th style="width:24%">Target Site &amp; Guidance</th>
+<th style="width:16%">Dose / Parameters</th>
+<th style="width:15%">Date / Window</th>
+<th style="width:16%">Response &amp; Exercise Pairing</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height:6.5mm;"><td class="c"><span class="cb sm"></span></td><td>Intra-articular steroid + mobility/stretching</td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6.5mm;"><td class="c"><span class="cb sm"></span></td><td>Subacromial injection (short-term window)</td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6.5mm;"><td class="c"><span class="cb sm"></span></td><td>Hydrodilatation (saline + steroid)</td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6.5mm;"><td class="c"><span class="cb sm"></span></td><td>High-energy ESWT (calcific tendinitis)</td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6.5mm;"><td class="c"><span class="cb sm"></span></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<div class="dots fill" id="p6-notes"><span class="dots-l">Injection Timing · Short-Term Window Pairing with Exercise · Shared Decision-Making Notes</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab on" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 7 ===================== -->
+<div class="clinical-page" id="page-7" data-accent="teal">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Manual Therapy, Safety Screen &amp; Informed Consent</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">07 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <!-- 1 : Rotator Cuff Manual Therapy (Page 2016 Cochrane & Desjardins-Charbonneau) & Frozen Shoulder MT (Page 2014, Vermeulen, Diercks) -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p7-cuff-mt">
+<div class="card-h"><span>1 · Rotator Cuff Manual Therapy <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#mt-rotator-cuff-cochrane" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">PAGE 2016 · DESJARDINS-CHARBONNEAU</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#mt-rotator-cuff-cochrane" rel="noopener" target="_blank"><b>MT + exercise for cuff disease (Cochrane, 60 trials)</b></a> (Page 2016 Cochrane) <span class="eb eb-m">M</span>: <b class="nav">vs placebo at 22 weeks: pain MD 6.8 (−0.70 to 14.30), function MD 7.1 (0.30 to 13.90) on 100-point scales — may not be clinically important</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#mt-rotator-cuff-cochrane" rel="noopener" target="_blank"><b>MT for cuff tendinopathy (MA)</b></a> (Desjardins-Charbonneau 2015 JOSPT) <span class="eb eb-l">L</span>: <b class="nav">pain MD 1.1 (0.6–1.6) on 10-cm VAS vs placebo/added; MT added to exercise: 1.0 (0.7–1.4); effect on function unclear</b></div></div>
+</div>
+</section>
+<section class="card" id="p7-frozen-mt">
+<div class="card-h"><span>2 · Frozen Shoulder Mobilisation vs Supervised Neglect <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#mt-frozen-shoulder" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">PAGE 2014 · VERMEULEN · DIERCKS</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#mt-frozen-shoulder" rel="noopener" target="_blank"><b>MT + exercise for frozen shoulder (Cochrane)</b></a> (Page 2014 Cochrane) <span class="eb eb-m">M</span>: <b class="crim">at 7 weeks probably less improvement than glucocorticoid injection (pain MD 26 points, 15–37, on 100)</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#mt-frozen-shoulder" rel="noopener" target="_blank"><b>High-grade vs low-grade mobilisation</b></a> (Vermeulen 2006 Phys Ther) <span class="eb eb-m">M</span>: <b class="nav">HGMT more effective for mobility and disability; overall differences small</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#mt-frozen-shoulder" rel="noopener" target="_blank"><b>Supervised neglect vs intensive stretching</b></a> (Diercks 2004 J Shoulder Elbow Surg) <span class="eb eb-l">L</span>: <b class="nav">Constant ≥ 80 at 24 months: 89% supervised neglect vs 63% intensive; 64% within 12 months</b></div></div>
+</div>
+</section>
+</div>
+<!-- 2 : Thoracic SMT & Mintken CPR + Dry Needling, Kinesio Taping & Cross-Body Stretch -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card" id="p7-thoracic-smt">
+<div class="card-h"><span>3 · Thoracic SMT &amp; Cervicothoracic CPR <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#thoracic-smt-shoulder" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">KARDOUNI · PEEK · MINTKEN</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#thoracic-smt-shoulder" rel="noopener" target="_blank"><b>Thoracic SMT vs sham (SIS)</b></a> (Kardouni 2015 JOSPT) <span class="eb eb-m">M</span>: <b class="nav">both groups improved (NPRS 1.2, Penn 9.1) with no difference between real and sham</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#thoracic-smt-shoulder" rel="noopener" target="_blank"><b>Thoracic manual therapy (SR)</b></a> (Peek 2015 J Man Manip Ther) <span class="eb eb-l">L</span>: <b class="nav">3 RCTs: reduced pain and disability vs usual care up to 52 weeks</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#thoracic-smt-shoulder" rel="noopener" target="_blank"><b>Cervicothoracic manipulation CPR</b></a> (Mintken 2010 Phys Ther) <span class="eb eb-l">L</span>: <b class="crim">≥ 3 of 5 variables: success 61% → 89% (LR+ 5.3); unvalidated single-arm study</b></div></div>
+</div>
+</section>
+<section class="card" id="p7-adjuncts">
+<div class="card-h"><span>4 · Dry Needling, Kinesio Taping &amp; Stretching <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#dry-needling-taping-stretching" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">NAVARRO-SANTANA · CELIK · MCCLURE</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#dry-needling-taping-stretching" rel="noopener" target="_blank"><b>Dry needling (MA)</b></a> (Navarro-Santana 2021 Phys Ther) <span class="eb eb-m">M</span>: <b class="nav">pain MD −0.49 (−0.84 to −0.13) — small, short term; disability MD −9.99 (−15.97 to −4.01) — low quality</b></div></div>
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#dry-needling-taping-stretching" rel="noopener" target="_blank"><b>Kinesio taping (MA, 14 studies)</b></a> (Celik 2020 Clin Rehabil) <span class="eb eb-m">M</span>: <b class="crim">no better than sham for pain (MD −0.77, −1.77 to 0.22) or function → no firm evidence of benefit</b></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#dry-needling-taping-stretching" rel="noopener" target="_blank"><b>Posterior shoulder tightness</b></a> (McClure 2007 JOSPT) <span class="eb eb-l">L</span>: <b class="nav">cross-body stretch +20.0° IR (SD 12.9) vs control +5.9° (P = .009); sleeper stretch +12.4° (not significant)</b></div></div>
+</div>
+</section>
+</div>
+<!-- 3 : Manual Therapy & Paired Exercise Delivery Log -->
+<section class="card" id="p7-delivery">
+<div class="card-h"><span>5 · Manual Therapy, Stretching &amp; Paired Exercise Log</span><span class="tag">WRITE-IN LOG</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<table class="t dense">
+<thead>
+<tr>
+<th class="c" style="width:5%">Rx</th>
+<th style="width:28%">Technique / Stretch</th>
+<th style="width:22%">Target Joint / Irritability Match</th>
+<th style="width:20%">Immediate Pre/Post Response</th>
+<th style="width:25%">Paired Active Exercise (p8)</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Glenohumeral mobilisation (low vs high grade)</td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Cross-body stretch (McClure 2007)</td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Thoracic / cervicothoracic mobilisation / SMT</td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Soft-tissue / myofascial / dry needling adjunct</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- 4 : Safety Screen -->
+<section class="card red" id="p7-safety">
+<div class="card-h"><span>6 · Pre-Mobilisation, Manipulation &amp; Needling Safety Screen</span><span class="tag">CONTRAINDICATION GATE</span></div>
+<div class="card-b grid grid-cols-2 gap-x-2" style="padding:.8mm 1.2mm;">
+<div>
+<div class="ci"><span class="cb r"></span><div><b>BESS/BOA red flags excluded:</b> suspected infected joint, unreduced dislocation, tumour/malignancy &amp; acute traumatic tear screened (p1) (Guideline)</div></div>
+<div class="ci"><span class="cb r"></span><div><b>Posterior dislocation &amp; fracture excluded:</b> trauma with locked IR or greater-tuberosity fracture cleared (p1) <span class="eb eb-l">L</span></div></div>
+</div>
+<div>
+<div class="ci"><span class="cb r"></span><div><b>Stage &amp; irritability matched:</b> avoid aggressive overstretching in high-irritability frozen shoulder (Diercks 2004 <span class="eb eb-l">L</span>; Kelley 2013, Guideline)</div></div>
+<div class="ci"><span class="cb r"></span><div><b>Needling &amp; thoracic safety:</b> pneumothorax / lung field landmarks, anticoagulants, and neurovascular status checked <span class="eb eb-e">E</span></div></div>
+</div>
+</div>
+</section>
+<!-- Consent Block -->
+<div class="box r flex flex-wrap items-center xs" style="padding:.7mm 1.6mm;">
+<b class="crim mr-2">CONSENT OBTAINED FOR:</b>
+<span class="cio"><span class="cb r"></span>GH / scapular mobilisation</span>
+<span class="cio"><span class="cb r"></span>Thoracic manipulation / SMT</span>
+<span class="cio"><span class="cb r"></span>Dry needling / soft-tissue</span>
+<span class="mut mr-1">|</span><span class="cio"><span class="cb r"></span>Risks &amp; alternatives discussed</span>
+<span class="cio"><span class="cb r"></span>Patient may decline</span>
+<span class="lr" style="margin-left:auto">Signature <span class="fl l"></span></span>
+</div>
+<div class="dots fill" id="p7-notes"><span class="dots-l">Manual Therapy Clinical Reasoning · Irritability Matching · Immediate Re-Test Notes</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab on" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 8 ===================== -->
+<div class="clinical-page" id="page-8" data-accent="green">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Exercise Therapy, Return to Sport &amp; 12-Week Loading Log</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">08 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <!-- 1 : Rotator Cuff / RCRSP Exercise Trials (GRASP, Holmgren, SELF, Ingwersen, Smith, Saito) -->
+<section class="card green" id="p8-cuff-trials">
+<div class="card-h"><span>1 · Rotator Cuff / RCRSP Exercise Trials &amp; Dosing Principles <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">GRASP · HOLMGREN · SELF · INGWERSEN · SMITH · SAITO</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><b>GRASP (n = 708)</b></a> (Hopewell 2021 Lancet) <span class="eb eb-h">H</span>: <b class="emer">progressive exercise vs one best-practice advice session: SPADI over 12 months −0.66 (99% CI −4.52 to 3.20) — no difference; injection vs no injection −1.11 (−4.47 to 2.26)</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><b>Specific exercise (Holmgren)</b></a> (Holmgren 2012 BMJ) <span class="eb eb-h">H</span>: <b class="emer">Constant-Murley +24 vs +9 points (MD 15, 8.5–20.6); surgery chosen by 20% vs 63% (OR 7.7, 3.1–19.4)</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><b>Single self-managed exercise (SELF)</b></a> (Littlewood 2016 Clin Rehabil) <span class="eb eb-m">M</span>: <b class="emer">SPADI at 3 months 32.4 vs 30.7 usual physio; adjusted MD 3.2 (−6.0 to 12.4) — comparable</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><b>Heavy vs low load (RCT, n = 100)</b></a> (Ingwersen 2017 Orthop J Sports Med) <span class="eb eb-m">M</span>: <b class="emer">DASH adjusted difference −1.37 (−6.72 to 3.99) — no superiority of high-load</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><b>Painful vs pain-free exercise (MA)</b></a> (Smith 2017 BJSM) <span class="eb eb-m">M</span>: <b class="emer">short-term pain SMD −0.27 (−0.54 to −0.05) in favour of painful exercise; no difference later</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rotator-cuff-exercise-trials" rel="noopener" target="_blank"><b>Scapular-focused exercise (MA, 6 RCTs)</b></a> (Saito 2018 Physiother Theory Pract) <span class="eb eb-m">M</span>: <b class="emer">short-term pain MD −0.88 (−1.19 to −0.58), function −11.31 (−17.20 to −5.41); no difference at follow-up</b></div></div>
+</div>
+</section>
+<!-- 2 : Full-Thickness Cuff Tears (Kukkonen & Moosmayer 10-year) & MDI Watson Programme (Warby) -->
+<div class="grid grid-cols-2 gap-[1.5mm]">
+<section class="card green" id="p8-tears">
+<div class="card-h"><span>2 · Full-Thickness Tears: Exercise vs Repair <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#full-thickness-tear-exercise-vs-surgery" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">KUKKONEN · MOOSMAYER</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#full-thickness-tear-exercise-vs-surgery" rel="noopener" target="_blank"><b>Non-traumatic cuff tears &gt; 55 y (RCT, 180 shoulders)</b></a> (Kukkonen 2014 Bone Joint J) <span class="eb eb-h">H</span>: <b class="emer">Constant at 1 year: physio 74.1, acromioplasty 77.2, repair 77.9 (p = 0.34)</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#full-thickness-tear-exercise-vs-surgery" rel="noopener" target="_blank"><b>Small/medium tears — 10 years</b></a> (Moosmayer 2019 JBJS Am) <span class="eb eb-h">H</span>: <b class="emer">repair better than physio by 9.6 Constant points (p = 0.002), ASES 15.7; crossovers to late surgery 10.0 points worse than primary repair</b></div></div>
+</div>
+</section>
+<section class="card green" id="p8-mdi-frozen">
+<div class="card-h"><span>3 · MDI Watson Programme &amp; Frozen Shoulder CPG <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#mdi-watson-programme" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">WARBY · KELLEY</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#mdi-watson-programme" rel="noopener" target="_blank"><b>MDI: Watson vs Rockwood programme</b></a> (Warby 2018 Am J Sports Med) <span class="eb eb-m">M</span>: <b class="emer">WOSI effect 11.1 (1.9–20.2) at 12 weeks; 12.6 (3.4–21.9) at 24 weeks — favours Watson</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#frozen-shoulder-kelley-cpg" rel="noopener" target="_blank"><b>Frozen shoulder education</b></a> <a class="guide-badge" href="https://doi.org/10.2519/jospt.2013.0302" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Kelley 2013</a> (Guideline): <b class="emer">JOSPT CPG: educate on natural course, activity modification, and match stretching intensity to irritability</b></div></div>
+</div>
+</section>
+</div>
+<!-- 3 : Throwers GIRD / TRM / ER (Wilk 2011 & Wilk 2015) -->
+<section class="card green" id="p8-throwers">
+<div class="card-h"><span>4 · Overhead Throwers — GIRD, Total Rotational Motion (TRM) &amp; External Rotation <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#throwers-gird-trm-wilk" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">WILK 2011 · WILK 2015</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#throwers-gird-trm-wilk" rel="noopener" target="_blank"><b>Throwers — GIRD / TRM</b></a> (Wilk 2011 Am J Sports Med) <span class="eb eb-l">L</span>: <b class="emer">GIRD ≈ twice the injury rate but not significant (P = .17); total rotational motion deficit &gt; 5° → higher injury rate</b></div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#throwers-gird-trm-wilk" rel="noopener" target="_blank"><b>Throwers — ER</b></a> (Wilk 2015 Am J Sports Med) <span class="eb eb-l">L</span>: <b class="emer">insufficient ER (&lt; 5° more ER on throwing side): 2.2× disabled-list risk (1.2–4.1), 4.0× surgery (1.5–12.6); GIRD not significant</b></div></div>
+</div>
+</section>
+<!-- 4 : 12-Week Loading Log (Blank Write-In Fields) -->
+<section class="card" id="p8-loading-log">
+<div class="card-h"><span>5 · 12-Week Shoulder Exercise &amp; Return-to-Sport Progression Log</span><span class="tag">12-WEEK LOG</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<div class="flex flex-wrap xs mb-[2px]" style="row-gap:1px">
+<span class="lb mr-1">Primary Programme Ticked:</span>
+<span class="cio"><span class="cb sm g"></span>GRASP Best-Practice / Progressive</span>
+<span class="cio"><span class="cb sm g"></span>Holmgren Specific Cuff</span>
+<span class="cio"><span class="cb sm g"></span>SELF Single Exercise</span>
+<span class="cio"><span class="cb sm g"></span>Scapular-Focused (Saito)</span>
+<span class="cio"><span class="cb sm g"></span>Watson MDI Programme</span>
+<span class="cio"><span class="cb sm g"></span>Irritability-Matched Stretching (Kelley)</span>
+</div>
+<table class="t dense">
+<thead>
+<tr>
+<th style="width:24%">Exercise / Rehabilitation Domain</th>
+<th class="c" style="width:15%">Phase I (Baseline)</th>
+<th class="c" style="width:15%">Phase II</th>
+<th class="c" style="width:15%">Phase III</th>
+<th class="c" style="width:15%">Phase IV</th>
+<th class="c" style="width:16%">Week 12 / RTS</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height:6mm;"><td class="k">1 · Primary Cuff / Self-Managed Exercise</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="k">2 · Scapular Upward Rotation / Control</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="k">3 · Posterior Shoulder / Mobility</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="k">4 · Kinetic Chain / CKCUEST / Overhead</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:6mm;"><td class="k">5 · Symptom Response (NPRS)</td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<div class="dots fill" id="p8-notes"><span class="dots-l">Exercise Prescription Details · Load Progression · Return-to-Sport Criteria Notes</span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Clinician</b> <span class="fl l"></span> <b>Date</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab on" href="#page-8">8</a>
+        <a class="ptab" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<!-- ===================== PAGE 9 ===================== -->
+<div class="clinical-page" id="page-9" data-accent="slate">
+  <header class="pg-hdr">
+    <div class="brand">
+      <div class="logo">SHO</div>
+      <div>
+        <div class="kicker">Shoulder Complex &middot; Master Clinical Assessment &amp; Rehabilitation Dossier</div>
+        <h1 class="pg-title">Longitudinal Session-by-Session Tracking Flowsheet</h1>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <div class="fr"><span class="lb">Patient</span><span class="fl l"></span></div>
+      <div class="pgno">09 / 09</div>
+    </div>
+  </header>
+  <main class="pg-body">
+ <table class="t flow slate" id="p9-flowsheet" style="table-layout:fixed;">
+<thead>
+<tr>
+<th class="c" style="width:4%">#</th>
+<th style="width:7%">Date</th>
+<th style="width:6%">NPRS</th>
+<th style="width:8%">ER 0°/90°</th>
+<th style="width:8%">Elev / IR</th>
+<th style="width:7%">SAT/SSMP</th>
+<th style="width:24%">Exercise &amp; Loading Delivered</th>
+<th style="width:16%">Manual &amp; Adjuncts</th>
+<th style="width:8%">Irritability</th>
+<th style="width:8%">Adherence</th>
+<th class="c" style="width:4%">Init</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height:12.2mm;">
+<td class="vnum">1</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">2</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">3</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">4</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">5</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">6</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">7</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">8</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">9</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">10</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">11</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+<tr style="height:12.2mm;">
+<td class="vnum">12</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
+<td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
+<td></td><td></td>
+</tr>
+</tbody>
+</table>
+<div class="grid grid-cols-12 gap-[1.5mm]">
+<section class="card col-span-7" id="p9-discharge">
+<div class="card-h"><span>Discharge &amp; Outcome Milestone Summary (Change vs Verified MCID) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-tracking-flowsheet" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">FINAL OUTCOME</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<table class="t dense slate">
+<thead><tr><th>Shoulder PROM &amp; Verified Threshold</th><th class="c">Initial</th><th class="c">Discharge</th><th class="c">Δ</th><th class="c">MCID met</th></tr></thead>
+<tbody>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#spadi" rel="noopener" target="_blank">SPADI</a> (MDC90 18.1; MCID 8.0 and 13.1 points)</td><td class="c"></td><td class="c"></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#quickdash" rel="noopener" target="_blank">QuickDASH / DASH</a> (MCID 8.0; MA 11.97 / 11.00; FS 10.2)</td><td class="c"></td><td class="c"></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ases" rel="noopener" target="_blank">ASES</a> (MDC 9.7; MCID 6.4 points)</td><td class="c"></td><td class="c"></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#oxford-shoulder-score" rel="noopener" target="_blank">Oxford Shoulder Score</a> (MCIC 6.50 / 8.42; “at least eight points”)</td><td class="c"></td><td class="c"></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#constant-score" rel="noopener" target="_blank">Constant</a> (MCID 10.4; MID 10, PASS 80)</td><td class="c"></td><td class="c"></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#nprs" rel="noopener" target="_blank">NPRS</a> (MCID 1.1) &amp; <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#psfs" rel="noopener" target="_blank">PSFS</a> (write-in <span class="eb eb-e">E</span>)</td><td class="c"></td><td class="c"></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+</tbody>
+</table>
+<div class="flex flex-wrap items-center mt-[2px] xs" style="row-gap:1px"><span class="lb mr-1">Discharge:</span><span class="cio"><span class="cb g"></span>Goals &amp; MCID met</span><span class="cio"><span class="cb"></span>Self-management / RTS</span><span class="cio"><span class="cb"></span>Orthopaedic / surgical review</span><span class="cio"><span class="cb r"></span>Non-responder</span></div>
+</div>
+</section>
+<section class="card col-span-5" id="p9-milestones">
+<div class="card-h"><span>Objective Re-Test Milestones</span><span class="tag">SERIAL RE-TEST</span></div>
+<div class="card-b" style="padding:.8mm 1.2mm;">
+<table class="t dense slate">
+<thead><tr><th>Objective Measure</th><th class="c">Base</th><th class="c">Mid</th><th class="c">D/C</th><th class="c">Met</th></tr></thead>
+<tbody>
+<tr><td class="k">Passive &amp; Active ER (0° / 90°)</td><td></td><td></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k">Total Rotational Motion (ER + IR)</td><td></td><td></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k">Isometric Strength / HHD Symmetry</td><td></td><td></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ckcuest" rel="noopener" target="_blank">CKCUEST</a> (≥ 3 touches = real change)</td><td></td><td></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k">Scapular Dyskinesis / SAT / SRT</td><td></td><td></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+<tr><td class="k">Special Test Cluster Status</td><td></td><td></td><td></td><td class="c"><span class="cb sm"></span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<div class="dots fill" id="p9-notes" style="min-height:8mm"><span class="dots-l">Home Exercise Maintenance · Overhead / RTS Plan · Discharge Summary</span></div>
+<div class="fr xs" style="gap:2mm"><span class="lb">Clinician / Surgeon follow-up</span><span class="fl"></span><span class="lb">Signature</span><span class="fl"></span><span class="lb">Date</span><span class="fl m"></span></div>
+
+  </main>
+  <footer class="pg-ftr">
+    <div class="ftr-top">
+      <span><b>Discharging Clinician</b> <span class="fl l"></span> <b>Sig.</b> <span class="fl l"></span></span>
+      <span>Underline = Atlas card &middot; &#9656; = video &middot; Evidence: <span class="eb eb-h">H</span> high <span class="eb eb-m">M</span> moderate <span class="eb eb-l">L</span> low <span class="eb eb-e">E</span> expert &middot; Confidential &middot; v2026.10</span>
+    </div>
+    <div class="pnav-wrap">
+      <nav class="pnav" aria-label="Dossier pages">
+        <span class="nl">GO TO</span>
+        <a class="ptab" href="#page-1">1</a>
+        <a class="ptab" href="#page-2">2</a>
+        <a class="ptab" href="#page-3">3</a>
+        <a class="ptab" href="#page-4">4</a>
+        <a class="ptab" href="#page-5">5</a>
+        <a class="ptab" href="#page-6">6</a>
+        <a class="ptab" href="#page-7">7</a>
+        <a class="ptab" href="#page-8">8</a>
+        <a class="ptab on" href="#page-9">9</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

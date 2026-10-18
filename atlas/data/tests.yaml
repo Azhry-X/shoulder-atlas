@@ -1,0 +1,2677 @@
+- id: bess-boa-red-flags
+  type: info
+  title: BESS/BOA Shoulder Red Flags & Urgent Referral Pathway
+  page: 1
+  summary: British Elbow and Shoulder Society / British Orthopaedic Association (BESS/BOA) primary care triage gate
+    for suspected joint infection, unreduced dislocation, malignancy, and acute traumatic rotator cuff tear.
+  steps:
+  - '"A suspected infected joint needs same day emergency referral."'
+  - '"An unreduced dislocation needs same day emergency referral."'
+  - '"Suspected tumour and malignancy will need urgent referral following the local 2-week cancer referral pathway."'
+  - '"An acute cuff tear as a result of a traumatic event needs urgent referral and ideally should be seen in the
+    next available outpatient clinic."'
+  positive: '"A suspected infected joint needs same day emergency referral." · "An unreduced dislocation needs same
+    day emergency referral." · "Suspected tumour and malignancy will need urgent referral following the local 2-week
+    cancer referral pathway." · "An acute cuff tear as a result of a traumatic event needs urgent referral and ideally
+    should be seen in the next available outpatient clinic."'
+  interpretation: Complete the BESS/BOA red-flag screen before mechanical loading or manual therapy.
+  metrics: 'Level: Guideline. Kulkarni 2015 BESS/BOA subacromial pain pathway: "A suspected infected joint needs
+    same day emergency referral." · "An unreduced dislocation needs same day emergency referral." · "Suspected tumour
+    and malignancy will need urgent referral following the local 2-week cancer referral pathway." · "An acute cuff
+    tear as a result of a traumatic event needs urgent referral and ideally should be seen in the next available
+    outpatient clinic."'
+  evidence: Guideline
+  sources:
+  - &id002
+    text: Kulkarni 2015 BESS/BOA subacromial pain pathway
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4935112/
+    free_full_text: true
+  review_status: approved
+- id: septic-arthritis-shoulder
+  type: info
+  title: Septic Arthritis — Synovial Fluid WBC Thresholds
+  page: 1
+  summary: Diagnostic accuracy of synovial fluid white blood cell (WBC) count thresholds for acute native-joint
+    septic arthritis.
+  steps:
+  - Screen for acute hot, swollen, severely painful shoulder with marked global restriction of active and passive
+    motion.
+  - '"A suspected infected joint needs same day emergency referral."'
+  - Evaluate synovial fluid aspiration white blood cell (WBC) count likelihood ratios alongside Gram stain and culture.
+  positive: 'WBC > 25,000/µL: LR 2.9 (2.5–3.4); > 50,000/µL: LR 7.7 (5.7–11.0).'
+  interpretation: Synovial WBC > 50,000/µL substantially increases the likelihood of septic arthritis (LR 7.7, 5.7–11.0).
+  metrics: 'Margaretten 2007 JAMA: WBC > 25,000/µL: LR 2.9 (2.5–3.4); > 50,000/µL: LR 7.7 (5.7–11.0).'
+  evidence: M
+  sources:
+  - text: Margaretten 2007 JAMA
+    url: https://doi.org/10.1001/jama.297.13.1478
+    free_full_text: false
+  review_status: approved
+- id: posterior-shoulder-dislocation
+  type: info
+  title: Posterior Shoulder Dislocation — Radiographic Pitfalls & Locked ER Loss
+  page: 1
+  summary: Triage recognition and orthogonal imaging requirement for posterior glenohumeral dislocation.
+  steps:
+  - Suspect posterior dislocation after seizure, electrocution, or axial load onto an internally rotated, flexed,
+    adducted arm.
+  - Examine for a fixed internal rotation deformity with complete loss of passive external rotation and prominent
+    posterior humeral head.
+  - Do not rely on an anteroposterior (AP) radiograph alone (11.4% diagnostic rate); obtain axillary, scapular Y
+    view, or CT.
+  positive: rare (< 4% of all shoulder dislocations); initial diagnosis missed in 150 patients (73.2%); AP radiograph
+    alone gave the right diagnosis in only 19 of 166 (11.4%); axillary / Y view / CT confirmed all 205.
+  interpretation: Because initial diagnosis was missed in 73.2% of cases and AP radiographs alone identified only
+    11.4%, orthogonal views (axillary / Y view / CT) are mandatory whenever passive ER is locked after trauma.
+  metrics: 'Xu 2015 J Orthop Translat (systematic review): rare (< 4% of all shoulder dislocations); initial diagnosis
+    missed in 150 patients (73.2%); AP radiograph alone gave the right diagnosis in only 19 of 166 (11.4%); axillary
+    / Y view / CT confirmed all 205.'
+  evidence: L
+  sources:
+  - text: Xu 2015 J Orthop Translat (systematic review)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5982360/
+    free_full_text: true
+  review_status: approved
+- id: traumatic-anterior-dislocation-injuries
+  type: info
+  title: Traumatic Anterior Dislocation — Associated Nerve, Fracture & Cuff Injuries
+  page: 1
+  summary: BESS/BOA guideline data on nerve injury, greater-tuberosity fracture, age-stratified rotator cuff tears,
+    and 6-week EMG follow-up after traumatic anterior dislocation.
+  steps:
+  - 'Screen peripheral nerve function before and after reduction: clinically apparent neurological injury ≈ 13.5%
+    of dislocations (axillary nerve two-thirds); EMG shows nerve injury in 48%.'
+  - Check radiographs for greater-tuberosity fracture (≈ 16%).
+  - 'Maintain a high index of suspicion for concomitant rotator cuff tears in patients ≥ 40 years: 41% (40–55 y),
+    71% (56–70 y), 100% (> 70 y).'
+  - '"EMG studies should be performed at 6 weeks if no clinical recovery is seen" → nerve-injury centre referral
+    if no recovery.'
+  positive: clinically apparent neurological injury ≈ 13.5% of dislocations (axillary nerve two-thirds); EMG shows
+    nerve injury in 48%; greater-tuberosity fracture ≈ 16%; rotator cuff tears 41% (40–55 y), 71% (56–70 y), 100%
+    (> 70 y). "EMG studies should be performed at 6 weeks if no clinical recovery is seen" → nerve-injury centre
+    referral if no recovery.
+  interpretation: Persistent deltoid or rotator cuff weakness after traumatic anterior dislocation in patients over
+    40 years requires urgent cuff imaging and 6-week EMG if nerve recovery is absent.
+  metrics: 'Level: Guideline. Brownson 2015 BESS/BOA traumatic anterior instability pathway: clinically apparent
+    neurological injury ≈ 13.5% of dislocations (axillary nerve two-thirds); EMG shows nerve injury in 48%; greater-tuberosity
+    fracture ≈ 16%; rotator cuff tears 41% (40–55 y), 71% (56–70 y), 100% (> 70 y). "EMG studies should be performed
+    at 6 weeks if no clinical recovery is seen" → nerve-injury centre referral if no recovery.'
+  evidence: Guideline
+  sources:
+  - &id003
+    text: Brownson 2015 BESS/BOA traumatic anterior instability pathway
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4935160/
+    free_full_text: true
+  review_status: approved
+- id: pancoast-tumour
+  type: info
+  title: Pancoast (Superior Sulcus) Apical Lung Tumour Triage
+  page: 1
+  summary: Oncological red-flag screening for apical bronchogenic carcinoma masquerading as musculoskeletal shoulder
+    or C8–T1 radicular pain.
+  steps:
+  - Screen for unremitting, non-mechanical shoulder, scapular, and medial arm/ulnar border (C8–T1) pain, especially
+    in smokers or patients with constitutional symptoms.
+  - Examine for intrinsic hand muscle wasting and Horner syndrome (ipsilateral ptosis, miosis, anhidrosis).
+  - '"Suspected tumour and malignancy will need urgent referral following the local 2-week cancer referral pathway."'
+  positive: '4 cases presenting to orthopaedics: mean diagnostic delay 18.5 months.'
+  interpretation: Apical lung tumours frequently present initially to orthopaedic or musculoskeletal clinics with
+    shoulder pain, resulting in prolonged diagnostic delay (mean 18.5 months in Bisbinas 1999).
+  metrics: 'Bisbinas 1999 Ann R Coll Surg Engl: 4 cases presenting to orthopaedics: mean diagnostic delay 18.5 months.'
+  evidence: L
+  sources:
+  - text: Bisbinas 1999 Ann R Coll Surg Engl
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2503294/
+    free_full_text: true
+  review_status: approved
+- id: polymyalgia-rheumatica-eular-acr
+  type: info
+  title: Polymyalgia Rheumatica (PMR — EULAR/ACR 2012 Classification Criteria)
+  page: 1
+  summary: EULAR/ACR 2012 classification criteria for polymyalgia rheumatica in patients aged ≥ 50 years with bilateral
+    aching shoulder pain and elevated inflammatory markers.
+  steps:
+  - Evaluate patients aged ≥ 50 years presenting with bilateral shoulder aching and abnormal CRP and/or ESR.
+  - Score clinical criteria (morning stiffness, hip pain or limited range of motion, absence of RF/ACPA, absence
+    of other joint involvement) and optional ultrasound criteria (bilateral subdeltoid bursitis / biceps tenosynovitis
+    / glenohumeral synovitis, plus hip synovitis / trochanteric bursitis).
+  - Apply the ≥ 4 cut-off (without ultrasound) or ≥ 5 cut-off (with ultrasound) and refer to rheumatology / primary
+    care.
+  positive: 'score ≥ 4 (no ultrasound): Sn 68%, Sp 78%; score ≥ 5 with ultrasound: Sn 66%, Sp 81%.'
+  interpretation: Adding shoulder and hip ultrasound improves specificity (Sp 81% vs 78%) for classifying polymyalgia
+    rheumatica.
+  metrics: 'Dasgupta 2012 Ann Rheum Dis (EULAR/ACR 2012): score ≥ 4 (no ultrasound): Sn 68%, Sp 78%; score ≥ 5 with
+    ultrasound: Sn 66%, Sp 81%.'
+  evidence: M
+  sources:
+  - text: Dasgupta 2012 Ann Rheum Dis
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3298664/
+    free_full_text: true
+  review_status: approved
+- id: cardiac-visceral-shoulder-referral
+  type: info
+  title: Cardiac, Diaphragmatic & Visceral Referred Shoulder Pain Screen
+  page: 1
+  summary: Clinical screening for myocardial ischaemia, pericarditis, diaphragmatic irritation, hepatobiliary disease,
+    or splenic pathology referring pain to the shoulder complex.
+  steps:
+  - Screen for exertional, retrosternal, or left pectoral/shoulder/medial arm pain accompanied by dyspnoea, diaphoresis,
+    nausea, or dizziness (cardiac ischaemia).
+  - Screen for right scapular/shoulder pain associated with postprandial right upper quadrant pain, nausea, or jaundice
+    (hepatobiliary / gallbladder referral via phrenic nerve).
+  - Screen for left shoulder tip pain (Kehr sign) after abdominal/thoracic trauma, ectopic pregnancy, or diaphragmatic
+    irritation; confirm that shoulder palpation and mechanical loading do not reproduce the primary symptom.
+  positive: Non-mechanical shoulder pain provoked by exertion, respiration, or meals, or accompanied by autonomic/visceral
+    signs — no verified numbers.
+  interpretation: Visceral and cardiac referral must be excluded when shoulder symptoms are unrelated to glenohumeral
+    or cervical movement.
+  metrics: Clinical red-flag synthesis — no verified numbers in source file.
+  evidence: E
+  sources: []
+  review_status: approved
+- id: wainner-cervical-radiculopathy-cluster
+  type: test
+  title: Cervical Radiculopathy Screen — Wainner 4-Item Test Cluster
+  page: 1
+  summary: 4-item clinical examination cluster (Spurling test, cervical distraction test, ipsilateral cervical rotation
+    < 60°, and Upper Limb Tension Test A) for ruling in or ruling out cervical radiculopathy.
+  steps:
+  - Perform Upper Limb Tension Test A (ULTT A — median nerve bias) as the primary high-sensitivity screening test
+    to rule out cervical radiculopathy.
+  - Measure active ipsilateral cervical rotation range of motion (< 60° threshold).
+  - Perform the seated cervical distraction test (symptom reduction) and Spurling test (radicular symptom reproduction).
+  - Count the number of positive tests across the 4-item cluster.
+  positive: 4-item test cluster LR+ 30.3 (wide CI); ULTT A most useful to rule out.
+  interpretation: When all 4 items are positive, LR+ rises to 30.3 (wide CI); a negative ULTT A is the most useful
+    single test to rule out cervical radiculopathy.
+  metrics: 'Wainner 2003 Spine: 4-item test cluster LR+ 30.3 (wide CI); ULTT A most useful to rule out.'
+  evidence: M
+  sources:
+  - &id001
+    text: Wainner 2003 Spine
+    url: https://doi.org/10.1097/00007632-200301010-00014
+    free_full_text: false
+  review_status: approved
+- id: ultt-a
+  type: test
+  title: Upper Limb Tension Test A (ULTT A — Median Nerve Bias)
+  page: 1
+  summary: Sequential upper-limb neurodynamic provocation test biasing the brachial plexus and median nerve roots
+    (C5–C7) to screen cervical radiculopathy.
+  steps:
+  - Position the patient supine without a pillow; examiner depresses and stabilises the shoulder girdle.
+  - Abduct the glenohumeral joint in the coronal plane, supinate the forearm, extend the wrist and fingers, externally
+    rotate the shoulder, and slowly extend the elbow.
+  - Perform structural differentiation using contralateral and ipsilateral cervical lateral flexion.
+  positive: ULTT A most useful to rule out cervical radiculopathy; component of the Wainner 4-item test cluster
+    (LR+ 30.3, wide CI).
+  interpretation: Most sensitive upper-limb neurodynamic test for ruling out cervical radiculopathy during the shoulder
+    clearing exam.
+  metrics: 'Wainner 2003 Spine: 4-item test cluster LR+ 30.3 (wide CI); ULTT A most useful to rule out.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=rir6x6Iiqc4
+  video_title: Upper Limb Tension Test (ULTT) — All 4 Variants (Physiotutors)
+  sources:
+  - *id001
+  review_status: approved
+- id: rcrsp-subacromial-pain
+  type: info
+  title: Rotator Cuff-Related Shoulder Pain (RCRSP) & Subacromial Pain Syndrome
+  page: 2
+  summary: BESS/BOA definition, primary care epidemiology, rotator cuff tear prevalence, and RCRSP clinical framework.
+  steps:
+  - 'BESS/BOA clinical definition: "commonly located to the top and lateral side of the shoulder … exaggerated by
+    overhead activity … can be associated with night pain … usually associated with full passive range of movement".'
+  - 'Epidemiology: shoulder pain accounts for 2.4% of UK primary care consultations, with subacromial pain up to
+    70% of shoulder-pain problems (Beard 2018 Lancet).'
+  - 'Rotator cuff tear prevalence: "overall prevalence of rotator cuff tears is 34% and … risk increases significantly
+    with age" (Kulkarni 2015).'
+  - 'RCRSP terminology (Lewis 2016): umbrella term for subacromial pain, RC tendinopathy, partial and full-thickness
+    tears; exercise ≈ surgery — no numbers.'
+  positive: '"commonly located to the top and lateral side of the shoulder … exaggerated by overhead activity …
+    can be associated with night pain … usually associated with full passive range of movement" (Kulkarni 2015).'
+  interpretation: Preserved passive external rotation helps distinguish RCRSP/subacromial pain from frozen shoulder
+    and glenohumeral osteoarthritis.
+  metrics: 'Kulkarni 2015 (Guideline): "commonly located to the top and lateral side of the shoulder … exaggerated
+    by overhead activity … can be associated with night pain … usually associated with full passive range of movement";
+    "overall prevalence of rotator cuff tears is 34% and … risk increases significantly with age". Beard 2018 Lancet
+    (CSAW, Level M): 2.4% of UK primary care consultations; subacromial pain up to 70% of shoulder-pain problems.
+    Lewis 2016 Man Ther (Level E): umbrella term for subacromial pain, RC tendinopathy, partial and full-thickness
+    tears; exercise ≈ surgery — no numbers.'
+  evidence: Guideline
+  sources:
+  - *id002
+  - &id020
+    text: Beard 2018 Lancet (CSAW)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5803129/
+    free_full_text: true
+  - text: Lewis 2016 Man Ther
+    url: https://doi.org/10.1016/j.math.2016.03.009
+    free_full_text: false
+  review_status: approved
+- id: cadogan-subacromial-cluster
+  type: test
+  title: Cadogan Full Passive ER Rule & Primary Care Subacromial Pain Cluster
+  page: 2
+  summary: Primary care diagnostic rule separating subacromial pain from stiff shoulder / arthropathy, plus a 3-feature
+    history/exam cluster for subacromial anaesthetic response and ultrasound supraspinatus tear.
+  steps:
+  - 'Assess passive external rotation (ER) bilaterally: full passive ER has Sn 99%, LR− 0.14 for subacromial pain
+    → loss of passive ER argues against subacromial pain.'
+  - Note that patients with passive ER loss had more glenohumeral arthropathy on X-ray (17% vs 3%).
+  - 'Evaluate the 3-item subacromial pain cluster: anterior shoulder pain + strain injury + no symptoms at end-range
+    ER in abduction.'
+  positive: 'full passive ER: Sn 99%, LR− 0.14 → loss of passive ER argues against subacromial pain; those with
+    ER loss had more GH arthropathy on X-ray (17% vs 3%). Cluster (anterior shoulder pain + strain injury + no symptoms
+    at end-range ER in abduction): Sp 100% (LR+ ∞, 2.9–∞); full-thickness supraspinatus tear on US: Sp 98% (94–100),
+    LR+ 6.2 (1.5–25.7); 34% had a positive subacromial anaesthetic response.'
+  interpretation: Loss of passive external rotation strongly argues against isolated subacromial pain (Sn 99%, LR−
+    0.14) and points toward adhesive capsulitis or glenohumeral osteoarthritis.
+  metrics: 'Cadogan 2016 PLoS One: full passive ER: Sn 99%, LR− 0.14 → loss of passive ER argues against subacromial
+    pain; those with ER loss had more GH arthropathy on X-ray (17% vs 3%). Subacromial pain cluster: anterior shoulder
+    pain + strain injury + no symptoms at end-range ER in abduction: Sp 100% (LR+ ∞, 2.9–∞); full-thickness supraspinatus
+    tear on US: Sp 98% (94–100), LR+ 6.2 (1.5–25.7); 34% had a positive subacromial anaesthetic response.'
+  evidence: M
+  sources:
+  - &id008
+    text: Cadogan 2016 PLoS One
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5147961/
+    free_full_text: true
+  review_status: approved
+- id: frozen-shoulder-kelley-cpg
+  type: info
+  title: Frozen Shoulder (Adhesive Capsulitis) — Prevalence, Risk Factors, 4 Stages & ER-Loss Definition (Kelley
+    CPG)
+  page: 2
+  summary: JOSPT Clinical Practice Guideline (Kelley 2013) diagnostic definition, metabolic/demographic risk factors,
+    4 clinical stages, and patient education principles for adhesive capsulitis.
+  steps:
+  - 'Diagnostic definition: ROM loss > 25% in at least 2 planes AND passive ER loss > 50% of the other side or <
+    30° ER.'
+  - 'Screen epidemiology & risk factors: shoulder pain 2.4–26%; primary adhesive capsulitis 2% to 5.3%; secondary
+    (diabetes/thyroid) 4.3%–38%; diabetes in women 23.7% vs 4.7% and men 38.0% vs 6.5%; hypothyroidism (women) 21.1%
+    vs 7.9%; age 40–65, peak 51–55; contralateral risk 5%–34%, bilateral simultaneous up to 14%.'
+  - 'Stage the presentation across the 4 stages: stage 1 up to 3 months; stage 2 "freezing" 3–9 months; stage 3
+    "frozen" 9–15 months; stage 4 "thawing" 15–24 months; mild symptoms may persist for years.'
+  - 'JOSPT CPG education: educate on natural course, activity modification, and match stretching intensity to irritability.'
+  positive: ROM loss > 25% in at least 2 planes AND passive ER loss > 50% of the other side or < 30° ER.
+  interpretation: Match manual therapy and stretching intensity to tissue irritability across the 4 stages; consider
+    intra-articular corticosteroid injection combined with shoulder mobility and stretching exercises in high-irritability
+    early stages (Page 6).
+  metrics: 'Level: Guideline. Kelley 2013 JOSPT CPG: shoulder pain 2.4–26%; primary adhesive capsulitis 2% to 5.3%;
+    secondary (diabetes/thyroid) 4.3%–38%; diabetes in women 23.7% vs 4.7% and men 38.0% vs 6.5%; hypothyroidism
+    (women) 21.1% vs 7.9%; age 40–65, peak 51–55; contralateral risk 5%–34%, bilateral simultaneous up to 14%. Stages:
+    stage 1 up to 3 months; stage 2 "freezing" 3–9 months; stage 3 "frozen" 9–15 months; stage 4 "thawing" 15–24
+    months; mild symptoms may persist for years. Definition: ROM loss > 25% in at least 2 planes AND passive ER
+    loss > 50% of the other side or < 30° ER.'
+  evidence: Guideline
+  sources:
+  - &id015
+    text: Kelley 2013 JOSPT CPG
+    url: https://doi.org/10.2519/jospt.2013.0302
+    free_full_text: false
+  review_status: approved
+- id: stanmore-atraumatic-instability
+  type: info
+  title: Atraumatic Shoulder Instability — Stanmore Classification (Polar Types II & III)
+  page: 2
+  summary: BESS/BOA pathway classification for atraumatic shoulder instability across the Stanmore triangle (polar
+    types II and III).
+  steps:
+  - Distinguish traumatic structural instability (Stanmore polar type I) from atraumatic instability.
+  - Identify Stanmore polar type II (atraumatic structural / hyperlaxity) vs polar type III (abnormal muscle patterning,
+    structurally normal).
+  - Prioritise scapular and rotator cuff motor control rehabilitation (such as the Watson MDI programme on Page
+    8) rather than early surgery in polar types II and III.
+  positive: Stanmore polar types II (hyperlaxity) and III (muscle patterning, structurally normal).
+  interpretation: Patients can migrate between polar groups over time; rehabilitation of kinetic-chain, scapular,
+    and cuff control is the primary management for types II and III.
+  metrics: 'Level: Guideline. Noorani 2019 BESS/BOA atraumatic instability pathway: Stanmore polar types II (hyperlaxity)
+    and III (muscle patterning, structurally normal).'
+  evidence: Guideline
+  sources:
+  - text: Noorani 2019 BESS/BOA atraumatic instability pathway
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6348586/
+    free_full_text: true
+  review_status: approved
+- id: traumatic-instability-recurrence
+  type: info
+  title: Traumatic Anterior Instability — Recurrence Risk & Immobilisation Evidence
+  page: 2
+  summary: BESS/BOA guideline prognosis for recurrent instability following first-time traumatic anterior shoulder
+    dislocation.
+  steps:
+  - 'Stratify recurrence risk by age and sex: males under 20 have ≈ 72% chance of recurrent instability.'
+  - 'Monitor closely over the first 24 months: almost 90% of recurrences occur within 2 years.'
+  - 'Avoid prolonged sling immobilisation for recurrence prevention: immobilisation > 1 week does not reduce recurrence.'
+  positive: almost 90% of recurrences within 2 years; males under 20 ≈ 72% chance of recurrent instability; immobilisation
+    > 1 week does not reduce recurrence.
+  interpretation: Young collision and overhead athletes have high recurrence rates after primary traumatic dislocation;
+    counsel early regarding rehabilitation vs surgical stabilisation (Page 5).
+  metrics: 'Level: Guideline. Brownson 2015 BESS/BOA traumatic anterior instability pathway: almost 90% of recurrences
+    within 2 years; males under 20 ≈ 72% chance of recurrent instability; immobilisation > 1 week does not reduce
+    recurrence.'
+  evidence: Guideline
+  sources:
+  - *id003
+  review_status: approved
+- id: physical-tests-cochrane-hanchard
+  type: info
+  title: Diagnostic Accuracy Caution for Isolated Shoulder Physical Tests (Cochrane & Meta-Analyses)
+  page: 2
+  summary: High-level evidence synthesis from Cochrane (Hanchard 2013) and meta-analyses (Hegedus 2008, Gismervik
+    2017) on the limitations of isolated special tests.
+  steps:
+  - 'Cochrane review (Hanchard 2013): insufficient evidence to base selection of physical tests in primary care.'
+  - 'AC joint & impingement meta-analysis (Hegedus 2008): no impingement or AC-joint test showed significant diagnostic
+    accuracy (2008 meta-analysis).'
+  - 'SLAP meta-analysis (Gismervik 2017): pooled DOR of physical tests 1.38 (1.13–1.69) — poor.'
+  - Interpret special tests within validated test clusters (Michener, Park, Murrell) and alongside patient history
+    and passive ER status.
+  positive: insufficient evidence to base selection of physical tests in primary care (Hanchard 2013 Cochrane);
+    no impingement or AC-joint test showed significant diagnostic accuracy (Hegedus 2008 BJSM); pooled DOR of physical
+    tests 1.38 (1.13–1.69) — poor (Gismervik 2017).
+  interpretation: Do not rely on any single orthopaedic special test in isolation to make a structural pathoanatomical
+    diagnosis.
+  metrics: 'Hanchard 2013 Cochrane (Level H): insufficient evidence to base selection of physical tests in primary
+    care. Hegedus 2008 BJSM (Level M): no impingement or AC-joint test showed significant diagnostic accuracy (2008
+    meta-analysis). Gismervik 2017 BMC Musculoskelet Disord (Level M): pooled DOR of physical tests 1.38 (1.13–1.69)
+    — poor.'
+  evidence: H
+  sources:
+  - text: Hanchard 2013 Cochrane
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6464770/
+    free_full_text: true
+  - &id012
+    text: Hegedus 2008 BJSM
+    url: https://doi.org/10.1136/bjsm.2007.038406
+    free_full_text: false
+  - &id005
+    text: Gismervik 2017 BMC Musculoskelet Disord
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5267375/
+    free_full_text: true
+  review_status: approved
+- id: tos-calcific-differential
+  type: info
+  title: Calcific Tendinopathy & Thoracic Outlet Syndrome (TOS) Differential
+  page: 2
+  summary: Clinical differential features of resorptive/formative calcific tendinopathy and neurogenic or vascular
+    thoracic outlet syndrome.
+  steps:
+  - 'Calcific tendinopathy: acute resorptive phase can cause severe, unremitting chemical pain mimicking joint sepsis
+    or acute gout, while formative/resting phase mimics subacromial pain; confirm calcific deposit on radiograph
+    or ultrasound.'
+  - 'Thoracic outlet syndrome (TOS): evaluate for positional upper-limb paraesthesia, heaviness, fatigue, or vascular
+    colour/temperature changes during overhead work.'
+  - Combine cervical radiculopathy screening (Wainner cluster / ULTT A) and peripheral neurological examination
+    to differentiate TOS from cervical root compression.
+  positive: Clinical pattern recognition in words — no verified numbers in source file.
+  interpretation: For calcific tendinopathy management evidence (ESWT and ultrasound-guided barbotage RCT), see
+    Page 6.
+  metrics: Clinical differential synthesis — no verified numbers in source file.
+  evidence: E
+  sources: []
+  review_status: approved
+- id: shoulder-rom-kolber
+  type: test
+  title: Shoulder Range of Motion Assessment — Goniometer vs Digital Inclinometer (Kolber)
+  page: 3
+  summary: Active and passive shoulder goniometry / inclinometry across flexion, abduction, external rotation at
+    0° and 90° abduction, internal rotation at 90°, and total rotational motion arc.
+  steps:
+  - Measure active and passive flexion, abduction, external rotation (ER) at 0° adduction and at 90° abduction,
+    and internal rotation (IR) at 90° abduction with scapular stabilisation.
+  - Compute Total Rotational Motion (TRM = ER at 90° + IR at 90°) and compare against the contralateral side (see
+    Wilk thrower criteria on Page 8).
+  - 'Do not swap between universal goniometer and digital inclinometer across visits: limits of agreement are 2°–20°
+    (Kolber 2012).'
+  positive: intrarater ICC ≥ 0.94 (goniometer), ≥ 0.95 (inclinometer); limits of agreement 2°–20° → do not swap
+    instruments between visits.
+  interpretation: Both goniometry and digital inclinometry have high intrarater reliability, but wide inter-instrument
+    limits of agreement (2°–20°) mean the same instrument must be used for serial reassessment.
+  metrics: 'Kolber 2012 IJSPT: intrarater ICC ≥ 0.94 (goniometer), ≥ 0.95 (inclinometer); limits of agreement 2°–20°
+    → do not swap instruments between visits.'
+  evidence: M
+  sources:
+  - text: Kolber 2012 IJSPT
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3362980/
+    free_full_text: true
+  review_status: approved
+- id: scapular-dyskinesis-test
+  type: test
+  title: Scapular Dyskinesis Test (SDT — McClure & Singh)
+  page: 3
+  summary: Visual dynamic observation of scapulothoracic motion during weighted bilateral shoulder flexion and coronal-plane
+    abduction.
+  steps:
+  - Instruct the patient to perform 5 repetitions of bilateral active weighted shoulder flexion and 5 repetitions
+    of bilateral weighted abduction holding 1.4 kg or 2.3 kg dumbbells.
+  - Observe the medial border and inferior angle of the scapula from posteriorly for dysrhythmia (premature/excessive
+    elevation, shrugging, or rapid downward rotation) or winging.
+  - Classify each shoulder as normal, subtle abnormality, or obvious dyskinesis.
+  positive: '5 reps weighted flexion + abduction (1.4 kg or 2.3 kg); agreement 75–82%, κw 0.48–0.61 (McClure 2009).
+    In rugby players: slight reliability (κ 0.16; 41%) (Singh 2021).'
+  interpretation: Moderate inter-rater reliability in general overhead populations (McClure 2009), but only slight
+    reliability in rugby players (Singh 2021) — pair visual observation with symptom modification tests (SAT, SRT,
+    SSMP).
+  metrics: 'McClure 2009 J Athl Train (Level M): 5 reps weighted flexion + abduction (1.4 kg or 2.3 kg); agreement
+    75–82%, κw 0.48–0.61. Singh 2021 S Afr J Sports Med (Level L, rugby players): slight reliability (κ 0.16; 41%).'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=btp9l6vD330
+  video_title: Scapular Dyskinesia Assessment (McClure) (Physiotutors)
+  sources:
+  - text: McClure 2009 J Athl Train
+    url: https://doi.org/10.4085/1062-6050-44.2.160
+    free_full_text: false
+  - text: Singh 2021 S Afr J Sports Med
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9924517/
+    free_full_text: true
+  review_status: approved
+- id: scapular-assistance-test
+  type: test
+  title: Scapular Assistance Test (SAT)
+  page: 3
+  summary: Symptom modification maneuver assessing whether manual assistance of scapular upward rotation and posterior
+    tilt reduces pain during active shoulder elevation.
+  steps:
+  - Ask the patient to actively elevate the arm in the painful plane (flexion, scaption, or abduction) and rate
+    baseline pain.
+  - Place one hand over the superior aspect of the scapula and the other hand over the inferior angle.
+  - Manually assist scapular upward rotation and posterior tilt as the patient repeats active arm elevation.
+  positive: Substantial reduction in pain or increase in pain-free elevation range during manual scapular assistance
+    — no verified numbers.
+  interpretation: A positive SAT supports incorporating scapular upward-rotator and serratus anterior facilitation
+    into the exercise programme.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  video_url: https://www.youtube.com/watch?v=pfXdmXL9ouM
+  video_title: Scapular Assistance Test (SAT) (Physiotutors)
+  sources: []
+  review_status: approved
+- id: scapular-retraction-test
+  type: test
+  title: Scapular Retraction Test (SRT)
+  page: 3
+  summary: Manual stabilisation of the scapula in retraction/posterior tilt during supraspinatus testing or elevation
+    to evaluate symptom modification and apparent cuff strength.
+  steps:
+  - Perform a baseline Empty Can (Jobe) or elevation provocation test and note pain and isometric strength.
+  - Stabilise the medial border and clavicle/spine of the scapula manually in a gently retracted, posteriorly tilted
+    position against the thorax.
+  - Repeat the isometric test or elevation maneuver and compare pain intensity and force output.
+  positive: Reduction of shoulder pain or improvement in apparent supraspinatus isometric strength with manual scapular
+    retraction — no verified numbers.
+  interpretation: Indicates that a stable scapulothoracic base improves rotator cuff force generation or symptom
+    tolerance.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  video_url: https://www.youtube.com/watch?v=tyxDTbVn_gg
+  video_title: Scapular Retraction Test (SRT) (Physiotutors)
+  sources: []
+  review_status: approved
+- id: ssmp
+  type: test
+  title: Shoulder Symptom Modification Procedure (SSMP)
+  page: 3
+  summary: Sequential clinical reasoning algorithm applying thoracic posture, scapular position, humeral head centring,
+    and neuromodulatory modifications during a patient-nominated painful movement.
+  steps:
+  - Identify the patient-nominated provocative movement or functional task and establish baseline symptom intensity.
+  - 'Apply sequential modifications: thoracic extension/posture adjustment, scapular position/assistance (SAT/SRT),
+    and humeral head procedures (depression, AP/PA glide, or external rotation recruitment).'
+  - Adopt any modification that meaningfully reduces symptoms directly into the patient’s active exercise prescription.
+  positive: Meaningful immediate reduction or abolition of concordant pain during the provocative shoulder movement
+    — no verified numbers.
+  interpretation: Links physical examination directly to exercise selection without relying on pathoanatomical special
+    test labels.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  sources: []
+  review_status: approved
+- id: hhd-shoulder-strength
+  type: test
+  title: Hand-Held Dynamometry (HHD) & Isometric Shoulder Strength Testing
+  page: 3
+  summary: Objective isometric force measurement of external rotation, internal rotation, scaption/abduction, and
+    periscapular muscle groups using a hand-held dynamometer.
+  steps:
+  - Standardise patient position (seated, supine, or prone), arm angle (neutral 0° or 90° abduction), and dynamometer
+    placement (distal forearm proximal to ulnar styloid).
+  - Perform make tests (or belt-stabilised isometric holds) bilaterally for ER, IR, abduction/scaption, flexion,
+    and extension.
+  - Record raw values and compute within-patient limb symmetry and ER:IR ratios across visits (no normative cut-offs
+    applied).
+  positive: Asymmetric isometric force deficit or symptom reproduction compared with the uninvolved limb and serial
+    baseline — no verified numbers.
+  interpretation: Track individual strength recovery and ER:IR balance across rehabilitation phases.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  sources: []
+  review_status: approved
+- id: ckcuest
+  type: test
+  title: Closed Kinetic Chain Upper Extremity Stability Test (CKCUEST)
+  page: 3
+  summary: Timed closed-kinetic-chain upper-limb plyometric/stability test counting alternating cross-body hand
+    touches from a push-up position (or modified kneeling push-up).
+  steps:
+  - Place two strips of tape on the floor in parallel; patient assumes a standard push-up position (or modified
+    kneeling push-up for females/early rehab) with hands on the tape.
+  - Instruct the patient to alternately reach across and touch the opposite hand/tape line as fast as possible during
+    each timed trial.
+  - Average the number of touches across test trials and compare change against the MDC threshold.
+  positive: MDC 2.05–3.91 touches; at least 3 touches = real improvement.
+  interpretation: An increase of at least 3 touches between sessions represents real clinical improvement beyond
+    measurement error.
+  metrics: 'Tucci 2014 BMC Musculoskelet Disord: MDC 2.05–3.91 touches; at least 3 touches = real improvement.'
+  evidence: M
+  sources:
+  - text: Tucci 2014 BMC Musculoskelet Disord
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3890535/
+    free_full_text: true
+  review_status: approved
+- id: ybt-uq
+  type: test
+  title: Upper Quarter Y-Balance Test (YBT-UQ)
+  page: 3
+  summary: Closed-kinetic-chain upper-extremity reach test in the medial, inferolateral, and superolateral directions
+    while stabilising on the stance arm in a push-up plank.
+  steps:
+  - Measure upper-limb length from the C7 spinous process to the tip of the middle finger with the shoulder abducted
+    to 90°.
+  - From a push-up position, the patient stabilises on the tested arm and reaches maximally with the free hand along
+    the medial, inferolateral, and superolateral directions without losing 3-point contact.
+  - Record reach distances and compare limb symmetry against the patient’s own baseline (no normative cut-offs applied).
+  positive: Side-to-side reach asymmetry or apprehension during closed-chain weight-bearing — no verified numbers.
+  interpretation: Used alongside CKCUEST to evaluate closed-chain shoulder stability for return to sport.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  sources: []
+  review_status: approved
+- id: upper-limb-neuro-screen
+  type: test
+  title: Upper-Limb Neurological Examination Grid (C5–T1)
+  page: 3
+  summary: Systematic root-level neurological examination of C5–T1 dermatomes, myotomes, and deep tendon reflexes,
+    plus axillary, suprascapular, and long thoracic peripheral nerve screening.
+  steps:
+  - 'Sensory (dermatomes): test light touch and pinprick across C5 (lateral deltoid / regimental badge area), C6
+    (lateral forearm, thumb & index finger), C7 (middle finger), C8 (ring & little fingers / ulnar border of hand),
+    and T1 (medial forearm).'
+  - 'Motor (myotomes): test isometric strength across C5 (shoulder abduction & ER — deltoid/infraspinatus), C6 (elbow
+    flexion & wrist extension — biceps/ECRL), C7 (elbow extension & wrist flexion — triceps/FCR), C8 (thumb extension
+    & finger flexion — EPL/FDP), and T1 (finger abduction/adduction — dorsal/palmar interossei).'
+  - 'Reflexes: grade Biceps (C5–C6), Brachioradialis (C6), and Triceps (C7) deep tendon reflexes, and screen Hoffman
+    / Babinski signs if cervical myelopathy is suspected.'
+  positive: Dermatomal sensory loss, myotomal weakness, or diminished/absent deep tendon reflex concordant with
+    a cervical root or peripheral nerve injury — no verified numbers.
+  interpretation: "Always check the axillary nerve (regimental badge sensation + deltoid contraction) after traumatic dislocation: clinically apparent nerve injury ≈ 13.5% of dislocations, nerve injury on EMG 48% (Brownson 2015)."
+  metrics: Standard neurological examination grid — no verified numbers in source file.
+  evidence: E
+  sources:
+  - text: Brownson 2015 BESS/BOA traumatic anterior instability pathway
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4935160/
+    free_full_text: true
+  review_status: approved
+- id: neer-test
+  type: test
+  title: Neer Passive Forward Elevation Impingement Sign
+  page: 4
+  summary: Passive maximal forward elevation of the internally rotated humerus while stabilising the scapula to
+    provoke subacromial pain.
+  steps:
+  - Stand beside the seated or standing patient and stabilise the scapula superiorly to prevent scapular elevation.
+  - Passively internally rotate the patient’s arm and elevate it maximally in the sagittal/scapular plane.
+  - Interpret as part of the 5-item Michener subacromial cluster rather than in isolation.
+  positive: Neer Sn 72%, Sp 60% (Hegedus 2012); Neer LR− 0.35 (0.12–0.97), κ 0.39–0.40 (Michener 2009).
+  interpretation: Low specificity (Sp 60%) limits standalone diagnostic value; combine with Hawkins-Kennedy, painful
+    arc, empty can, and ER resistance in the Michener ≥ 3/5 cluster.
+  metrics: 'Hegedus 2012 BJSM (MA): Neer Sn 72%, Sp 60%. Michener 2009 Arch Phys Med Rehabil: Neer LR− 0.35 (0.12–0.97);
+    κ 0.39–0.40 (Neer, HK).'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=bXA8cblZUok
+  video_title: Neer Test — Subacromial Pain Syndrome (Physiotutors)
+  sources:
+  - &id004
+    text: Hegedus 2012 BJSM
+    url: https://doi.org/10.1136/bjsports-2012-091066
+    free_full_text: false
+  - &id006
+    text: Michener 2009 Arch Phys Med Rehabil
+    url: https://doi.org/10.1016/j.apmr.2009.05.015
+    free_full_text: false
+  review_status: approved
+- id: hawkins-kennedy-test
+  type: test
+  title: Hawkins-Kennedy Impingement Test
+  page: 4
+  summary: Passive glenohumeral internal rotation at 90° forward flexion and 90° elbow flexion to provoke subacromial
+    pain.
+  steps:
+  - Flex the patient’s shoulder to 90° and flex the elbow to 90° while stabilising the scapula.
+  - Passively rotate the humerus into maximal internal rotation.
+  - Use within the Michener cluster (≥ 3 of 5) or Park impingement cluster (HK + painful arc + infraspinatus test).
+  positive: Hawkins-Kennedy Sn 79%, Sp 59% (Hegedus 2012); Hawkins test for SIS DOR 2.86 (1.14–7.17), Sn 0.58, Sp
+    0.67 (Gismervik 2017); κ 0.39–0.40 (Michener 2009).
+  interpretation: Moderately sensitive screening maneuver with low specificity; combine with painful arc and infraspinatus
+    test (Park cluster → 95% post-test probability of any impingement).
+  metrics: 'Hegedus 2012 BJSM (MA): Hawkins-Kennedy Sn 79%, Sp 59%. Gismervik 2017 BMC Musculoskelet Disord (MA):
+    Hawkins test for SIS DOR 2.86 (1.14–7.17); Sn 0.58, Sp 0.67. Michener 2009 Arch Phys Med Rehabil: κ 0.39–0.40
+    (Neer, HK).'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=c8Y4i1SXzF4
+  video_title: Hawkins-Kennedy Test (Physiotutors)
+  sources:
+  - *id004
+  - *id005
+  - *id006
+  review_status: approved
+- id: painful-arc-test
+  type: test
+  title: Painful Arc Sign
+  page: 4
+  summary: Active shoulder abduction in the scapular/coronal plane assessing for mid-arc pain reproduction that
+    abates near full elevation.
+  steps:
+  - Instruct the patient to actively abduct the arm slowly through full range in the scapular plane and lower it
+    back to the side.
+  - Note whether familiar shoulder pain is provoked in the mid-range arc and diminishes near full overhead elevation.
+  - Combine with Michener and Park clusters.
+  positive: painful arc Sn 53%, Sp 76% (Hegedus 2012); painful arc LR+ 2.25 (1.33–3.81), LR− 0.38 (0.16–0.90), κ
+    0.45–0.67 (Michener 2009).
+  interpretation: More specific (Sp 76%) than Neer or Hawkins-Kennedy; included in both the Michener cluster and
+    the Park impingement / full-thickness tear clusters.
+  metrics: 'Hegedus 2012 BJSM (MA): painful arc Sn 53%, Sp 76%. Michener 2009 Arch Phys Med Rehabil: painful arc
+    LR+ 2.25 (1.33–3.81), LR− 0.38 (0.16–0.90); κ 0.45–0.67 (painful arc, empty can, ER resistance).'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=engHP9OA92U
+  video_title: Painful Arc Sign — Shoulder Impingement (Physiotutors)
+  sources:
+  - *id004
+  - *id006
+  review_status: approved
+- id: empty-can-jobe-test
+  type: test
+  title: Empty Can (Jobe / Supraspinatus) Test
+  page: 4
+  summary: Resisted isometric elevation in the scapular plane with internal rotation (thumb pointing down) testing
+    supraspinatus integrity and subacromial pain.
+  steps:
+  - Elevate the patient’s arm to 90° in the scapular plane (30° anterior to the coronal plane) and internally rotate
+    the shoulder so the thumb points downward ("empty can").
+  - Apply downward isometric resistance at the forearm and assess for weakness and/or concordant pain.
+  - Compare with the Full Can test and Scapular Retraction Test (Page 3).
+  positive: 'empty can LR+ 3.90 (1.5–10.12), κ 0.45–0.67 (Michener 2009). Full-thickness tear (MA): DOR 9.24 (1.99–42.84);
+    Sn 0.74, Sp 0.77 (Gismervik 2017).'
+  interpretation: Demonstrates the highest pooled diagnostic odds ratio for full-thickness supraspinatus tear in
+    Gismervik 2017 (DOR 9.24) and contributes to both the Michener and Murrell clusters.
+  metrics: 'Michener 2009 Arch Phys Med Rehabil: empty can LR+ 3.90 (1.5–10.12); κ 0.45–0.67 (painful arc, empty
+    can, ER resistance). Gismervik 2017 BMC Musculoskelet Disord (MA): Supraspinatus (empty can/Jobe) test for full-thickness
+    tear DOR 9.24 (1.99–42.84); Sn 0.74, Sp 0.77.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=DeO50UTxwoo
+  video_title: Jobe / Empty Can Test — Subacromial Pain Syndrome (Physiotutors)
+  sources:
+  - *id006
+  - *id005
+  review_status: approved
+- id: full-can-test
+  type: test
+  title: Full Can Test (Supraspinatus — Thumb Up)
+  page: 4
+  summary: Resisted isometric scapular-plane elevation at 90° with external rotation (thumb pointing upward) to
+    test supraspinatus with reduced subacromial impingement.
+  steps:
+  - Position the patient’s arm at 90° elevation in the scapular plane with the humerus externally rotated ("thumb
+    up" / full can position).
+  - Apply downward isometric resistance and evaluate force output and symptom provocation compared with the Empty
+    Can position.
+  positive: Weakness or reproduction of subacromial/supraspinatus pain during resisted scapular-plane elevation
+    — no verified numbers.
+  interpretation: Minimises mechanical subacromial narrowing compared with the internal-rotation Empty Can position.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  video_url: https://www.youtube.com/watch?v=NuBOHdm20cc
+  video_title: Full Can Test — Rotator Cuff Tears / SAPS (Physiotutors)
+  sources: []
+  review_status: approved
+- id: er-resistance-test
+  type: test
+  title: External Rotation Resistance (Infraspinatus) Test
+  page: 4
+  summary: Resisted isometric glenohumeral external rotation with the arm at the side (0° abduction) and elbow flexed
+    to 90°.
+  steps:
+  - Position the patient’s arm at 0° adduction against the trunk (or supported on a small towel roll) with the elbow
+    flexed to 90°.
+  - Apply inward (internal rotation) resistance at the distal forearm while the patient resists into external rotation.
+  - Record pain and/or weakness as part of the Michener, Park, and Murrell clusters.
+  positive: ER resistance LR+ 4.39 (1.74–11.07), LR− 0.50 (0.28–0.89), κ 0.45–0.67 (Michener 2009).
+  interpretation: Strongest single positive likelihood ratio among the 5 Michener subacromial tests (LR+ 4.39) and
+    a core component of both Park clusters and the Murrell cuff-tear cluster.
+  metrics: 'Michener 2009 Arch Phys Med Rehabil: ER resistance LR+ 4.39 (1.74–11.07), LR− 0.50 (0.28–0.89); κ 0.45–0.67
+    (painful arc, empty can, ER resistance). Park 2005 JBJS Am: HK + painful arc + infraspinatus test → 95% post-test
+    probability of any impingement; painful arc + drop-arm + infraspinatus test → 91% for full-thickness tear.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=vzl97bB2hzQ
+  video_title: Infraspinatus Test / Resisted External Rotation (Physiotutors)
+  sources:
+  - *id006
+  - &id007
+    text: Park 2005 JBJS Am
+    url: https://doi.org/10.2106/JBJS.D.02335
+    free_full_text: false
+  review_status: approved
+- id: michener-saps-cluster
+  type: test
+  title: Michener Subacromial Pain / Impingement Cluster (≥ 3 of 5 Tests)
+  page: 4
+  summary: 5-test diagnostic cluster (Neer, Hawkins-Kennedy, painful arc, empty can, and external rotation resistance)
+    for confirming or ruling out subacromial impingement.
+  steps:
+  - 'Perform all 5 tests: (1) Neer sign, (2) Hawkins-Kennedy test, (3) Painful arc sign, (4) Empty can (Jobe) test,
+    and (5) External rotation resistance test.'
+  - Count the number of positive tests out of 5.
+  - 'Apply the cut-off: ≥ 3 of 5 positive confirms subacromial impingement; < 3 positive rules it out.'
+  positive: ≥ 3 of 5 positive (Neer, Hawkins-Kennedy, painful arc, empty can, ER resistance) confirms; < 3 rules
+    out; AUC 0.79; κ 0.45–0.67 (painful arc, empty can, ER resistance), 0.39–0.40 (Neer, HK).
+  interpretation: 'Single-test likelihood ratios in Michener 2009: painful arc LR+ 2.25 (1.33–3.81), LR− 0.38 (0.16–0.90);
+    empty can LR+ 3.90 (1.5–10.12); ER resistance LR+ 4.39 (1.74–11.07), LR− 0.50 (0.28–0.89); Neer LR− 0.35 (0.12–0.97).'
+  metrics: 'Michener 2009 Arch Phys Med Rehabil: ≥ 3 of 5 positive (Neer, Hawkins-Kennedy, painful arc, empty can,
+    ER resistance) confirms; < 3 rules out; AUC 0.79; κ 0.45–0.67 (painful arc, empty can, ER resistance), 0.39–0.40
+    (Neer, HK). Single tests: painful arc LR+ 2.25 (1.33–3.81), LR− 0.38 (0.16–0.90); empty can LR+ 3.90 (1.5–10.12);
+    ER resistance LR+ 4.39 (1.74–11.07), LR− 0.50 (0.28–0.89); Neer LR− 0.35 (0.12–0.97).'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=UErH4NUsDWQ
+  video_title: Subacromial Pain Syndrome (SAPS) Test Cluster (Physiotutors)
+  sources:
+  - *id006
+  review_status: approved
+- id: park-clusters
+  type: test
+  title: Park Clusters for Impingement & Full-Thickness Rotator Cuff Tear
+  page: 4
+  summary: 3-test clinical combinations yielding high post-test probabilities for any subacromial impingement (95%)
+    and full-thickness rotator cuff tear (91%).
+  steps:
+  - 'Impingement cluster: perform Hawkins-Kennedy + Painful arc + Infraspinatus (ER resistance) test.'
+  - 'Full-thickness tear cluster: perform Painful arc + Drop-arm + Infraspinatus (ER resistance) test.'
+  - Interpret alongside patient age (see Murrell cluster).
+  positive: HK + painful arc + infraspinatus test → 95% post-test probability of any impingement; painful arc +
+    drop-arm + infraspinatus test → 91% for full-thickness tear.
+  interpretation: Replacing Hawkins-Kennedy with the Drop-arm test shifts the cluster from general subacromial impingement
+    (95%) to full-thickness rotator cuff tear (91%).
+  metrics: 'Park 2005 JBJS Am: HK + painful arc + infraspinatus test → 95% post-test probability of any impingement;
+    painful arc + drop-arm + infraspinatus test → 91% for full-thickness tear.'
+  evidence: M
+  sources:
+  - *id007
+  review_status: approved
+- id: drop-arm-test
+  type: test
+  title: Drop-Arm Test (Full-Thickness Rotator Cuff Tear)
+  page: 4
+  summary: Eccentric lowering test from passive shoulder abduction evaluating supraspinatus / posterosuperior rotator
+    cuff tear.
+  steps:
+  - Passively abduct the patient’s shoulder above 90°.
+  - Instruct the patient to slowly and smoothly lower the arm back to the side in the same plane.
+  - Observe for a sudden drop of the arm or inability to control eccentric lowering through mid-range.
+  positive: Sudden dropping of the arm or inability to lower smoothly; painful arc + drop-arm + infraspinatus test
+    → 91% post-test probability for full-thickness tear (Park 2005).
+  interpretation: "Use inside the Park full-thickness tear cluster (painful arc + drop-arm + infraspinatus test → 91%) rather than as a stand-alone test."
+  metrics: 'Park 2005 JBJS Am: painful arc + drop-arm + infraspinatus test → 91% for full-thickness tear.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=JXgRBeqToik
+  video_title: Drop Arm Test — Rotator Cuff Tears (Physiotutors)
+  sources:
+  - *id007
+  review_status: approved
+- id: er-lag-sign
+  type: test
+  title: External Rotation Lag Sign (ERLS — Supraspinatus / Infraspinatus)
+  page: 4
+  summary: Passive placement of the shoulder in near-maximal external rotation at 20° scaption to detect an active
+    maintenance lag.
+  steps:
+  - Flex the patient’s elbow to 90° and elevate the arm slightly in the scapular plane (20°).
+  - Passively rotate the shoulder to near-maximal external rotation (just short of elastic recoil) while supporting
+    the elbow.
+  - Ask the patient to actively hold that externally rotated position as you release the wrist.
+  positive: 'Angular drop / lag back toward internal rotation: highest specificity of all tests in primary care
+    (97%, Cadogan 2016); ERLS less sensitive but more specific than Jobe, and lag size correlates with tear size
+    (Hertel 1996).'
+  interpretation: "In primary care (Cadogan 2016) the ER lag sign had the highest specificity of all tests (97%) for subacromial pain confirmed by diagnostic injection; Hertel 1996 found it more specific than Jobe for cuff rupture, with lag size tracking tear size."
+  metrics: 'Cadogan 2016 PLoS One (Level M): highest specificity of all tests: 97%. Hertel 1996 J Shoulder Elbow
+    Surg (Level L): ERLS less sensitive but more specific than Jobe; IRLS more sensitive than lift-off; lag size
+    correlates with tear size — no numbers.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=JPsLBYjldGI
+  video_title: External Rotation Lag Sign (ERLS) (Physiotutors)
+  sources:
+  - *id008
+  - &id009
+    text: Hertel 1996 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/S1058-2746(96)80058-9
+    free_full_text: false
+  review_status: approved
+- id: ir-lag-sign
+  type: test
+  title: Internal Rotation Lag Sign (IRLS — Subscapularis)
+  page: 4
+  summary: Passive placement of the hand away from the lumbar spine in internal rotation to detect a subscapularis
+    maintenance lag.
+  steps:
+  - Place the dorsum of the patient’s hand behind the lower back (lumbar region) with the elbow flexed to 90°.
+  - Passively lift the hand away from the lumbar spine into near-maximal internal rotation while supporting the
+    elbow and wrist.
+  - Ask the patient to actively hold the hand off the back when you release the wrist.
+  positive: 'Inability to hold the position (hand lags or drops back onto the lumbar spine): IRLS is more sensitive
+    than the Gerber lift-off test; lag size correlates with tear size (Hertel 1996).'
+  interpretation: Detects partial and full-thickness subscapularis tears with greater sensitivity than the active
+    lift-off test.
+  metrics: 'Hertel 1996 J Shoulder Elbow Surg: ERLS less sensitive but more specific than Jobe; IRLS more sensitive
+    than lift-off; lag size correlates with tear size — no numbers.'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=FbxrdmtjwN8
+  video_title: Internal Rotation Lag Sign (IRLS) — Subscapularis (Physiotutors)
+  sources:
+  - *id009
+  review_status: approved
+- id: hornblower-sign
+  type: test
+  title: Hornblower’s Sign (Teres Minor / Posteroinferior Cuff)
+  page: 4
+  summary: Assessment of external rotation control at 90° abduction/scaption (or inability to bring hand to mouth
+    without abducting the elbow) for teres minor integrity.
+  steps:
+  - Support the patient’s arm at 90° abduction in the scapular plane with the elbow flexed to 90°.
+  - Passively externally rotate the shoulder or ask the patient to externally rotate / hold the forearm vertical,
+    or ask the patient to bring the hand to the mouth.
+  - Observe for inability to maintain external rotation in abduction or compensatory elbow abduction above the hand
+    ("hornblower" posture).
+  positive: Inability to externally rotate or maintain external rotation in abduction (or obligatory elbow elevation
+    when bringing hand to mouth) — no verified numbers.
+  interpretation: Indicates posterosuperior cuff tear extending into the teres minor.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  video_url: https://www.youtube.com/watch?v=am5XZ1VnoLc
+  video_title: Hornblower’s Sign — Teres Minor Tears (Physiotutors)
+  sources: []
+  review_status: approved
+- id: murrell-cuff-tear-cluster
+  type: test
+  title: Murrell & Walton Rotator Cuff Tear Cluster
+  page: 4
+  summary: 3-item clinical cluster (supraspinatus weakness, external rotation weakness, and impingement sign) combined
+    with patient age (≥ 60 years).
+  steps:
+  - Test for (1) supraspinatus weakness, (2) weakness in external rotation, and (3) a positive impingement sign.
+  - Check whether all 3 signs are positive, OR whether any 2 signs are positive in a patient aged ≥ 60 years.
+  positive: supraspinatus weakness + ER weakness + impingement sign all positive (or 2 positive and age ≥ 60) →
+    98% chance of cuff tear.
+  interpretation: When all 3 signs are positive (or 2 positive with age ≥ 60), post-test probability of a rotator
+    cuff tear reaches 98%.
+  metrics: 'Murrell & Walton 2001 Lancet: supraspinatus weakness + ER weakness + impingement sign all positive (or
+    2 positive and age ≥ 60) → 98% chance of cuff tear.'
+  evidence: L
+  sources:
+  - text: Murrell & Walton 2001 Lancet
+    url: https://doi.org/10.1016/S0140-6736(00)04161-1
+    free_full_text: false
+  review_status: approved
+- id: bear-hug-test
+  type: test
+  title: Bear-Hug Test (Subscapularis)
+  page: 4
+  summary: Resisted anterior internal rotation with the palm on the contralateral shoulder and elbow elevated anteriorly
+    to test upper and lower subscapularis fibres.
+  steps:
+  - Place the palm of the affected hand flat on the opposite shoulder with the fingers extended and the elbow positioned
+    anteriorly in front of the body.
+  - Ask the patient to hold the palm pressed down on the shoulder while you apply an external rotation force perpendicular
+    to the forearm to lift the palm off.
+  - Compare strength against the contralateral side.
+  positive: bear-hug Sn 60%, Sp 91.7%; belly-press Sn 40%, Sp 97.9%; Napoleon Sn 25%, Sp 97.9%; lift-off Sn 17.6%,
+    Sp 100% (Barth 2006).
+  interpretation: Most sensitive of the 4 clinical subscapularis tests in Barth 2006 (Sn 60% while retaining Sp
+    91.7%).
+  metrics: 'Barth 2006 Arthroscopy: bear-hug Sn 60%, Sp 91.7%; belly-press Sn 40%, Sp 97.9%; Napoleon Sn 25%, Sp
+    97.9%; lift-off Sn 17.6%, Sp 100%.'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=30C3DNq-w4g
+  video_title: Bear Hug Test — Subscapularis Tear (Physiotutors)
+  sources:
+  - &id010
+    text: Barth 2006 Arthroscopy
+    url: https://doi.org/10.1016/j.arthro.2006.05.005
+    free_full_text: false
+  review_status: approved
+- id: belly-press-test
+  type: test
+  title: Belly-Press & Napoleon Tests (Subscapularis)
+  page: 4
+  summary: Active internal rotation pressure of the palm against the abdomen while maintaining the wrist neutral
+    and elbow anterior to the trunk.
+  steps:
+  - Place the patient’s palm flat against the abdomen just below the xiphoid process with the elbow brought forward
+    in front of the coronal plane.
+  - Instruct the patient to press the abdomen inward while keeping the wrist straight (0° flexion) and the elbow
+    forward.
+  - Observe whether the elbow drops posteriorly behind the trunk or the wrist flexes (Napoleon sign) to compensate.
+  positive: belly-press Sn 40%, Sp 97.9%; Napoleon Sn 25%, Sp 97.9% (Barth 2006).
+  interpretation: Very high specificity (Sp 97.9%) and executable even when internal rotation ROM is too restricted
+    for the hand-behind-back lift-off position.
+  metrics: 'Barth 2006 Arthroscopy: bear-hug Sn 60%, Sp 91.7%; belly-press Sn 40%, Sp 97.9%; Napoleon Sn 25%, Sp
+    97.9%; lift-off Sn 17.6%, Sp 100%.'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=RDfStbLsj6Q
+  video_title: Belly Press Test / Abdominal Compression — Subscapularis (Physiotutors)
+  sources:
+  - *id010
+  review_status: approved
+- id: lift-off-test
+  type: test
+  title: Gerber Lift-Off Test (Subscapularis)
+  page: 4
+  summary: Active internal rotation lift-off of the dorsum of the hand away from the mid-lumbar spine.
+  steps:
+  - Place the dorsum of the patient’s hand against the mid-lumbar spine.
+  - Instruct the patient to actively lift the hand posteriorly away from the back without extending the elbow or
+    hyperextending the shoulder.
+  - If passive internal rotation is restricted or painful, use the Bear-Hug or Belly-Press test instead.
+  positive: lift-off Sn 17.6%, Sp 100% (Barth 2006); IRLS more sensitive than lift-off (Hertel 1996).
+  interpretation: A positive lift-off test has 100% specificity in Barth 2006, but sensitivity is very low (17.6%)
+    — pair with the Bear-Hug test (Sn 60%) and Internal Rotation Lag Sign.
+  metrics: 'Barth 2006 Arthroscopy: bear-hug Sn 60%, Sp 91.7%; belly-press Sn 40%, Sp 97.9%; Napoleon Sn 25%, Sp
+    97.9%; lift-off Sn 17.6%, Sp 100%. Hertel 1996 J Shoulder Elbow Surg: IRLS more sensitive than lift-off.'
+  evidence: L
+  sources:
+  - *id010
+  - *id009
+  review_status: approved
+- id: apprehension-test
+  type: test
+  title: Anterior Shoulder Apprehension Test
+  page: 4
+  summary: Passive 90° abduction and external rotation of the supine glenohumeral joint using apprehension (fear
+    of imminent subluxation/dislocation), not isolated pain, as the positive criterion.
+  steps:
+  - Position the patient supine with the shoulder at the edge of the plinth, abducted to 90° and elbow flexed to
+    90°.
+  - Slowly externally rotate the humerus while observing the patient’s facial expression, protective muscular guarding,
+    and verbal report.
+  - Score positive only when true apprehension (sensation of imminent anterior instability) is elicited, rather
+    than isolated posterior/subacromial pain.
+  positive: apprehension Sn 72%, Sp 96%, LR 20.2 (apprehension as criterion, not pain — Farber 2006).
+  interpretation: Using apprehension rather than pain as the positive criterion yields Sp 96% and LR 20.2; follow
+    immediately with the Jobe Relocation and Surprise (Release) tests.
+  metrics: 'Farber 2006 JBJS Am: apprehension Sn 72%, Sp 96%, LR 20.2; relocation Sn 81%, Sp 92%, LR 10.4 (apprehension
+    as criterion, not pain); anterior drawer Sn 53%, Sp 85%, LR 3.6.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=jZ29dAXKA5M
+  video_title: Apprehension Test — Anterior Shoulder Instability (Physiotutors)
+  sources:
+  - &id011
+    text: Farber 2006 JBJS Am
+    url: https://doi.org/10.2106/JBJS.E.00594
+    free_full_text: false
+  review_status: approved
+- id: relocation-test
+  type: test
+  title: Jobe Relocation Test
+  page: 4
+  summary: Application of a posteriorly directed force over the proximal humeral head in the 90°/90° apprehension
+    position to relieve anterior apprehension.
+  steps:
+  - From the supine 90° abduction / external rotation position where apprehension was provoked, apply a firm anterior-to-posterior
+    (AP) centring force over the anterior humeral head.
+  - Assess whether the patient’s sense of apprehension disappears and further external rotation is tolerated.
+  - Use apprehension relief (not pain relief alone) as the primary anterior instability criterion.
+  positive: 'relocation Sn 81%, Sp 92%, LR 10.4 (apprehension as criterion, not pain — Farber 2006); SLAP (MA):
+    best Sn relocation test 52% (Hegedus 2012).'
+  interpretation: High accuracy for traumatic anterior instability when apprehension relief is used as the criterion
+    (Sn 81%, Sp 92%, LR 10.4).
+  metrics: 'Farber 2006 JBJS Am: relocation Sn 81%, Sp 92%, LR 10.4 (apprehension as criterion, not pain). Hegedus
+    2012 BJSM: SLAP (MA): best Sn relocation test 52%.'
+  evidence: M
+  video_url: https://www.youtube.com/watch?v=YX1uJhjhwWg
+  video_title: Relocation Test — Anterior Shoulder Instability (Physiotutors)
+  sources:
+  - *id011
+  - *id004
+  review_status: approved
+- id: surprise-release-test
+  type: test
+  title: Surprise (Anterior Release) Test
+  page: 4
+  summary: Sudden removal of the posteriorly directed relocation force on the humeral head at 90° abduction and
+    external rotation.
+  steps:
+  - Perform the Jobe Relocation test in supine 90° abduction and external rotation.
+  - Carefully release the anterior-to-posterior stabilising hand from the humeral head while maintaining control
+    of the forearm.
+  - Note immediate return of anterior apprehension.
+  positive: 'Sn 63.89%, Sp 98.91%; all three tests positive (apprehension + relocation + surprise): PPV 93.6%, NPV
+    71.9% (Lo 2004).'
+  interpretation: "Very high specificity (Sp 98.91%) in Lo 2004; when apprehension, relocation and surprise tests are all positive, PPV is 93.6%."
+  cautions: Perform with caution to avoid provoking frank subluxation or dislocation in highly unstable shoulders.
+  metrics: 'Lo 2004 Am J Sports Med: Sn 63.89%, Sp 98.91%; all three tests positive: PPV 93.6%, NPV 71.9%.'
+  evidence: L
+  sources:
+  - text: Lo 2004 Am J Sports Med
+    url: https://pubmed.ncbi.nlm.nih.gov/14977651/
+    free_full_text: false
+  review_status: approved
+- id: load-and-shift-test
+  type: test
+  title: Load-and-Shift & Anterior Drawer Test
+  page: 4
+  summary: Passive assessment of anterior and posterior humeral head translation relative to the glenoid rim after
+    centring ("loading") the humeral head.
+  steps:
+  - Stabilise the scapula and clavicle with one hand while grasping the humeral head with the other hand.
+  - Apply a gentle axial compressive load to centre the humeral head in the glenoid fossa, then translate the humeral
+    head anteriorly and posteriorly (or perform the supine anterior drawer test).
+  - Compare translation magnitude, end-feel, and symptom reproduction against the contralateral shoulder.
+  positive: anterior drawer Sn 53%, Sp 85%, LR 3.6 (Farber 2006).
+  interpretation: "Grades translation; always distinguish asymptomatic physiological laxity from symptomatic instability and combine with apprehension, relocation and surprise tests."
+  metrics: "No verified numbers for the load-and-shift test itself. Related anterior drawer test (Farber 2006 JBJS Am): Sn 53%, Sp 85%, LR 3.6."
+  evidence: "E"
+  video_url: https://www.youtube.com/watch?v=txARar71h5E
+  video_title: Load and Shift Test — Shoulder Instability Assessment (Physiotutors)
+  sources:
+  - *id011
+  review_status: approved
+- id: sulcus-sign
+  type: test
+  title: Sulcus Sign (Inferior Glenohumeral Laxity)
+  page: 4
+  summary: Inferior longitudinal traction applied to the relaxed dependent humerus to assess inferior capsular laxity
+    (rotator interval) and multidirectional instability.
+  steps:
+  - With the patient seated or standing and the arm relaxed at the side (0° abduction), stabilise the superior shoulder
+    girdle.
+  - Apply downward (caudal) traction at the distal humerus / elbow.
+  - Observe for a visible/palpable subacromial sulcus step-off beneath the lateral acromial border and ask whether
+    it reproduces the patient’s concordant instability symptoms.
+  positive: Subacromial sulcus step-off accompanied by concordant inferior/multidirectional instability symptoms
+    — no verified numbers.
+  interpretation: An asymptomatic sulcus sign reflects generalized inferior laxity (Stanmore type II); clinical
+    multidirectional instability requires symptom reproduction.
+  metrics: no verified numbers — list the test only.
+  evidence: E
+  video_url: https://www.youtube.com/watch?v=vV7u2JtdYWI
+  video_title: Sulcus Sign — Inferior Shoulder Instability Assessment (Physiotutors)
+  sources: []
+  review_status: approved
+- id: cross-body-adduction-test
+  type: test
+  title: Cross-Body Adduction (Scarf) Test & AC Resisted Extension
+  page: 4
+  summary: Passive horizontal adduction of the 90° flexed arm across the chest (and resisted horizontal extension)
+    to compress and provoke the acromioclavicular (AC) joint.
+  steps:
+  - Elevate the patient’s arm to 90° forward flexion and passively adduct the arm horizontally across the chest
+    toward the contralateral shoulder.
+  - Ask the patient to point with one finger to the exact site of pain (true AC joint pain is localized directly
+    over the AC joint, not posteriorly).
+  - Combine with AC resisted extension (Sn 72%) and Active Compression (O’Brien, Sp 95%).
+  positive: cross-body adduction Sn 77%; AC resisted extension Sn 72%; active compression (O'Brien) Sn 41%, Sp 95%;
+    all NPV > 94%, PPV < 30% (Chronopoulos 2004).
+  interpretation: 'Cross-body adduction is the most sensitive of the three tests in Chronopoulos 2004 (Sn 77%, NPV
+    > 94%) for ruling out AC joint pathology, while O’Brien is the most specific (Sp 95%). Note Hegedus 2008 BJSM:
+    no impingement or AC-joint test showed significant diagnostic accuracy (2008 meta-analysis).'
+  metrics: 'Chronopoulos 2004 Am J Sports Med (Level L): cross-body adduction Sn 77%; AC resisted extension Sn 72%;
+    active compression (O''Brien) Sn 41%, Sp 95%; all NPV > 94%, PPV < 30%. Hegedus 2008 BJSM (Level M): no impingement
+    or AC-joint test showed significant diagnostic accuracy (2008 meta-analysis).'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=DKLvt816x6o
+  video_title: Cross-Body Adduction / Scarf Test — AC Joint Pathology (Physiotutors)
+  sources:
+  - &id013
+    text: Chronopoulos 2004 Am J Sports Med
+    url: https://doi.org/10.1177/0363546503261723
+    free_full_text: false
+  - *id012
+  review_status: approved
+- id: obrien-active-compression-test
+  type: test
+  title: Active Compression (O’Brien) Test (AC Joint & SLAP)
+  page: 4
+  summary: Resisted isometric elevation at 90° flexion and horizontal adduction performed first in full internal
+    rotation (thumb down) and then in external rotation (palm up).
+  steps:
+  - Flex the patient’s shoulder to 90° and horizontally adduct slightly across the midline with the elbow extended.
+  - 'Step 1 (thumb down): internally rotate the arm fully and apply downward resistance; note whether pain is felt
+    "on top" (AC joint) or "deep inside" (labral/SLAP).'
+  - 'Step 2 (palm up): supinate/externally rotate the arm and repeat downward resistance; test is positive if pain
+    from Step 1 is reduced or eliminated in Step 2.'
+  positive: 'active compression (O''Brien) for AC joint: Sn 41%, Sp 95%; all NPV > 94%, PPV < 30% (Chronopoulos
+    2004).'
+  interpretation: High specificity (Sp 95%) for AC joint pathology when pain is localized directly over the top
+    of the AC joint and relieved in the palm-up position. For SLAP lesions, pooled DOR of physical tests is 1.38
+    (1.13–1.69) — poor (Gismervik 2017).
+  metrics: 'Chronopoulos 2004 Am J Sports Med (Level L): active compression (O''Brien) Sn 41%, Sp 95%; all NPV >
+    94%, PPV < 30%. Gismervik 2017 BMC Musculoskelet Disord (Level M, SLAP): pooled DOR of physical tests 1.38 (1.13–1.69)
+    — poor.'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=qkDvVBi0gg8
+  video_title: Active Compression Test of O’Brien — SLAP Lesions & AC Pathology (Physiotutors)
+  sources:
+  - *id013
+  - *id005
+  review_status: approved
+- id: paxinos-ac-tenderness
+  type: test
+  title: Paxinos Sign & AC Joint Line Tenderness
+  page: 4
+  summary: Anteroposterior pinch-shear compression of the acromioclavicular joint (Paxinos sign) and direct AC joint-line
+    palpation tenderness.
+  steps:
+  - 'AC joint tenderness: palpate directly over the superior acromioclavicular joint line for focal concordant pain
+    (Sn 96%).'
+  - 'Paxinos sign: place your thumb under the posterolateral aspect of the acromion and your index/middle fingers
+    over the superior mid-distal clavicle, then squeeze to apply anterosuperior acromial and posteroinferior clavicular
+    shear (Sn 79%).'
+  - Combine high-sensitivity palpation/Paxinos screening with high-specificity O’Brien active compression (Sp 95%).
+  positive: AC tenderness Sn 96%; Paxinos Sn 79% — both low specificity (Walton 2004).
+  interpretation: Absence of AC joint-line tenderness (Sn 96%) helps rule out the AC joint as the pain source, whereas
+    a positive tenderness or Paxinos test has low specificity and must be confirmed with Cross-Body Adduction and
+    O’Brien testing.
+  metrics: 'Walton 2004 JBJS Am: AC tenderness Sn 96%; Paxinos Sn 79% — both low specificity.'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=fiEeyT9VsCc
+  video_title: Paxinos Sign — Acromioclavicular (AC) Joint Pathology (Physiotutors)
+  sources:
+  - text: Walton 2004 JBJS Am
+    url: https://doi.org/10.2106/00004623-200404000-00021
+    free_full_text: false
+  review_status: approved
+- id: biceps-load-ii-test
+  type: test
+  title: Biceps Load Test II (SLAP Lesion)
+  page: 4
+  summary: Resisted elbow flexion in the supine abducted and externally rotated position to tension the long head
+    of the biceps-superior labrum anchor.
+  steps:
+  - Position the patient supine with the shoulder abducted, elbow flexed to 90°, and forearm supinated.
+  - Externally rotate the shoulder to the point of apprehension or end-range.
+  - Ask the patient to actively flex the elbow against your resistance while maintaining the supinated, externally
+    rotated position.
+  positive: Sn 89.7%, Sp 96.9%, κ 0.815 (single-surgeon study — Kim 2001).
+  interpretation: Reported high accuracy in its original single-surgeon derivation study (Kim 2001), but interpret
+    with caution as pooled SLAP physical test accuracy across meta-analyses is poor (pooled DOR 1.38, 1.13–1.69,
+    Gismervik 2017).
+  metrics: 'Kim 2001 Arthroscopy (Level L): Sn 89.7%, Sp 96.9%, κ 0.815 (single-surgeon study). Gismervik 2017 BMC
+    Musculoskelet Disord (Level M): SLAP tests overall pooled DOR of physical tests 1.38 (1.13–1.69) — poor.'
+  evidence: L
+  sources:
+  - text: Kim 2001 Arthroscopy
+    url: https://doi.org/10.1053/jars.2001.20665
+    free_full_text: false
+  - *id005
+  review_status: approved
+- id: speeds-test
+  type: test
+  title: Speed’s Test (Biceps Tendon / SLAP)
+  page: 4
+  summary: Resisted isometric shoulder forward flexion with the forearm supinated and elbow extended to provoke
+    bicipital groove or superior labral pain.
+  steps:
+  - Position the patient’s shoulder in forward flexion with the elbow fully extended and forearm supinated (palm
+    up).
+  - Apply downward isometric resistance at the distal forearm while palpating the bicipital groove.
+  - Record reproduction of concordant anterior bicipital groove or deep superior glenohumeral pain.
+  positive: Speed Sn 32%, Sp 75%, LR+ 1.28, LR− 0.91 (Holtby 2004).
+  interpretation: Likelihood ratios close to 1.0 (LR+ 1.28, LR− 0.91) indicate very limited standalone diagnostic
+    utility.
+  metrics: 'Holtby 2004 Arthroscopy: Speed Sn 32%, Sp 75%, LR+ 1.28, LR− 0.91; Yergason Sn 43%, Sp 79%, LR+ 2.05,
+    LR− 0.72.'
+  evidence: L
+  video_url: https://www.youtube.com/shorts/jHb7C3bVQyE
+  video_title: Speed’s Test — Biceps Pathology & SLAP Lesions (Physiotutors)
+  sources:
+  - &id014
+    text: Holtby 2004 Arthroscopy
+    url: https://doi.org/10.1016/j.arthro.2004.01.008
+    free_full_text: false
+  review_status: approved
+- id: yergasons-test
+  type: test
+  title: Yergason’s Resisted Supination Test (Biceps / SLAP)
+  page: 4
+  summary: Resisted forearm supination and external rotation with the elbow flexed to 90° at the side.
+  steps:
+  - Position the patient’s arm at the side with the elbow flexed to 90° and forearm pronated.
+  - Resist active forearm supination (and external rotation) while palpating the long head of the biceps tendon
+    in the bicipital groove.
+  - Note reproduction of bicipital groove pain or palpable tendon subluxation.
+  positive: 'Yergason Sn 43%, Sp 79%, LR+ 2.05, LR− 0.72 (Holtby 2004); SLAP (MA): best Sp Yergason 95% (Hegedus
+    2012).'
+  interpretation: Shows high specificity for SLAP lesion in the Hegedus 2012 meta-analysis (Sp 95%), though sensitivity
+    is low (Sn 43% in Holtby 2004).
+  metrics: 'Holtby 2004 Arthroscopy (Level L): Yergason Sn 43%, Sp 79%, LR+ 2.05, LR− 0.72. Hegedus 2012 BJSM (Level
+    M): SLAP (MA) best Sp Yergason 95%.'
+  evidence: L
+  video_url: https://www.youtube.com/watch?v=_Cjahul5yuI
+  video_title: Yergason’s Test — Biceps Pathology & SLAP Lesions (Physiotutors)
+  sources:
+  - *id014
+  - *id004
+  review_status: approved
+- id: compression-rotation-test
+  type: test
+  title: Compression-Rotation & Passive Distraction Tests (SLAP)
+  page: 4
+  summary: Axial glenohumeral compression combined with internal/external rotation at 90° abduction to trap or provoke
+    a superior labrum anterior-to-posterior (SLAP) tear.
+  steps:
+  - Position the patient supine with the shoulder abducted to 90° and elbow flexed to 90°.
+  - Apply an axial compressive force along the humerus into the glenoid while rotating the humerus internally and
+    externally (analogous to the knee McMurray maneuver).
+  - Note reproduction of deep glenohumeral catching, clicking, or pain; optionally pair with the passive distraction
+    test.
+  positive: 'Hegedus 2012 (MA): best Sn relocation test 52%; best Sp Yergason 95%; best LR+ compression-rotation
+    2.81; passive distraction test highly specific. Gismervik 2017 (MA): Compression-rotation test for SLAP DOR
+    6.36 (1.41–28.59); Sp 0.89, Sn 0.43; SLAP tests overall pooled DOR of physical tests 1.38 (1.13–1.69) — poor.'
+  interpretation: Among SLAP tests, Compression-Rotation showed the highest positive likelihood ratio in Hegedus
+    2012 (LR+ 2.81) and DOR 6.36 (Sp 0.89, Sn 0.43) in Gismervik 2017, though overall SLAP physical test accuracy
+    remains limited (pooled DOR 1.38).
+  metrics: 'Hegedus 2012 BJSM: SLAP (MA): best Sn relocation test 52%; best Sp Yergason 95%; best LR+ compression-rotation
+    2.81; passive distraction test highly specific. Gismervik 2017 BMC Musculoskelet Disord: Compression-rotation
+    test for SLAP (MA): DOR 6.36 (1.41–28.59); Sp 0.89, Sn 0.43; SLAP tests overall pooled DOR of physical tests
+    1.38 (1.13–1.69) — poor.'
+  evidence: M
+  sources:
+  - *id004
+  - *id005
+  review_status: approved
+- id: spadi
+  type: info
+  title: Shoulder Pain and Disability Index (SPADI)
+  page: 4
+  summary: Condition-specific shoulder questionnaire consisting of 5 pain items and 8 disability items rated 0–10,
+    expressed as a percentage disability score (0–100%).
+  steps:
+  - Patient rates 5 pain items (0 = no pain to 10 = worst pain imaginable) and 8 disability items (0 = no difficulty
+    to 10 = so difficult it requires help).
+  - Compute total percentage score (or subscale percentages) from the item sum scaled to 100%.
+  - Compare longitudinal change against verified MDC90 and MCID thresholds.
+  positive: MDC90 18.1; MCID 8.0 and 13.1 points (two studies — Kelley 2013).
+  interpretation: Primary condition-specific outcome measure used in landmark trials including GRASP (Hopewell 2021)
+    and SELF (Littlewood 2016).
+  metrics: 'Level: Guideline. Kelley 2013 JOSPT CPG: SPADI MDC90 18.1; MCID 8.0 and 13.1 points (two studies).'
+  evidence: Guideline
+  calculator:
+    kind: formula
+    inputs:
+    - heading: 'Pain subscale (5 items: 0 = no pain … 10 = worst pain imaginable)'
+    - key: p1
+      label: 1. At its worst?
+      type: select
+      options:
+      - - 0
+        - 0 · no pain
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · worst pain imaginable
+    - key: p2
+      label: 2. When lying on the involved side?
+      type: select
+      options:
+      - - 0
+        - 0 · no pain
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · worst pain imaginable
+    - key: p3
+      label: 3. Reaching for something on a high shelf?
+      type: select
+      options:
+      - - 0
+        - 0 · no pain
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · worst pain imaginable
+    - key: p4
+      label: 4. Touching the back of your neck?
+      type: select
+      options:
+      - - 0
+        - 0 · no pain
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · worst pain imaginable
+    - key: p5
+      label: 5. Pushing with the involved arm?
+      type: select
+      options:
+      - - 0
+        - 0 · no pain
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · worst pain imaginable
+    - heading: 'Disability subscale (8 items: 0 = no difficulty … 10 = so difficult it requires help)'
+    - key: d1
+      label: 6. Washing your hair?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d2
+      label: 7. Washing your back?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d3
+      label: 8. Putting on an undershirt or jumper?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d4
+      label: 9. Putting on a shirt that buttons down the front?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d5
+      label: 10. Putting on your pants?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d6
+      label: 11. Placing an object on a high shelf?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d7
+      label: 12. Carrying a heavy object of 10 pounds (4.5 kg)?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    - key: d8
+      label: 13. Removing something from your back pocket?
+      type: select
+      options:
+      - - 0
+        - 0 · no difficulty
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · so difficult it requires help
+    expr: (p1+p2+p3+p4+p5+d1+d2+d3+d4+d5+d6+d7+d8)/130*100
+    value_label: SPADI total (%) · sum / 130 × 100
+    decimals: 1
+    outputs:
+    - when: v>=0
+      text: 'Total {v|1}% (sum {p1+p2+p3+p4+p5+d1+d2+d3+d4+d5+d6+d7+d8|0}/130) · Pain subscale {(p1+p2+p3+p4+p5)/50*100|1}%
+        · Disability subscale {(d1+d2+d3+d4+d5+d6+d7+d8)/80*100|1}% · Kelley 2013: MDC90 18.1; MCID 8.0 and 13.1
+        points (two studies)'
+      tone: good
+  sources:
+  - *id015
+  review_status: approved
+- id: quickdash
+  type: info
+  title: QuickDASH & DASH (Disabilities of the Arm, Shoulder and Hand)
+  page: 4
+  summary: 11-item upper-extremity disability scale (QuickDASH, scored 1–5 per item, requiring at least 10 items
+    answered) and full DASH psychometrics.
+  steps:
+  - Patient rates 11 items from 1 (no difficulty / none) to 5 (unable / extreme); at least 10 of the 11 items must
+    be answered.
+  - Compute score = ((sum / n) − 1) × 25 on a 0–100 scale (0 = no disability, 100 = most severe disability).
+  - Compare change against verified QuickDASH and DASH MDC90 and MCID thresholds.
+  positive: 'Galardini 2024 (MA): DASH / QuickDASH pooled MCID 11.00 (8.59–13.41) / 11.97 (9.60–14.33); MDC90 9.04
+    / 9.03. Franchignoni 2014: DASH / QuickDASH ICC 0.93 / 0.91; MDC90 10.81 / 12.85; MCID 10.83 / 15.91. Mintken
+    2009: QuickDASH / NPRS test-retest 0.90 / 0.74; MCID 8.0 points / 1.1. Kelley 2013 (frozen shoulder): DASH MDC
+    6.6–12.2 (weighted average 10.5); MCID 10.2.'
+  interpretation: Highly reliable upper-limb functional measure with meta-analytic pooled MCID of 11.97 (QuickDASH)
+    and 11.00 (DASH) (Galardini 2024).
+  metrics: 'Galardini 2024 Phys Ther (MA, Level H): DASH / QuickDASH pooled MCID 11.00 (8.59–13.41) / 11.97 (9.60–14.33);
+    MDC90 9.04 / 9.03. Franchignoni 2014 JOSPT (Level M): DASH / QuickDASH ICC 0.93 / 0.91; MDC90 10.81 / 12.85;
+    MCID 10.83 / 15.91. Mintken 2009 J Shoulder Elbow Surg (Level M): QuickDASH / NPRS test-retest 0.90 / 0.74;
+    MCID 8.0 points / 1.1. Kelley 2013 JOSPT CPG (Guideline, frozen shoulder): DASH MDC 6.6–12.2 (weighted average
+    10.5); MCID 10.2.'
+  evidence: H
+  calculator:
+    kind: formula
+    inputs:
+    - heading: QuickDASH 11 items (1 = no difficulty/none … 5 = unable/extreme; at least 10 items required)
+    - key: i1
+      label: 1. Open a tight or new jar
+      type: select
+      options: &id016
+      - - 1
+        - 1 · No difficulty
+      - - 2
+        - 2 · Mild difficulty
+      - - 3
+        - 3 · Moderate difficulty
+      - - 4
+        - 4 · Severe difficulty
+      - - 5
+        - 5 · Unable
+      - - ''
+        - — omit item (at least 10 of 11 required) —
+    - key: i2
+      label: 2. Do heavy household chores (e.g., wash walls, wash floors)
+      type: select
+      options: *id016
+    - key: i3
+      label: 3. Carry a shopping bag or briefcase
+      type: select
+      options: *id016
+    - key: i4
+      label: 4. Wash your back
+      type: select
+      options: *id016
+    - key: i5
+      label: 5. Use a knife to cut food
+      type: select
+      options: *id016
+    - key: i6
+      label: 6. Recreational activities in which you take some force or impact through your arm, shoulder or hand
+      type: select
+      options: *id016
+    - key: i7
+      label: 7. During the past week, to what extent has your arm, shoulder or hand problem interfered with your
+        normal social activities?
+      type: select
+      options:
+      - - 1
+        - 1 · Not at all
+      - - 2
+        - 2 · Slightly
+      - - 3
+        - 3 · Moderately
+      - - 4
+        - 4 · Quite a bit
+      - - 5
+        - 5 · Extremely
+      - - ''
+        - — omit item (at least 10 of 11 required) —
+    - key: i8
+      label: 8. During the past week, were you limited in your work or other regular daily activities as a result
+        of your arm, shoulder or hand problem?
+      type: select
+      options:
+      - - 1
+        - 1 · Not limited at all
+      - - 2
+        - 2 · Slightly limited
+      - - 3
+        - 3 · Moderately limited
+      - - 4
+        - 4 · Very limited
+      - - 5
+        - 5 · Unable
+      - - ''
+        - — omit item (at least 10 of 11 required) —
+    - key: i9
+      label: 9. Arm, shoulder or hand pain
+      type: select
+      options: &id017
+      - - 1
+        - 1 · None
+      - - 2
+        - 2 · Mild
+      - - 3
+        - 3 · Moderate
+      - - 4
+        - 4 · Severe
+      - - 5
+        - 5 · Extreme
+      - - ''
+        - — omit item (at least 10 of 11 required) —
+    - key: i10
+      label: 10. Tingling (pins and needles) in your arm, shoulder or hand
+      type: select
+      options: *id017
+    - key: i11
+      label: 11. During the past week, how much difficulty have you had sleeping because of the pain in your arm,
+        shoulder or hand?
+      type: select
+      options:
+      - - 1
+        - 1 · No difficulty
+      - - 2
+        - 2 · Mild difficulty
+      - - 3
+        - 3 · Moderate difficulty
+      - - 4
+        - 4 · Severe difficulty
+      - - 5
+        - 5 · So much difficulty that I cannot sleep
+      - - ''
+        - — omit item (at least 10 of 11 required) —
+    expr: '([i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11].filter(Number.isFinite).length>=10 ? (([i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11].filter(Number.isFinite).reduce((a,b)=>a+b,0)/[i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11].filter(Number.isFinite).length)-1)*25
+      : NaN)'
+    value_label: QuickDASH score (0–100) · ((sum / n) − 1) × 25
+    decimals: 1
+    outputs:
+    - when: isFinite(v)
+      text: QuickDASH {v|1}% ({[i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11].filter(Number.isFinite).length|0}/11 items answered)
+        · Pooled MCID 11.97 (9.60–14.33), MDC90 9.03 (Galardini 2024); MCID 8.0 (Mintken 2009); MCID 15.91, MDC90
+        12.85 (Franchignoni 2014)
+      tone: good
+    - when: '!isFinite(v)'
+      text: At least 10 of 11 items must be answered to compute a valid QuickDASH score
+      tone: warn
+  sources:
+  - &id021
+    text: Galardini 2024 Phys Ther
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11997799/
+    free_full_text: true
+  - &id022
+    text: Franchignoni 2014 JOSPT
+    url: https://doi.org/10.2519/jospt.2014.4893
+    free_full_text: false
+  - &id019
+    text: Mintken 2009 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/j.jse.2008.12.015
+    free_full_text: false
+  - *id015
+  review_status: approved
+- id: ases
+  type: info
+  title: American Shoulder and Elbow Surgeons Standardized Shoulder Assessment Form (ASES)
+  page: 4
+  summary: 100-point shoulder outcome score combining pain (0–10 numeric/VAS weighted 50%) and 10 daily functional
+    activities (0–3 scale weighted 50%, higher = better).
+  steps:
+  - Record patient pain today on a 0–10 scale; compute pain component = (10 − pain) × 5 (maximum 50 points).
+  - Rate 10 daily activities from 0 (unable to do) to 3 (not difficult); compute function component = function sum
+    × 5 / 3 (maximum 50 points).
+  - Sum the two components for the total ASES score (0–100, where 100 = best function / no pain).
+  positive: ICC 0.84; MDC 9.7; MCID 6.4 points (Michener 2002).
+  interpretation: An increase of ≥ 6.4 points exceeds the MCID and ≥ 9.7 points exceeds the MDC (Michener 2002).
+  metrics: 'Michener 2002 J Shoulder Elbow Surg: ICC 0.84; MDC 9.7; MCID 6.4 points.'
+  evidence: M
+  calculator:
+    kind: formula
+    inputs:
+    - heading: 'Pain subscale (50 points: (10 − pain) × 5)'
+    - key: pain
+      label: How bad is your pain today? (0 = no pain at all … 10 = pain as bad as it can be)
+      type: select
+      options:
+      - - 0
+        - 0 · no pain at all
+      - - 1
+        - '1'
+      - - 2
+        - '2'
+      - - 3
+        - '3'
+      - - 4
+        - '4'
+      - - 5
+        - '5'
+      - - 6
+        - '6'
+      - - 7
+        - '7'
+      - - 8
+        - '8'
+      - - 9
+        - '9'
+      - - 10
+        - 10 · pain as bad as it can be
+    - heading: Function subscale (10 items, 0–3; function sum × 5/3 = 50 points)
+    - key: f1
+      label: 1. Put on a coat
+      type: select
+      options: &id018
+      - - 0
+        - 0 · Unable to do
+      - - 1
+        - 1 · Very difficult to do
+      - - 2
+        - 2 · Somewhat difficult
+      - - 3
+        - 3 · Not difficult
+    - key: f2
+      label: 2. Sleep on your painful or affected side
+      type: select
+      options: *id018
+    - key: f3
+      label: 3. Wash back / do up bra in back
+      type: select
+      options: *id018
+    - key: f4
+      label: 4. Manage toileting
+      type: select
+      options: *id018
+    - key: f5
+      label: 5. Comb hair
+      type: select
+      options: *id018
+    - key: f6
+      label: 6. Reach a high shelf
+      type: select
+      options: *id018
+    - key: f7
+      label: 7. Lift 10 lbs (4.5 kg) above the level of the shoulder
+      type: select
+      options: *id018
+    - key: f8
+      label: 8. Throw a ball overhand
+      type: select
+      options: *id018
+    - key: f9
+      label: 9. Do usual work — list
+      type: select
+      options: *id018
+    - key: f10
+      label: 10. Do usual sport / leisure activity
+      type: select
+      options: *id018
+    expr: (10-pain)*5 + (f1+f2+f3+f4+f5+f6+f7+f8+f9+f10)*5/3
+    value_label: ASES total score (0–100, higher = better)
+    decimals: 1
+    outputs:
+    - when: v>=0
+      text: 'Total {v|1}/100 · Pain component {(10-pain)*5|1}/50 · Function component {(f1+f2+f3+f4+f5+f6+f7+f8+f9+f10)*5/3|1}/50
+        (sum {f1+f2+f3+f4+f5+f6+f7+f8+f9+f10|0}/30) · Michener 2002: ICC 0.84; MDC 9.7; MCID 6.4 points'
+      tone: good
+  sources:
+  - &id023
+    text: Michener 2002 J Shoulder Elbow Surg
+    url: https://doi.org/10.1067/mse.2002.127096
+    free_full_text: false
+  review_status: approved
+- id: constant-score
+  type: info
+  title: Constant-Murley Score & Simple Shoulder Test (SST) MID / PASS
+  page: 4
+  summary: Combined subjective/objective shoulder score (Constant-Murley, 0–100, higher = better) and Simple Shoulder
+    Test (SST) surgical thresholds.
+  steps:
+  - Evaluate pain, activities of daily living, active painless ROM (flexion, abduction, ER, IR), and abduction strength
+    on the 100-point Constant-Murley scale.
+  - Compare change after rotator cuff surgery against Kukkonen 2013 (MCID 10.4 points) and Kanto 2021 (MID 10 points,
+    PASS 80).
+  - 'If using the Simple Shoulder Test (SST) or activity VAS after subacromial surgery, apply Kanto 2021 thresholds
+    (MID: pain on activity 20 mm, SST 1.5; PASS: SST 11).'
+  positive: 'Constant score (cuff surgery): MCID 10.4 points (Kukkonen 2013). MID after subacromial surgery: pain
+    on activity 20 mm, Constant 10 points, SST 1.5; PASS: Constant 80, SST 11 (Kanto 2021).'
+  interpretation: A post-operative Constant score ≥ 80 (or SST ≥ 11) represents the Patient Acceptable Symptom State
+    (PASS) after subacromial surgery (Kanto 2021).
+  metrics: 'Kukkonen 2013 J Shoulder Elbow Surg: Constant score (cuff surgery) MCID 10.4 points. Kanto 2021 BMC
+    Med Res Methodol: MID: pain on activity 20 mm, Constant 10 points, SST 1.5; PASS: Constant 80, SST 11.'
+  evidence: M
+  sources:
+  - &id024
+    text: Kukkonen 2013 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/j.jse.2013.05.002
+    free_full_text: false
+  - &id025
+    text: Kanto 2021 BMC Med Res Methodol
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7937213/
+    free_full_text: true
+  review_status: approved
+- id: oxford-shoulder-score
+  type: info
+  title: Oxford Shoulder Score (OSS)
+  page: 4
+  summary: 12-item patient-reported shoulder pain and function questionnaire scored 0–4 per item (total 0–48, higher
+    = better function).
+  steps:
+  - Patient rates 12 pain and daily activity items over the past 4 weeks from 0 (worst / impossible) to 4 (no pain
+    / no trouble).
+  - Sum all 12 items for a total score of 0–48 (higher score = better shoulder status).
+  - Compare longitudinal improvement against Fang 2024 thresholds (MCIC 6.50 mean-change; 8.42 predictive; "at least
+    eight points" meaningful).
+  positive: MCIC 6.50 (4.41–8.61) mean-change; 8.42 predictive; "at least eight points" meaningful (Fang 2024).
+  interpretation: Primary outcome scale in CSAW (Beard 2018), UK FROST (Rangan 2020), and the Moosmayer 2023 barbotage
+    RCT.
+  metrics: 'Fang 2024 Arthritis Care Res (after shoulder replacement): MCIC 6.50 (4.41–8.61) mean-change; 8.42 predictive;
+    "at least eight points" meaningful.'
+  evidence: M
+  calculator:
+    kind: scale
+    items: 12
+    min: 0
+    max: 4
+    order: desc
+    note: '12 items scored 0–4 (4 = no trouble / none … 0 = impossible / unbearable; total 0–48, higher = better).
+      Fang 2024: MCIC 6.50 (4.41–8.61) mean-change; 8.42 predictive; "at least eight points" meaningful.'
+    item_labels:
+    - Worst pain from your shoulder (4 = None … 0 = Unbearable)
+    - Trouble dressing yourself because of your shoulder (4 = No trouble … 0 = Impossible)
+    - Trouble getting in and out of a car or using public transport (4 = No trouble … 0 = Impossible)
+    - Able to use a knife and fork at the same time (4 = Yes, easily … 0 = No, impossible)
+    - Could you do the household shopping on your own? (4 = Yes, easily … 0 = No, impossible)
+    - Could you carry a tray of food across a room? (4 = Yes, easily … 0 = No, impossible)
+    - Could you brush or comb your hair with the affected arm? (4 = Yes, easily … 0 = No, impossible)
+    - How would you describe the pain you usually had from your shoulder? (4 = None … 0 = Severe)
+    - Could you hang your clothes up in a wardrobe using the affected arm? (4 = Yes, easily … 0 = No, impossible)
+    - Have you been able to wash and dry yourself under both arms? (4 = Yes, easily … 0 = No, impossible)
+    - How much has pain from your shoulder interfered with your usual work? (4 = Not at all … 0 = Totally)
+    - Have you been troubled by pain from your shoulder in bed at night? (4 = No nights … 0 = Every night)
+    option_labels:
+      4: 4 · No trouble / None (best)
+      3: 3 · Very little / Mild
+      2: 2 · Moderate
+      1: 1 · Extreme difficulty / Severe
+      0: 0 · Impossible / Unbearable (worst)
+    aggregate: sum
+    decimals: 0
+    value_label: Oxford Shoulder Score (0–48, higher = better) · MCIC 6.50 (4.41–8.61); 8.42 predictive; "at least
+      eight points" meaningful
+  sources:
+  - &id026
+    text: Fang 2024 Arthritis Care Res
+    url: https://doi.org/10.1002/acr.25304
+    free_full_text: false
+  review_status: approved
+- id: wosi
+  type: info
+  title: Western Ontario Shoulder Instability Index (WOSI)
+  page: 4
+  summary: Instability-specific quality-of-life questionnaire comprising 21 items across 4 domains (physical symptoms,
+    sport/recreation/work, lifestyle, and emotions).
+  steps:
+  - Administer the 21-item WOSI in patients with traumatic or atraumatic (MDI / Stanmore II–III) shoulder instability.
+  - Score across the 4 domains (physical symptoms, sports/recreation/work, lifestyle, emotions).
+  - Track change against baseline (used as primary outcome in the Warby 2018 Watson vs Rockwood MDI trial on Page
+    8).
+  positive: instability-specific QoL tool, 21 items, 4 domains — no MCID in source (Kirkley 1998).
+  interpretation: Condition-specific outcome tool more responsive than generic shoulder scales in instability cohorts.
+  metrics: 'Kirkley 1998 Am J Sports Med: instability-specific QoL tool, 21 items, 4 domains — no MCID in source.'
+  evidence: M
+  sources:
+  - text: Kirkley 1998 Am J Sports Med
+    url: https://doi.org/10.1177/03635465980260060501
+    free_full_text: false
+  review_status: approved
+- id: nprs
+  type: info
+  title: Numeric Pain Rating Scale (NPRS — Shoulder Pain)
+  page: 4
+  summary: 11-point numeric pain rating scale (0 = no pain to 10 = worst pain imaginable) averaged across current,
+    best, and worst pain in the past 24 hours.
+  steps:
+  - Ask the patient to rate current pain, best pain, and worst pain over the past 24 hours on the 0–10 numeric scale.
+  - Average the 3 ratings and track across sessions.
+  - Compare change against Mintken 2009 shoulder pain psychometrics (test-retest 0.74; MCID 1.1).
+  positive: 'QuickDASH / NPRS (shoulder pain): test-retest 0.90 / 0.74; MCID 8.0 points / 1.1 (Mintken 2009).'
+  interpretation: A reduction of ≥ 1.1 points on the 0–10 NPRS represents a clinically meaningful change in shoulder
+    pain (Mintken 2009).
+  metrics: 'Mintken 2009 J Shoulder Elbow Surg: QuickDASH / NPRS (shoulder pain) test-retest 0.90 / 0.74; MCID 8.0
+    points / 1.1.'
+  evidence: M
+  calculator:
+    kind: scale
+    items: 3
+    min: 0
+    max: 10
+    note: 'Rate 0 (no pain) to 10 (worst pain imaginable). Mintken 2009 (shoulder pain): test-retest 0.74; MCID
+      1.1.'
+    item_labels:
+    - Current shoulder pain intensity (0–10)
+    - Best shoulder pain in the past 24 hours (0–10)
+    - Worst shoulder pain in the past 24 hours (0–10)
+    option_labels:
+      0: 0 · no pain
+      10: 10 · worst pain imaginable
+    aggregate: mean
+    decimals: 1
+    value_label: NPRS mean (0–10) · test-retest 0.74; MCID 1.1 (Mintken 2009)
+  sources:
+  - *id019
+  review_status: approved
+- id: psfs
+  type: info
+  title: Patient-Specific Functional Scale (PSFS)
+  page: 4
+  summary: Individualised functional scale where the patient nominates important shoulder activities and rates each
+    from 0 (unable to perform) to 10 (able to perform at prior level).
+  steps:
+  - Ask the patient to nominate important functional activities limited by their shoulder problem.
+  - Have the patient rate each activity from 0 (unable to perform activity) to 10 (able to perform at the same level
+    as before the problem).
+  - Compute the average score (0–10) and track against the patient’s own baseline across visits.
+  positive: list the tool only (PSFS has no shoulder-specific number in this file).
+  interpretation: Tailors goal-setting and functional tracking directly to the patient’s personal overhead, work,
+    or sport tasks.
+  metrics: list the tool only (PSFS has no shoulder-specific number in this file).
+  evidence: E
+  calculator:
+    kind: scale
+    items: 3
+    min: 0
+    max: 10
+    note: Rate each patient-nominated shoulder activity from 0 (unable to perform) to 10 (able to perform at prior
+      level). No shoulder-specific MCID number in source file.
+    item_labels:
+    - First patient-nominated shoulder activity
+    - Second patient-nominated shoulder activity
+    - Third patient-nominated shoulder activity
+    option_labels:
+      0: 0 · unable to perform activity
+      10: 10 · able to perform at prior level
+    aggregate: mean
+    decimals: 1
+    value_label: PSFS average (0–10)
+  sources: []
+  review_status: approved
+- id: cuff-repair-early-vs-delayed-prom
+  type: info
+  title: 'Rotator Cuff Repair: Early vs Delayed Passive ROM (Kluczynski) & Pre-Op Injection Risk (Forsythe)'
+  page: 5
+  summary: Meta-analysis of early vs delayed passive range of motion after rotator cuff repair stratified by tear
+    size (28 studies, 1,729 repairs) and infection risk from corticosteroid injection within 1 month before repair.
+  steps:
+  - POST-OP RESTRICTIONS ARE SURGEON-DIRECTED — verify tear size, repair construct, and surgeon-directed passive/active
+    motion instructions.
+  - 'Level 1 studies overall: retear 13.7% early vs 10.5% delayed, RR 1.30 (0.74–2.30), P = .36.'
+  - 'Stratify by tear size (Kluczynski 2015): tears ≤ 3 cm (TO + single-row): 18.7% vs 28.2%, RR 0.66 (0.47–0.95);
+    tears > 5 cm (double-row): 56.4% vs 20%, RR 2.82 (1.31–6.07) → tear size matters.'
+  - 'Pre-operative injection timing (Forsythe 2019): injection within 1 month before arthroscopic cuff repair is
+    associated with post-op infection 1.3% vs 0.8% (OR 1.7, 1.0–2.9).'
+  positive: 'level 1 studies: retear 13.7% early vs 10.5% delayed, RR 1.30 (0.74–2.30), P = .36; tears ≤ 3 cm (TO
+    + single-row): 18.7% vs 28.2%, RR 0.66 (0.47–0.95); tears > 5 cm (double-row): 56.4% vs 20%, RR 2.82 (1.31–6.07)
+    → tear size matters (Kluczynski 2015). Injection within 1 month before arthroscopic cuff repair: infection 1.3%
+    vs 0.8% (OR 1.7, 1.0–2.9) (Forsythe 2019).'
+  interpretation: POST-OP RESTRICTIONS ARE SURGEON-DIRECTED. Large tears (> 5 cm) have higher retear risk with early
+    PROM (RR 2.82), whereas tears ≤ 3 cm had lower retear with early PROM (RR 0.66).
+  metrics: 'Kluczynski 2015 Am J Sports Med (MA, 28 studies, 1,729 repairs): level 1 studies: retear 13.7% early
+    vs 10.5% delayed, RR 1.30 (0.74–2.30), P = .36; tears ≤ 3 cm (TO + single-row): 18.7% vs 28.2%, RR 0.66 (0.47–0.95);
+    tears > 5 cm (double-row): 56.4% vs 20%, RR 2.82 (1.31–6.07) → tear size matters. Forsythe 2019 JBJS Am: injection
+    within 1 month before arthroscopic cuff repair: infection 1.3% vs 0.8% (OR 1.7, 1.0–2.9).'
+  evidence: M
+  sources:
+  - text: Kluczynski 2015 Am J Sports Med
+    url: https://doi.org/10.1177/0363546514552802
+    free_full_text: false
+  - text: Forsythe 2019 JBJS Am
+    url: https://doi.org/10.2106/JBJS.18.00631
+    free_full_text: false
+  review_status: approved
+- id: bankart-vs-latarjet-rts
+  type: info
+  title: 'Anterior Stabilisation: Bankart vs Latarjet (Hossein Zadeh) & Return to Sport (Memon)'
+  page: 5
+  summary: Meta-analysis comparing arthroscopic Bankart repair with Latarjet coracoid transfer (21 studies, 13,176
+    shoulders) and systematic review of return to sport after arthroscopic Bankart repair (34 studies).
+  steps:
+  - POST-OP RESTRICTIONS ARE SURGEON-DIRECTED.
+  - 'Bankart vs Latarjet (Hossein Zadeh 2024): arthroscopic Bankart has RR 3.08 (2.03–4.68) for recurrence/revision
+    vs Latarjet, and Rowe score is +4.55 for Latarjet, but total complications are ≈ 47% lower with Bankart (RR
+    0.53, 0.31–0.90).'
+  - 'Return to sport after arthroscopic Bankart (Memon 2018, 34 studies): any sport 81% (74–87%); pre-injury level
+    66% (57–74%); ≈ one-third do not return to pre-injury level.'
+  positive: 'arthroscopic Bankart RR 3.08 (2.03–4.68) for recurrence/revision vs Latarjet; Rowe +4.55 for Latarjet;
+    total complications ≈ 47% lower with Bankart (RR 0.53, 0.31–0.90) (Hossein Zadeh 2024). Return to sport: any
+    sport 81% (74–87%); pre-injury level 66% (57–74%); ≈ one-third do not return to pre-injury level (Memon 2018).'
+  interpretation: POST-OP RESTRICTIONS ARE SURGEON-DIRECTED. Set realistic pre-operative expectations that roughly
+    one-third of athletes do not return to their pre-injury competition level after Bankart repair.
+  metrics: 'Hossein Zadeh 2024 J Shoulder Elbow Surg (MA, 21 studies, 13,176 shoulders): arthroscopic Bankart RR
+    3.08 (2.03–4.68) for recurrence/revision vs Latarjet; Rowe +4.55 for Latarjet; total complications ≈ 47% lower
+    with Bankart (RR 0.53, 0.31–0.90). Memon 2018 J Shoulder Elbow Surg (SR, 34 studies): any sport 81% (74–87%);
+    pre-injury level 66% (57–74%); ≈ one-third do not return to pre-injury level.'
+  evidence: M
+  sources:
+  - text: Hossein Zadeh 2024 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/j.jse.2024.06.024
+    free_full_text: false
+  - text: Memon 2018 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/j.jse.2018.02.044
+    free_full_text: false
+  review_status: approved
+- id: subacromial-decompression-trials
+  type: info
+  title: Subacromial Decompression Landmark Trials (CSAW, FIMPACT & Ketola 12-Year)
+  page: 5
+  summary: Placebo-controlled and long-term randomised trials demonstrating that arthroscopic subacromial decompression
+    (ASD) provides no clinically important benefit over diagnostic arthroscopy or structured exercise.
+  steps:
+  - 'CSAW trial (Beard 2018 Lancet, n = 313): OSS at 6 months: decompression 32.7 vs arthroscopy only 34.2, MD −1.3
+    (−3.9 to 1.3); both surgical groups only a small benefit over no treatment (2.8 points vs decompression).'
+  - 'FIMPACT trial at 24 months (Paavola 2018 BMJ): ASD vs diagnostic arthroscopy: pain VAS −4.6 (−11.3 to 2.1)
+    at rest, −9.0 (−18.1 to 0.2) on activity — no clinically relevant difference.'
+  - '12-year follow-up (Ketola 2017 Bone Joint J): no significant difference in pain between surgery and exercise.'
+  - 'JOSPT/Quebec CPG 2022 (Lafrance 2022): "Subacromial decompression is not recommended to treat rotator cuff
+    tendinopathy".'
+  positive: 'CSAW (n = 313): OSS at 6 months decompression 32.7 vs arthroscopy only 34.2, MD −1.3 (−3.9 to 1.3);
+    2.8 points vs no treatment. FIMPACT (24 months): pain VAS −4.6 (−11.3 to 2.1) at rest, −9.0 (−18.1 to 0.2) on
+    activity — no clinically relevant difference. Ketola 2017 (12 years): no significant difference in pain between
+    surgery and exercise.'
+  interpretation: "Arthroscopic subacromial decompression gives no clinically important benefit over placebo arthroscopy (CSAW, FIMPACT) or exercise (Ketola, 12 years) for subacromial pain."
+  metrics: 'Beard 2018 Lancet (CSAW, n = 313, Level H): OSS at 6 months: decompression 32.7 vs arthroscopy only
+    34.2, MD −1.3 (−3.9 to 1.3); both surgical groups only a small benefit over no treatment (2.8 points vs decompression).
+    Paavola 2018 BMJ (FIMPACT, 24 months, Level H): ASD vs diagnostic arthroscopy: pain VAS −4.6 (−11.3 to 2.1)
+    at rest, −9.0 (−18.1 to 0.2) on activity — no clinically relevant difference. Ketola 2017 Bone Joint J (12 years,
+    Level M): no significant difference in pain between surgery and exercise.'
+  evidence: H
+  sources:
+  - *id020
+  - text: Paavola 2018 BMJ
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6052435/
+    free_full_text: true
+  - text: Ketola 2017 Bone Joint J
+    url: https://doi.org/10.1302/0301-620X.99B6.BJJ-2016-0569.R1
+    free_full_text: false
+  review_status: approved
+- id: uk-frost-frozen-shoulder
+  type: info
+  title: Frozen Shoulder Surgical vs Physiotherapy Trials (UK FROST & Kivimäki)
+  page: 5
+  summary: Multicentre RCT comparing arthroscopic capsular release, manipulation under anaesthesia (MUA), and early
+    structured physiotherapy with steroid injection (UK FROST, n = 503), plus MUA + home exercise vs home exercise
+    alone (Kivimäki 2007).
+  steps:
+  - 'UK FROST (Rangan 2020 Lancet, n = 503): 12-month OSS: capsular release 40.3, MUA 38.3, early structured physio
+    37.2; all differences below target → none clinically superior.'
+  - 'Harms & health economics in UK FROST: capsular release had 8 serious adverse events, MUA had 2; MUA was the
+    most cost-effective intervention.'
+  - 'MUA + home exercise vs home exercise alone (Kivimäki 2007): no difference in pain or working ability at any
+    time; small ROM gains with MUA.'
+  positive: 'UK FROST (n = 503): 12-month OSS: capsular release 40.3, MUA 38.3, early structured physio 37.2; all
+    differences below target → none clinically superior; capsular release 8 serious adverse events, MUA 2; MUA most
+    cost-effective. Kivimäki 2007: no difference in pain or working ability at any time; small ROM gains with MUA.'
+  interpretation: "None of the three UK FROST pathways was clinically superior at 12 months; capsular release carried the most serious adverse events and MUA was the most cost-effective, so early structured physiotherapy remains a reasonable first option."
+  metrics: 'Rangan 2020 Lancet (UK FROST, n = 503, Level H): 12-month OSS: capsular release 40.3, MUA 38.3, early
+    structured physio 37.2; all differences below target → none clinically superior; capsular release 8 serious
+    adverse events, MUA 2; MUA most cost-effective. Kivimäki 2007 J Shoulder Elbow Surg (Level M): no difference
+    in pain or working ability at any time; small ROM gains with MUA.'
+  evidence: H
+  sources:
+  - text: Rangan 2020 Lancet
+    url: https://doi.org/10.1016/S0140-6736(20)31965-6
+    free_full_text: false
+  - text: Kivimäki 2007 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/j.jse.2007.02.125
+    free_full_text: false
+  review_status: approved
+- id: eswt-barbotage-calcific
+  type: info
+  title: Extracorporeal Shock Wave Therapy (ESWT) & Barbotage for Calcific Tendinopathy
+  page: 6
+  summary: Systematic reviews (Bannuru 2014, Surace 2020 Cochrane), BESS/BOA guideline recommendation, and sham-controlled
+    BMJ trial of ultrasound-guided lavage/barbotage (Moosmayer 2023).
+  steps:
+  - 'Bannuru 2014 Ann Intern Med (MA, 28 RCTs): high-energy ESWT better than placebo for pain, function and calcium
+    resorption in calcific tendinitis; no difference vs placebo in non-calcific tendinitis.'
+  - 'Surace 2020 Cochrane (32 trials): vs placebo at 3 months: pain 0.78 better (0.17–1.4) on 0–10, below the 1.5
+    clinically important change; function 7.9 better (1.6–14), below 10 → benefit may not be clinically important.'
+  - 'BESS/BOA pathway (Kulkarni 2015): "Extracorporeal shock wave therapy may improve pain in calcific tendonitis."'
+  - 'Barbotage / ultrasound-guided lavage RCT (Moosmayer 2023 BMJ, n = 218): OSS at 4 months: lavage + steroid vs
+    sham 0.2 (−2.3 to 2.8); none superior to sham at 24 months.'
+  positive: 'ESWT: high-energy ESWT better than placebo in calcific tendinitis, no difference in non-calcific (Bannuru
+    2014); vs placebo at 3 months pain 0.78 better (0.17–1.4) on 0–10 (below 1.5), function 7.9 better (1.6–14,
+    below 10) (Surace 2020). Barbotage (n = 218): OSS at 4 months lavage + steroid vs sham 0.2 (−2.3 to 2.8); none
+    superior to sham at 24 months (Moosmayer 2023).'
+  interpretation: Do not use ESWT for non-calcific rotator cuff tendinopathy; in calcific tendinopathy, high-energy
+    ESWT may improve pain ("Extracorporeal shock wave therapy may improve pain in calcific tendonitis."), whereas
+    ultrasound-guided lavage + steroid was no better than sham at 4 or 24 months (Moosmayer 2023).
+  metrics: 'Moosmayer 2023 BMJ (RCT, n = 218, Level H): OSS at 4 months: lavage + steroid vs sham 0.2 (−2.3 to 2.8);
+    none superior to sham at 24 months. Bannuru 2014 Ann Intern Med (MA, 28 RCTs, Level M): high-energy ESWT better
+    than placebo for pain, function and calcium resorption in calcific tendinitis; no difference vs placebo in non-calcific
+    tendinitis. Surace 2020 Cochrane (32 trials, Level M): vs placebo at 3 months: pain 0.78 better (0.17–1.4) on
+    0–10, below the 1.5 clinically important change; function 7.9 better (1.6–14), below 10 → benefit may not be
+    clinically important. Kulkarni 2015 BESS/BOA (Guideline): "Extracorporeal shock wave therapy may improve pain
+    in calcific tendonitis."'
+  evidence: H
+  sources:
+  - text: Moosmayer 2023 BMJ
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10565688/
+    free_full_text: true
+  - text: Bannuru 2014 Ann Intern Med
+    url: https://doi.org/10.7326/M13-1982
+    free_full_text: false
+  - text: Surace 2020 Cochrane
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7059880/
+    free_full_text: true
+  - *id002
+  review_status: approved
+- id: electrotherapy-cochrane-page
+  type: info
+  title: Electrotherapy Modalities for Rotator Cuff Disease (Cochrane — Page 2016)
+  page: 6
+  summary: Cochrane systematic review of 47 trials evaluating therapeutic ultrasound, TENS, laser (LLLT), and pulsed
+    electromagnetic fields for rotator cuff disease.
+  steps:
+  - 'Review Cochrane synthesis across 47 trials: no meta-analysis was possible due to clinical heterogeneity.'
+  - 'In calcific tendinitis (1 trial, 61 participants, low quality): pulsed ultrasound reduced pain by MD −8.60
+    (−13.48 to −3.72) on a 52-point scale.'
+  - Prioritise active task-oriented exercise and education per Lafrance 2022 JOSPT CPG.
+  positive: 'no meta-analysis possible; pulsed ultrasound for calcific tendinitis (1 trial, 61 participants, low
+    quality): pain MD −8.60 (−13.48 to −3.72) on a 52-point scale.'
+  interpretation: Passive electrotherapy modalities lack high-quality evidence of clinically important benefit over
+    placebo in non-calcific rotator cuff disease.
+  metrics: 'Page 2016 Cochrane (47 trials): no meta-analysis possible; pulsed ultrasound for calcific tendinitis
+    (1 trial, 61 participants, low quality): pain MD −8.60 (−13.48 to −3.72) on a 52-point scale.'
+  evidence: L
+  sources:
+  - text: Page 2016 Cochrane
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8570637/
+    free_full_text: true
+  review_status: approved
+- id: corticosteroid-injections-hydrodilatation
+  type: info
+  title: Corticosteroid Injections, Hydrodilatation & CPG Recommendations (Cuff & Frozen Shoulder)
+  page: 6
+  summary: Evidence synthesis for subacromial corticosteroid injection in rotator cuff tendinosis (Mohamadi 2017,
+    Lafrance 2022) and intra-articular injection / arthrographic distension in frozen shoulder (Challoumas 2020,
+    Carette 2003, Kelley 2013, Buchbinder 2008).
+  steps:
+  - 'Rotator cuff tendinosis (Mohamadi 2017 MA): no better than placebo at 3 months; small transient relief at 4–8
+    weeks (SMD 0.52); at least 5 treated for 1 to benefit.'
+  - 'JOSPT/Quebec CPG 2022 (Lafrance 2022): "Clinicians should prescribe an active and task-oriented rehabilitation
+    program (exercises and education)"; "Subacromial decompression is not recommended to treat rotator cuff tendinopathy";
+    injections "may be useful to reduce pain in the short term".'
+  - 'Frozen shoulder NMA (Challoumas 2020, 65 studies): only intra-articular corticosteroid clinically superior
+    short term: pain vs placebo MD −1.0 (−1.5 to −0.5), vs physio −1.1 (−1.7 to −0.5) VAS.'
+  - 'Frozen shoulder injection ± physio RCT (Carette 2003): injection + home exercise effective; adding supervised
+    physio gives faster ROM gain; physio alone of limited efficacy; all groups similar at 12 months.'
+  - 'JOSPT CPG (Kelley 2013): "Intra-articular corticosteroid injections combined with shoulder mobility and stretching
+    exercises are more effective in providing short-term (4-6 weeks) pain relief and improved function compared
+    to shoulder mobility and stretching exercises alone." (strong evidence).'
+  - 'Hydrodilatation / arthrographic distension (Buchbinder 2008 Cochrane): 1 low-risk-of-bias trial: distension
+    with saline + steroid better than placebo at 3 weeks (NNTB 2 pain, 3 function).'
+  positive: 'Cuff tendinosis: SMD 0.52 at 4–8 weeks, no better than placebo at 3 months, NNT ≥ 5 (Mohamadi 2017).
+    Frozen shoulder NMA: intra-articular steroid vs placebo MD −1.0 (−1.5 to −0.5), vs physio −1.1 (−1.7 to −0.5)
+    VAS (Challoumas 2020). Hydrodilatation at 3 weeks: NNTB 2 pain, 3 function (Buchbinder 2008).'
+  interpretation: 'Remember surgical infection caution (Page 5): injection within 1 month before arthroscopic cuff
+    repair increases infection risk (1.3% vs 0.8%, OR 1.7, 1.0–2.9, Forsythe 2019).'
+  metrics: 'Mohamadi 2017 Clin Orthop Relat Res (MA, Level M): no better than placebo at 3 months; small transient
+    relief at 4–8 weeks (SMD 0.52); at least 5 treated for 1 to benefit. Challoumas 2020 JAMA Netw Open (NMA, 65
+    studies, Level M): only intra-articular corticosteroid clinically superior short term: pain vs placebo MD −1.0
+    (−1.5 to −0.5), vs physio −1.1 (−1.7 to −0.5) VAS. Carette 2003 Arthritis Rheum (RCT, Level M): injection +
+    home exercise effective; adding supervised physio gives faster ROM gain; physio alone of limited efficacy; all
+    groups similar at 12 months. Kelley 2013 JOSPT CPG (Guideline): "Intra-articular corticosteroid injections combined
+    with shoulder mobility and stretching exercises are more effective in providing short-term (4-6 weeks) pain
+    relief and improved function compared to shoulder mobility and stretching exercises alone." (strong evidence).
+    Buchbinder 2008 Cochrane (Level L): 1 low-risk-of-bias trial: distension with saline + steroid better than placebo
+    at 3 weeks (NNTB 2 pain, 3 function). Lafrance 2022 JOSPT (Guideline): "Clinicians should prescribe an active
+    and task-oriented rehabilitation program (exercises and education)"; "Subacromial decompression is not recommended
+    to treat rotator cuff tendinopathy"; injections "may be useful to reduce pain in the short term".'
+  evidence: M
+  sources:
+  - text: Mohamadi 2017 Clin Orthop Relat Res
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5174041/
+    free_full_text: true
+  - text: Challoumas 2020 JAMA Netw Open
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7745103/
+    free_full_text: true
+  - text: Carette 2003 Arthritis Rheum
+    url: https://doi.org/10.1002/art.10954
+    free_full_text: false
+  - *id015
+  - text: Buchbinder 2008 Cochrane
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12360628/
+    free_full_text: true
+  - text: Lafrance 2022 JOSPT
+    url: https://doi.org/10.2519/jospt.2022.11306
+    free_full_text: false
+  review_status: approved
+- id: mt-rotator-cuff-cochrane
+  type: info
+  title: Manual Therapy & Exercise for Rotator Cuff Disease (Page 2016 Cochrane & Desjardins-Charbonneau)
+  page: 7
+  summary: Cochrane systematic review (60 trials, Page 2016) and JOSPT meta-analysis (Desjardins-Charbonneau 2015)
+    evaluating manual therapy alone or added to exercise in rotator cuff disease.
+  steps:
+  - 'Page 2016 Cochrane (60 trials): manual therapy + exercise vs placebo at 22 weeks: pain MD 6.8 (−0.70 to 14.30),
+    function MD 7.1 (0.30 to 13.90) on 100-point scales — may not be clinically important.'
+  - 'Desjardins-Charbonneau 2015 JOSPT (MA): pain MD 1.1 (0.6–1.6) on 10-cm VAS vs placebo/added; MT added to exercise:
+    1.0 (0.7–1.4); effect on function unclear.'
+  - Use manual therapy only as a short-term symptom-modulating adjunct integrated with active task-oriented exercise.
+  positive: 'Page 2016 Cochrane (60 trials): vs placebo at 22 weeks: pain MD 6.8 (−0.70 to 14.30), function MD 7.1
+    (0.30 to 13.90) on 100-point scales — may not be clinically important. Desjardins-Charbonneau 2015 (MA): pain
+    MD 1.1 (0.6–1.6) on 10-cm VAS vs placebo/added; MT added to exercise: 1.0 (0.7–1.4); effect on function unclear.'
+  interpretation: Manual therapy provides small short-term pain reduction in rotator cuff tendinopathy, while effects
+    on function and at 22 weeks may not be clinically important.
+  metrics: 'Page 2016 Cochrane (60 trials, Level M): vs placebo at 22 weeks: pain MD 6.8 (−0.70 to 14.30), function
+    MD 7.1 (0.30 to 13.90) on 100-point scales — may not be clinically important. Desjardins-Charbonneau 2015 JOSPT
+    (MA, Level L): pain MD 1.1 (0.6–1.6) on 10-cm VAS vs placebo/added; MT added to exercise: 1.0 (0.7–1.4); effect
+    on function unclear.'
+  evidence: M
+  sources:
+  - text: Page 2016 Cochrane
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8570640/
+    free_full_text: true
+  - text: Desjardins-Charbonneau 2015 JOSPT
+    url: https://doi.org/10.2519/jospt.2015.5455
+    free_full_text: false
+  review_status: approved
+- id: mt-frozen-shoulder
+  type: info
+  title: 'Frozen Shoulder: Manual Therapy, High-Grade Mobilisation & Supervised Neglect (Page 2014, Vermeulen &
+    Diercks)'
+  page: 7
+  summary: Cochrane review comparing manual therapy + exercise vs glucocorticoid injection (Page 2014), RCT of high-grade
+    vs low-grade mobilisation (Vermeulen 2006), and cohort study of supervised neglect vs intensive stretching beyond
+    pain threshold (Diercks 2004).
+  steps:
+  - 'Page 2014 Cochrane: at 7 weeks, manual therapy + exercise probably results in less improvement than glucocorticoid
+    injection (pain MD 26 points, 15–37, on 100).'
+  - 'Vermeulen 2006 Phys Ther (stiff/frozen phase): high-grade mobilisation techniques (HGMT) were more effective
+    than low-grade mobilisation for mobility and disability, though overall differences were small.'
+  - 'Diercks 2004 J Shoulder Elbow Surg: Constant ≥ 80 at 24 months was achieved in 89% with supervised neglect
+    (pendulum/pain-free active movement + reassurance) vs 63% with intensive physical therapy stretching beyond
+    the pain threshold (64% within 12 months).'
+  - Match mobilisation intensity to tissue irritability (Kelley 2013 JOSPT CPG).
+  positive: 'Page 2014 Cochrane: at 7 weeks probably less improvement than glucocorticoid injection (pain MD 26
+    points, 15–37, on 100). Vermeulen 2006: HGMT more effective for mobility and disability; overall differences
+    small. Diercks 2004: Constant ≥ 80 at 24 months: 89% supervised neglect vs 63% intensive; 64% within 12 months.'
+  interpretation: Avoid aggressive stretching beyond the pain threshold in irritable frozen shoulders (Diercks 2004);
+    reserve high-grade end-range mobilisation for low-irritability stiff shoulders (Vermeulen 2006).
+  metrics: 'Page 2014 Cochrane (Level M): at 7 weeks probably less improvement than glucocorticoid injection (pain
+    MD 26 points, 15–37, on 100). Vermeulen 2006 Phys Ther (Level M): HGMT more effective for mobility and disability;
+    overall differences small. Diercks 2004 J Shoulder Elbow Surg (Level L): Constant ≥ 80 at 24 months: 89% supervised
+    neglect vs 63% intensive; 64% within 12 months.'
+  evidence: M
+  sources:
+  - text: Page 2014 Cochrane
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10882424/
+    free_full_text: true
+  - text: Vermeulen 2006 Phys Ther
+    url: https://doi.org/10.1093/ptj/86.3.355
+    free_full_text: false
+  - text: Diercks 2004 J Shoulder Elbow Surg
+    url: https://doi.org/10.1016/j.jse.2004.03.002
+    free_full_text: false
+  review_status: approved
+- id: thoracic-smt-shoulder
+  type: info
+  title: Thoracic Spine Manipulation & Unvalidated Cervicothoracic CPR (Kardouni, Peek & Mintken)
+  page: 7
+  summary: Sham-controlled trial of thoracic SMT in subacromial impingement (Kardouni 2015), systematic review of
+    thoracic manual therapy (Peek 2015), and unvalidated single-arm cervicothoracic manipulation CPR (Mintken 2010).
+  steps:
+  - 'Kardouni 2015 JOSPT (sham-controlled RCT): both thoracic SMT and sham thoracic SMT groups improved (NPRS 1.2,
+    Penn 9.1) with no difference between real and sham.'
+  - 'Peek 2015 J Man Manip Ther (SR, 3 RCTs): thoracic manual therapy reduced pain and disability vs usual care
+    up to 52 weeks.'
+  - 'Mintken 2010 Phys Ther (cervicothoracic manipulation CPR): ≥ 3 of 5 variables shifted short-term success from
+    61% → 89% (LR+ 5.3), but note this comes from an unvalidated single-arm study.'
+  positive: 'Kardouni 2015: both groups improved (NPRS 1.2, Penn 9.1) with no difference between real and sham.
+    Peek 2015 (3 RCTs): reduced pain and disability vs usual care up to 52 weeks. Mintken 2010 CPR: ≥ 3 of 5 variables:
+    success 61% → 89% (LR+ 5.3); unvalidated single-arm study.'
+  interpretation: Immediate clinical improvements after thoracic thrust manipulation in subacromial pain are largely
+    mediated by non-specific / contextual effects (real = sham in Kardouni 2015), and the Mintken 2010 CPR remains
+    unvalidated.
+  metrics: 'Kardouni 2015 JOSPT (Level M): both groups improved (NPRS 1.2, Penn 9.1) with no difference between
+    real and sham. Peek 2015 J Man Manip Ther (SR, Level L): 3 RCTs: reduced pain and disability vs usual care up
+    to 52 weeks. Mintken 2010 Phys Ther (Level L): ≥ 3 of 5 variables: success 61% → 89% (LR+ 5.3); unvalidated
+    single-arm study.'
+  evidence: M
+  sources:
+  - text: Kardouni 2015 JOSPT
+    url: https://doi.org/10.2519/jospt.2015.5647
+    free_full_text: false
+  - text: Peek 2015 J Man Manip Ther
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4727730/
+    free_full_text: true
+  - text: Mintken 2010 Phys Ther
+    url: https://doi.org/10.2522/ptj.20090095
+    free_full_text: false
+  review_status: approved
+- id: dry-needling-taping-stretching
+  type: info
+  title: Dry Needling, Kinesio Taping & Posterior Shoulder Stretching (Navarro-Santana, Celik & McClure 2007)
+  page: 7
+  summary: Meta-analyses on trigger-point dry needling (Navarro-Santana 2021) and kinesio taping (Celik 2020), plus
+    RCT comparing the cross-body stretch and sleeper stretch for posterior shoulder tightness (McClure 2007).
+  steps:
+  - 'Dry needling (Navarro-Santana 2021 MA): pain MD −0.49 (−0.84 to −0.13) — small, short term; disability MD −9.99
+    (−15.97 to −4.01) — low quality.'
+  - 'Kinesio taping (Celik 2020 MA, 14 studies): no better than sham for pain (MD −0.77, −1.77 to 0.22) or function
+    → no firm evidence of benefit.'
+  - 'Posterior shoulder tightness (McClure 2007 JOSPT): cross-body stretch gained +20.0° IR (SD 12.9) vs control
+    +5.9° (P = .009); sleeper stretch gained +12.4° (not significant).'
+  positive: 'Dry needling: pain MD −0.49 (−0.84 to −0.13) — small, short term; disability MD −9.99 (−15.97 to −4.01)
+    — low quality. Kinesio taping (14 studies): no better than sham for pain (MD −0.77, −1.77 to 0.22) or function.
+    Cross-body stretch: +20.0° IR (SD 12.9) vs control +5.9° (P = .009); sleeper stretch +12.4° (not significant).'
+  interpretation: Prefer the cross-body stretch over the sleeper stretch for asymptomatic/tight posterior shoulder
+    internal rotation loss (+20.0° IR vs +5.9° control, P = .009); do not rely on kinesio taping (no better than
+    sham).
+  metrics: 'Navarro-Santana 2021 Phys Ther (MA, Level M): pain MD −0.49 (−0.84 to −0.13) — small, short term; disability
+    MD −9.99 (−15.97 to −4.01) — low quality. Celik 2020 Clin Rehabil (MA, 14 studies, Level M): no better than
+    sham for pain (MD −0.77, −1.77 to 0.22) or function → no firm evidence of benefit. McClure 2007 JOSPT (Level
+    L): cross-body stretch +20.0° IR (SD 12.9) vs control +5.9° (P = .009); sleeper stretch +12.4° (not significant).'
+  evidence: M
+  sources:
+  - text: Navarro-Santana 2021 Phys Ther
+    url: https://doi.org/10.1093/ptj/pzaa216
+    free_full_text: false
+  - text: Celik 2020 Clin Rehabil
+    url: https://doi.org/10.1177/0269215520917747
+    free_full_text: false
+  - text: McClure 2007 JOSPT
+    url: https://doi.org/10.2519/jospt.2007.2337
+    free_full_text: false
+  review_status: approved
+- id: rotator-cuff-exercise-trials
+  type: info
+  title: 'Rotator Cuff Exercise Trials: GRASP, Holmgren, SELF, Load, Pain Allowance & Scapular Focus'
+  page: 8
+  summary: Synthesis of landmark exercise trials and meta-analyses for rotator cuff disorders (Hopewell 2021 GRASP,
+    Holmgren 2012, Littlewood 2016 SELF, Ingwersen 2017, Smith 2017, Saito 2018).
+  steps:
+  - 'GRASP trial (Hopewell 2021 Lancet, n = 708): progressive exercise vs one best-practice advice session: SPADI
+    over 12 months −0.66 (99% CI −4.52 to 3.20) — no difference; injection vs no injection −1.11 (−4.47 to 2.26).'
+  - 'Specific cuff & scapular exercise vs control exercise in surgical-waitlist patients (Holmgren 2012 BMJ): Constant-Murley
+    +24 vs +9 points (MD 15, 8.5–20.6); surgery chosen by 20% vs 63% (OR 7.7, 3.1–19.4).'
+  - 'Single self-managed loaded exercise vs usual physiotherapy (SELF — Littlewood 2016): SPADI at 3 months 32.4
+    vs 30.7 usual physio; adjusted MD 3.2 (−6.0 to 12.4) — comparable.'
+  - 'Heavy vs low load (Ingwersen 2017, n = 100): DASH adjusted difference −1.37 (−6.72 to 3.99) — no superiority
+    of high-load.'
+  - 'Painful vs pain-free exercise (Smith 2017 BJSM MA): short-term pain SMD −0.27 (−0.54 to −0.05) in favour of
+    painful exercise; no difference later.'
+  - 'Scapular-focused exercise (Saito 2018 MA, 6 RCTs): short-term pain MD −0.88 (−1.19 to −0.58), function −11.31
+    (−17.20 to −5.41); no difference at follow-up.'
+  positive: 'GRASP (n = 708): SPADI over 12 months −0.66 (99% CI −4.52 to 3.20) — no difference; injection −1.11
+    (−4.47 to 2.26). Holmgren 2012: Constant-Murley +24 vs +9 (MD 15, 8.5–20.6); surgery chosen by 20% vs 63% (OR
+    7.7, 3.1–19.4). SELF: SPADI at 3 months 32.4 vs 30.7; adjusted MD 3.2 (−6.0 to 12.4). Ingwersen (n = 100): DASH
+    −1.37 (−6.72 to 3.99). Smith 2017: short-term pain SMD −0.27 (−0.54 to −0.05) favouring painful exercise. Saito
+    2018 (6 RCTs): short-term pain MD −0.88 (−1.19 to −0.58), function −11.31 (−17.20 to −5.41).'
+  interpretation: A single well-delivered best-practice advice/self-managed exercise programme (GRASP, SELF) achieves
+    outcomes comparable to multi-session physiotherapy; specific exercise markedly reduces need for subacromial
+    surgery (20% vs 63%, Holmgren 2012), and exercising into tolerable pain is safe and effective short term (Smith
+    2017).
+  metrics: 'Hopewell 2021 Lancet (GRASP, n = 708, Level H): progressive exercise vs one best-practice advice session:
+    SPADI over 12 months −0.66 (99% CI −4.52 to 3.20) — no difference; injection vs no injection −1.11 (−4.47 to
+    2.26). Holmgren 2012 BMJ (Level H): Constant-Murley +24 vs +9 points (MD 15, 8.5–20.6); surgery chosen by 20%
+    vs 63% (OR 7.7, 3.1–19.4). Littlewood 2016 Clin Rehabil (SELF, Level M): SPADI at 3 months 32.4 vs 30.7 usual
+    physio; adjusted MD 3.2 (−6.0 to 12.4) — comparable. Ingwersen 2017 Orthop J Sports Med (RCT, n = 100, Level
+    M): DASH adjusted difference −1.37 (−6.72 to 3.99) — no superiority of high-load. Smith 2017 BJSM (MA, Level
+    M): short-term pain SMD −0.27 (−0.54 to −0.05) in favour of painful exercise; no difference later. Saito 2018
+    Physiother Theory Pract (MA, 6 RCTs, Level M): short-term pain MD −0.88 (−1.19 to −0.58), function −11.31 (−17.20
+    to −5.41); no difference at follow-up.'
+  evidence: H
+  sources:
+  - text: Hopewell 2021 Lancet
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8343092/
+    free_full_text: true
+  - text: Holmgren 2012 BMJ
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3282676/
+    free_full_text: true
+  - text: Littlewood 2016 Clin Rehabil
+    url: https://doi.org/10.1177/0269215515593784
+    free_full_text: false
+  - text: Ingwersen 2017 Orthop J Sports Med
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5576542/
+    free_full_text: true
+  - text: Smith 2017 BJSM
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5739826/
+    free_full_text: true
+  - text: Saito 2018 Physiother Theory Pract
+    url: https://doi.org/10.1080/09593985.2018.1423656
+    free_full_text: false
+  review_status: approved
+- id: full-thickness-tear-exercise-vs-surgery
+  type: info
+  title: 'Full-Thickness Rotator Cuff Tears: Physiotherapy vs Surgery at 1 Year (Kukkonen) & 10 Years (Moosmayer)'
+  page: 8
+  summary: Randomised trials comparing physiotherapy with surgical repair for non-traumatic tears > 55 years at
+    1 year (Kukkonen 2014, 180 shoulders) and small-to-medium tears at 10 years (Moosmayer 2019).
+  steps:
+  - 'Non-traumatic cuff tears > 55 years at 1 year (Kukkonen 2014, RCT, 180 shoulders): Constant at 1 year: physio
+    74.1, acromioplasty 77.2, repair 77.9 (p = 0.34) — no significant difference at 1 year.'
+  - 'Small/medium tears at 10 years (Moosmayer 2019 JBJS Am): primary tendon repair was better than physiotherapy
+    by 9.6 Constant points (p = 0.002) and ASES 15.7; patients who crossed over to late surgery scored 10.0 points
+    worse than primary repair.'
+  - 'Reminder (Page 1 BESS/BOA): "An acute cuff tear as a result of a traumatic event needs urgent referral and
+    ideally should be seen in the next available outpatient clinic."'
+  positive: 'Kukkonen 2014 (180 shoulders, > 55 y): Constant at 1 year physio 74.1, acromioplasty 77.2, repair 77.9
+    (p = 0.34). Moosmayer 2019 (10 years, small/medium tears): repair better than physio by 9.6 Constant points
+    (p = 0.002), ASES 15.7; crossovers to late surgery 10.0 points worse than primary repair.'
+  interpretation: In older adults (> 55 y) with atraumatic supraspinatus tears, structured physiotherapy is an effective
+    first-line option at 1 year, but over a 10-year horizon in small/medium tears, primary surgical repair yields
+    superior long-term function than physiotherapy or delayed crossover surgery.
+  metrics: 'Kukkonen 2014 Bone Joint J (RCT, 180 shoulders, Level H): Constant at 1 year: physio 74.1, acromioplasty
+    77.2, repair 77.9 (p = 0.34). Moosmayer 2019 JBJS Am (10 years, Level H): repair better than physio by 9.6 Constant
+    points (p = 0.002), ASES 15.7; crossovers to late surgery 10.0 points worse than primary repair.'
+  evidence: H
+  sources:
+  - text: Kukkonen 2014 Bone Joint J
+    url: https://doi.org/10.1302/0301-620X.96B1.32168
+    free_full_text: false
+  - text: Moosmayer 2019 JBJS Am
+    url: https://doi.org/10.2106/JBJS.18.01373
+    free_full_text: false
+  review_status: approved
+- id: mdi-watson-programme
+  type: info
+  title: 'Multidirectional Instability (MDI): Watson vs Rockwood Rehabilitation Programme (Warby)'
+  page: 8
+  summary: Randomised controlled trial comparing the Watson scapular motor-control and progressive arc-loading programme
+    against the Rockwood general strengthening programme in multidirectional shoulder instability.
+  steps:
+  - Re-establish optimal scapular upward rotation and posterior tilt control before loading into glenohumeral elevation
+    or external rotation.
+  - Progress rotator cuff and deltoid loading across increasing elevation arcs while maintaining dynamic scapular
+    and humeral head control (Watson programme).
+  - Track progress with the Western Ontario Shoulder Instability Index (WOSI).
+  positive: WOSI effect 11.1 (1.9–20.2) at 12 weeks; 12.6 (3.4–21.9) at 24 weeks — favours Watson (Warby 2018).
+  interpretation: The Watson scapular-specific motor-control programme outperforms the Rockwood programme on the
+    WOSI at both 12 and 24 weeks in patients with MDI.
+  metrics: 'Warby 2018 Am J Sports Med: WOSI effect 11.1 (1.9–20.2) at 12 weeks; 12.6 (3.4–21.9) at 24 weeks — favours
+    Watson.'
+  evidence: M
+  sources:
+  - text: Warby 2018 Am J Sports Med
+    url: https://doi.org/10.1177/0363546517734508
+    free_full_text: false
+  review_status: approved
+- id: throwers-gird-trm-wilk
+  type: info
+  title: 'Overhead Throwers: GIRD, Total Rotational Motion Deficit & External Rotation Gain (Wilk 2011 & 2015)'
+  page: 8
+  summary: Prospective cohort studies in professional baseball pitchers evaluating glenohumeral internal rotation
+    deficit (GIRD), total rotational motion (TRM) deficit, and external rotation (ER) gain.
+  steps:
+  - Measure passive ER and IR at 90° abduction bilaterally and compute Total Rotational Motion (TRM = ER + IR).
+  - 'Wilk 2011: GIRD had ≈ twice the injury rate but was not statistically significant (P = .17), whereas a total
+    rotational motion deficit > 5° was associated with a higher injury rate.'
+  - 'Wilk 2015: insufficient ER (< 5° more ER on the throwing side compared with the non-throwing side) carried
+    2.2× disabled-list risk (1.2–4.1) and 4.0× surgery risk (1.5–12.6); GIRD was not significant.'
+  positive: 'Wilk 2011: GIRD ≈ twice the injury rate but not significant (P = .17); total rotational motion deficit
+    > 5° → higher injury rate. Wilk 2015: insufficient ER (< 5° more ER on throwing side): 2.2× disabled-list risk
+    (1.2–4.1), 4.0× surgery (1.5–12.6); GIRD not significant.'
+  interpretation: Evaluate Total Rotational Motion deficit (> 5° deficit vs non-throwing side) and throwing-side
+    ER gain (< 5° more ER) rather than GIRD in isolation when screening overhead throwers.
+  metrics: 'Wilk 2011 Am J Sports Med: GIRD ≈ twice the injury rate but not significant (P = .17); total rotational
+    motion deficit > 5° → higher injury rate. Wilk 2015 Am J Sports Med: insufficient ER (< 5° more ER on throwing
+    side): 2.2× disabled-list risk (1.2–4.1), 4.0× surgery (1.5–12.6); GIRD not significant.'
+  evidence: L
+  sources:
+  - text: Wilk 2011 Am J Sports Med
+    url: https://doi.org/10.1177/0363546510384223
+    free_full_text: false
+  - text: Wilk 2015 Am J Sports Med
+    url: https://doi.org/10.1177/0363546515594380
+    free_full_text: false
+  review_status: approved
+- id: shoulder-tracking-flowsheet
+  type: info
+  title: Longitudinal Shoulder Outcome Tracking & Verified MCID / MDC / PASS Thresholds
+  page: 9
+  summary: Session-by-session tracking and discharge milestone criteria comparing baseline and follow-up shoulder
+    PROMs and objective tests against verified psychometric thresholds.
+  steps:
+  - Record session NPRS, passive/active ER and elevation ROM, scapular/cuff symptom modification, exercise loading,
+    and manual therapy adjuncts across 12 visits.
+  - Re-administer baseline shoulder PROMs (SPADI, QuickDASH, DASH, ASES, Constant, Oxford Shoulder Score, WOSI,
+    NPRS, PSFS) and compare change against verified MCID and MDC values.
+  - Verify objective functional milestones (e.g. CKCUEST improvement of at least 3 touches, Tucci 2014; Constant
+    PASS 80 or SST PASS 11 after subacromial surgery, Kanto 2021).
+  positive: 'SPADI: MDC90 18.1; MCID 8.0 and 13.1 points (two studies, Kelley 2013). QuickDASH / DASH (MA, Galardini
+    2024): pooled MCID 11.00 (8.59–13.41) / 11.97 (9.60–14.33); MDC90 9.04 / 9.03. QuickDASH / NPRS (Mintken 2009):
+    MCID 8.0 points / 1.1. ASES (Michener 2002): ICC 0.84; MDC 9.7; MCID 6.4 points. Constant (Kukkonen 2013): MCID
+    10.4 points; Kanto 2021 MID: pain on activity 20 mm, Constant 10 points, SST 1.5; PASS: Constant 80, SST 11.
+    Oxford Shoulder Score (Fang 2024): MCIC 6.50 (4.41–8.61) mean-change; 8.42 predictive; "at least eight points"
+    meaningful.'
+  interpretation: Combine validated PROM change scores with objective ROM (using the same instrument across visits,
+    Kolber 2012), strength, and sport-specific readiness for discharge decision-making.
+  metrics: 'Kelley 2013 JOSPT CPG (SPADI): MDC90 18.1; MCID 8.0 and 13.1 points (two studies); DASH (frozen shoulder):
+    MDC 6.6–12.2 (weighted average 10.5), MCID 10.2. Galardini 2024 Phys Ther (DASH / QuickDASH MA): pooled MCID
+    11.00 (8.59–13.41) / 11.97 (9.60–14.33); MDC90 9.04 / 9.03. Franchignoni 2014 JOSPT (DASH / QuickDASH): ICC
+    0.93 / 0.91; MDC90 10.81 / 12.85; MCID 10.83 / 15.91. Mintken 2009 J Shoulder Elbow Surg (QuickDASH / NPRS):
+    test-retest 0.90 / 0.74; MCID 8.0 points / 1.1. Michener 2002 J Shoulder Elbow Surg (ASES): ICC 0.84; MDC 9.7;
+    MCID 6.4 points. Kukkonen 2013 J Shoulder Elbow Surg (Constant): MCID 10.4 points. Kanto 2021 BMC Med Res Methodol:
+    MID: pain on activity 20 mm, Constant 10 points, SST 1.5; PASS: Constant 80, SST 11. Fang 2024 Arthritis Care
+    Res (Oxford Shoulder Score): MCIC 6.50 (4.41–8.61) mean-change; 8.42 predictive; "at least eight points" meaningful.'
+  evidence: M
+  sources:
+  - *id021
+  - *id022
+  - *id019
+  - *id015
+  - *id023
+  - *id024
+  - *id025
+  - *id026
+  review_status: approved
