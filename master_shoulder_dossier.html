@@ -227,8 +227,10 @@ body{
 .sh .calc-badge, .sh .guide-badge{ text-transform:none; letter-spacing:.01em; }
 .t tr.sub .calc-badge, .t tr.sub .guide-badge{ text-transform:none; letter-spacing:.01em; }
 
+#p9-flowsheet .p { font-size: 4.9pt; letter-spacing: -0.15px; }
+
 /* ---- compiled utility classes (Tailwind v3, generated at build) ---- */
-.col-span-2{grid-column:span 2/span 2}.col-span-5{grid-column:span 5/span 5}.col-span-7{grid-column:span 7/span 7}.mb-\[2px\]{margin-bottom:2px}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-\[1px\]{margin-top:1px}.mt-\[2px\]{margin-top:2px}.flex{display:flex}.table{display:table}.grid{display:grid}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-3{gap:.75rem}.gap-\[1\.5mm\]{gap:1.5mm}.gap-\[1\.5px\]{gap:1.5px}.gap-\[1px\]{gap:1px}.gap-\[2px\]{gap:2px}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.pl-2{padding-left:.5rem}.pt-\[1px\]{padding-top:1px}
+.col-span-2{grid-column:span 2/span 2}.col-span-5{grid-column:span 5/span 5}.col-span-7{grid-column:span 7/span 7}.mb-\[1px\]{margin-bottom:1px}.mb-\[2px\]{margin-bottom:2px}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-\[1px\]{margin-top:1px}.mt-\[2px\]{margin-top:2px}.flex{display:flex}.table{display:table}.grid{display:grid}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-\[0\.5px\]{gap:.5px}.gap-\[1\.5mm\]{gap:1.5mm}.gap-\[1\.5px\]{gap:1.5px}.gap-\[1px\]{gap:1px}.gap-\[2px\]{gap:2px}.gap-x-1{-moz-column-gap:.25rem;column-gap:.25rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.pl-2{padding-left:.5rem}.pt-\[1px\]{padding-top:1px}
 </style>
 </head>
 <body>
@@ -260,10 +262,15 @@ body{
 <div class="fr" style="flex:1.4"><span class="lb">Date</span><span class="fl"></span></div>
 </div>
 <div class="row">
-<div class="fr" style="flex:2"><span class="lb">Occupation / Overhead Sport</span><span class="fl"></span></div>
+<div class="fr" style="flex:1.8"><span class="lb">Occupation / Overhead Sport</span><span class="fl"></span></div>
 <div class="fr"><span class="lb">Dominant Arm</span><span class="cio"><span class="cb"></span>R</span><span class="cio"><span class="cb"></span>L</span></div>
-<div class="fr"><span class="lb">Affected Side</span><span class="cio"><span class="cb"></span>R</span><span class="cio"><span class="cb"></span>L</span><span class="cio"><span class="cb"></span>Bilat</span></div>
-<div class="fr"><span class="lb">Onset</span><span class="cio"><span class="cb"></span>Traumatic</span><span class="cio"><span class="cb"></span>Insidious</span></div>
+<div class="fr"><span class="lb">Side</span><span class="cio"><span class="cb"></span>R</span><span class="cio"><span class="cb"></span>L</span><span class="cio"><span class="cb"></span>Bilat</span></div>
+<div class="fr" style="flex:2"><span class="lb">Vitals:</span>
+<span class="lr">BP <span class="fl s"></span></span>
+<span class="lr">HR <span class="fl s"></span></span>
+<span class="lr">SpO₂ <span class="fl s"></span></span>
+<span class="lr">Temp <span class="fl s"></span></span>
+</div>
 </div>
 <div class="row">
 <div class="fr"><span class="lb"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#nprs" rel="noopener" target="_blank">NPRS</a> Now (circle)</span>
@@ -272,6 +279,10 @@ body{
 </span>
 </div>
 <div class="fr" style="flex:1"><span class="lb">Night Pain</span><span class="cio"><span class="cb sm"></span>No</span><span class="cio"><span class="cb sm r"></span>Yes</span><span class="lb">Best</span><span class="fl"></span><span class="lb">Worst</span><span class="fl"></span></div>
+</div>
+<div class="box r flex flex-col gap-[0.5px]" style="font-size:6.5px;line-height:1.12;padding:.25mm 1mm;">
+<div><span class="cio"><span class="cb sm r"></span><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#epa-medication-safety" rel="noopener" target="_blank"><b class="crim">EPA contraindications</b></a></span> (<a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3031347/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Houghton 2010</a>): implanted electronic devices, pregnancy, malignancy, recently irradiated tissue, active DVT, bleeding, impaired sensation — Level: Guideline</div>
+<div><span class="cio"><span class="cb sm r"></span><b>Anticoagulants / coagulopathy before needling</b></span> (<a class="guide-badge" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6598537/" rel="noopener" target="_blank"><svg aria-hidden="true" class="badge-ico" viewbox="0 0 10 10"><path d="M2 .7h4.2L8.3 2.8V9.3H2z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.05"></path><path d="M6.1.8v2.1h2.1" fill="none" stroke="currentColor" stroke-width="1"></path><path d="M3.3 5h3.5M3.3 6.6h3.5M3.3 8.1h2.2" stroke="currentColor" stroke-width=".85"></path></svg>Kearns 2019</a> <span class="eb eb-e">E</span>): caution — possible increased incidence or severity of haematoma and bruising • <b>Fluoroquinolones</b> (Wise 2012 <span class="eb eb-m">M</span>): tendonitis OR 4.3, rupture OR 2.0; stronger with oral glucocorticoids (OR 9.1) and age &gt; 60 (OR 8.3)</div>
 </div>
 </div>
 </section>
@@ -488,7 +499,7 @@ body{
 </div>
 </div>
 </section>
-<div class="dots fill" id="p1-notes"><span class="dots-l">Subjective History · Mechanism · Patient Goals (PSFS)</span></div>
+<div class="dots" id="p1-notes" style="min-height:5mm;height:5mm;"><span class="dots-l">Subjective History · Mechanism · Patient Goals (PSFS)</span></div>
 
   </main>
   <footer class="pg-ftr">
@@ -683,7 +694,7 @@ body{
 </tr>
 </tbody>
 </table>
-<div class="xs mt-[1px]"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank"><b>ROM — goniometer vs digital inclinometer</b></a> (Kolber 2012 IJSPT) <span class="eb eb-m">M</span>: <b class="nav">intrarater ICC ≥ 0.94 (goniometer), ≥ 0.95 (inclinometer); limits of agreement 2°–20° → do not swap instruments between visits</b>.</div>
+<div class="xs mt-[1px]"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#shoulder-rom-kolber" rel="noopener" target="_blank"><b>ROM reliability &amp; reference</b></a>: Kolber 2012 <span class="eb eb-m">M</span>: intrarater ICC ≥ 0.94 (goniometer), ≥ 0.95 (inclinometer); limits of agreement 2°–20° → do not swap instruments • Soucie 2011 <span class="eb eb-m">M</span>: significant age- and sex-related variation — compare with the other side and the patient's own baseline.</div>
 </div>
 </section>
 <!-- 2 : Scapular Assessment & Symptom Modification (SSMP, SAT, SRT) -->
@@ -699,37 +710,29 @@ body{
 </div>
 </div>
 </section>
-<!-- 3 : Strength / HHD Write-In Table (No Norms), CKCUEST & YBT-UQ -->
+<!-- 3 : Isometric Shoulder Strength (HHD) & Torque Table -->
 <section class="card" id="p3-strength">
-<div class="card-h"><span>3 · Isometric Strength / HHD Write-In Table &amp; Upper-Quarter Performance</span><span class="tag">NO NORMS · CKCUEST · YBT-UQ</span></div>
+<div class="card-h"><span>3 · Isometric Shoulder Strength (HHD), Torque &amp; LSI Tracking <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#hhd-strength" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">TORQUE · LSI</span></div>
 <div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
 <table class="t dense">
 <thead>
 <tr>
-<th style="width:28%">Muscle Group / Test (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">HHD</a> <span class="eb eb-e">E</span>)</th>
-<th class="c" style="width:14%">Left</th>
-<th class="c" style="width:14%">Right</th>
-<th class="c" style="width:16%">Symmetry / Ratio</th>
-<th style="width:28%">Pain Reproduction &amp; Notes (No Norms)</th>
+<th style="width:26%">Movement (<a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-strength" rel="noopener" target="_blank">HHD</a>)</th>
+<th class="c" style="width:16%">Lever arm (cm)</th>
+<th class="c" style="width:22%">Force (N) inv / uninv</th>
+<th class="c" style="width:20%">Torque (N·m) = N × cm ÷ 100</th>
+<th class="c" style="width:16%">LSI % = inv ÷ uninv × 100</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">External Rotation (ER at 0° / 90°)</a> <span class="eb eb-e">E</span></td>
-<td></td><td></td><td></td><td></td>
-</tr>
-<tr>
-<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">Internal Rotation (IR at 0° / 90°)</a> <span class="eb eb-e">E</span></td>
-<td></td><td></td><td></td><td></td>
-</tr>
-<tr>
-<td class="k"><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#hhd-shoulder-strength" rel="noopener" target="_blank">Scaption / Abduction &amp; ER:IR Ratio</a> <span class="eb eb-e">E</span></td>
-<td></td><td></td><td></td><td></td>
-</tr>
+<tr><td class="k">External Rotation (ER)</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="k">Internal Rotation (IR)</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="k">Abduction</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="k">Flexion</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="k">Scaption</td><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
-<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ckcuest" rel="noopener" target="_blank"><b>Closed Kinetic Chain Upper Extremity Stability Test (CKCUEST)</b></a> (Tucci 2014 BMC Musculoskelet Disord) <span class="eb eb-m">M</span>: <b class="nav">MDC 2.05–3.91 touches; at least 3 touches = real improvement</b> • Baseline: <span class="fl s"></span> Follow-up: <span class="fl s"></span></div></div>
-<div class="ci"><span class="cb n"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ybt-uq" rel="noopener" target="_blank"><b>Upper Quarter Y-Balance Test (YBT-UQ)</b></a> <span class="eb eb-e">E</span>: write-in reach L: <span class="fl m"></span> R: <span class="fl m"></span></div></div>
+<div class="xxs mut mt-[1px]">Method: Cools 2014 <span class="eb eb-m">M</span>: all procedures showed acceptable reliability for clinical use; patient position and equipment might influence results • Byram 2010 <span class="eb eb-m">M</span>: prone ER strength associated with throwing injury requiring surgery (P = .003); ER/IR strength ratio associated with shoulder injury (P = .037) • Clarsen 2014 <span class="eb eb-m">M</span>: ER weakness a risk factor: OR 0.71 per 10 Nm • Same tester, device, position at every visit (E).</div>
 </div>
 </section>
 <!-- 4 : Upper-Limb Neurological Screen C5–T1 -->
@@ -787,7 +790,7 @@ body{
 </table>
 </div>
 </section>
-<div class="dots fill" id="p3-notes"><span class="dots-l">Objective Examination Notes · Scapular Modification · Strength Observations</span></div>
+<div class="dots" id="p3-notes" style="min-height:5mm;height:5mm;"><span class="dots-l">Objective Examination Notes · Scapular Modification · Strength Observations</span></div>
 
   </main>
   <footer class="pg-ftr">
@@ -994,16 +997,17 @@ body{
 <section class="card" id="p5-cuff-repair">
 <div class="card-h"><span>2 · Rotator Cuff Repair PROM Timing <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#cuff-repair-early-vs-delayed-prom" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">KLUCZYNSKI 2015</span></div>
 <div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
-<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#cuff-repair-early-vs-delayed-prom" rel="noopener" target="_blank"><b>Cuff repair: early vs delayed PROM (MA, 28 studies, 1,729 repairs)</b></a> (Kluczynski 2015 Am J Sports Med) <span class="eb eb-m">M</span>: <b class="nav">level 1 studies: retear 13.7% early vs 10.5% delayed, RR 1.30 (0.74–2.30), P = .36; tears ≤ 3 cm (TO + single-row): 18.7% vs 28.2%, RR 0.66 (0.47–0.95); tears &gt; 5 cm (double-row): 56.4% vs 20%, RR 2.82 (1.31–6.07) → tear size matters</b></div></div>
-<div class="ci"><span class="cb"></span><div><b>Restrictions:</b> <b>POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#post-op-progression-criteria" rel="noopener" target="_blank"><b>Early vs delayed motion (SR/MA):</b></a> Mazuquin 2021 <span class="eb eb-h">H</span>: re-tear OR 1.05 (0.64–1.75); flexion MD 7.36 at 6 weeks, 8.45 at 3 months, 3.57 at 6 months, 1.42 at 1 year; SANE MD 6.54 at 6 months • Houck 2017 <span class="eb eb-m">M</span>: early motion improves ROM but increases retear risk; tear size may guide protocol</div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#post-op-progression-criteria" rel="noopener" target="_blank"><b>RCT &amp; meta-analyses:</b></a> Cuff 2012 <span class="eb eb-m">M</span>: healing 91 % (delayed) vs 85 % (early); ASES and SST similar • Chen 2015 <span class="eb eb-m">M</span>: healing RR 0.89 (0.80–0.99) favouring delayed; recurrence RR 1.77 (0.97–3.23), P = 0.06 • Hu 2023 <span class="eb eb-m">M</span>: flexion MD 1.57, ER MD 1.59</div></div>
+<div class="ci"><span class="cb"></span><div><b>Restrictions:</b> <b class="crim">POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
 </div>
 </section>
 <section class="card" id="p5-instability-surg">
 <div class="card-h"><span>3 · Bankart vs Latarjet &amp; Return to Sport <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">HOSSEIN ZADEH · MEMON</span></div>
 <div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
 <div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><b>Bankart vs Latarjet (MA, 21 studies, 13,176 shoulders)</b></a> (Hossein Zadeh 2024 J Shoulder Elbow Surg) <span class="eb eb-m">M</span>: <b class="nav">arthroscopic Bankart RR 3.08 (2.03–4.68) for recurrence/revision vs Latarjet; Rowe +4.55 for Latarjet; total complications ≈ 47% lower with Bankart (RR 0.53, 0.31–0.90)</b></div></div>
-<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><b>Return to sport after arthroscopic Bankart (SR, 34 studies)</b></a> (Memon 2018 J Shoulder Elbow Surg) <span class="eb eb-m">M</span>: <b class="nav">any sport 81% (74–87%); pre-injury level 66% (57–74%); ≈ one-third do not return to pre-injury level</b></div></div>
-<div class="ci"><span class="cb"></span><div><b>Restrictions:</b> <b>POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bankart-vs-latarjet-rts" rel="noopener" target="_blank"><b>Return to sport (Bankart &amp; Latarjet):</b></a> Memon 2018 <span class="eb eb-m">M</span>: any sport 81% (74–87%); pre-injury level 66% (57–74%) • <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#post-op-progression-criteria" rel="noopener" target="_blank">Bohu 2021 Latarjet</a> <span class="eb eb-l">L</span>: 73 % resumed main sport by 8 months (mean 5.1 ± 1.5 months); 67 % at preoperative level; RTP more likely with higher preoperative Rowe (OR 1.02) and SIRSI (OR 1.02)</div></div>
+<div class="ci"><span class="cb"></span><div><b>Restrictions:</b> <b class="crim">POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
 </div>
 </section>
 </div>
@@ -1042,7 +1046,23 @@ body{
 </div>
 </div>
 </section>
-<div class="dots fill" id="p5-notes"><span class="dots-l">Operative Findings · Surgeon-Directed Restrictions · Post-Surgical Rehabilitation Notes</span></div>
+<!-- 5 : Criteria to Progress Checklist -->
+<section class="card" id="p5-progression-criteria">
+<div class="card-h"><span>7 · Post-Operative Progression Criteria Checklist <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#post-op-progression-criteria" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">CRITERIA TO PROGRESS</span></div>
+<div class="card-b grid grid-cols-2 gap-x-2" style="padding:.7mm 1.2mm;">
+<div>
+<div class="ci"><span class="cb sm g"></span><div><b>Surgeon clearance:</b> formal sign-off for active progression • <b class="crim">POST-OP RESTRICTIONS ARE SURGEON-DIRECTED</b> <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb sm g"></span><div><b>Surgical portals / wound:</b> healed, clean, dry, no signs of infection (p1) <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb sm g"></span><div><b>Pain tolerance:</b> symptoms within acceptable pain-monitoring zones on page 8 (NPRS ≤ 5/10) <span class="eb eb-e">E</span></div></div>
+</div>
+<div>
+<div class="ci"><span class="cb sm g"></span><div><b>Range of motion:</b> passive and active ROM vs other side without capsular overload <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb sm g"></span><div><b>Strength symmetry:</b> objective isometric shoulder strength LSI recorded on page 3 <span class="eb eb-e">E</span></div></div>
+<div class="ci"><span class="cb sm g"></span><div><b>Movement quality &amp; confidence:</b> scapulohumeral rhythm; patient confidence to load (SIRSI) <span class="eb eb-e">E</span></div></div>
+</div>
+</div>
+</section>
+<div class="dots" id="p5-notes" style="min-height:5mm;height:5mm;"><span class="dots-l">Operative Findings · Surgeon-Directed Restrictions · Post-Surgical Rehabilitation Notes</span></div>
 
   </main>
   <footer class="pg-ftr">
@@ -1229,10 +1249,10 @@ body{
 </tr>
 </thead>
 <tbody>
-<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Glenohumeral mobilisation (low vs high grade)</td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Cross-body stretch (McClure 2007)</td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Thoracic / cervicothoracic mobilisation / SMT</td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Soft-tissue / myofascial / dry needling adjunct</td><td></td><td></td><td></td></tr>
+<tr style="height:5mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Glenohumeral mobilisation (low vs high grade)</td><td></td><td></td><td></td></tr>
+<tr style="height:5mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Cross-body stretch (McClure 2007)</td><td></td><td></td><td></td></tr>
+<tr style="height:5mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Thoracic / cervicothoracic mobilisation / SMT</td><td></td><td></td><td></td></tr>
+<tr style="height:5mm;"><td class="c"><span class="cb sm"></span></td><td class="k">Soft-tissue / myofascial / dry needling adjunct</td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 </div>
@@ -1251,8 +1271,17 @@ body{
 </div>
 </div>
 </section>
+<!-- 5 : Dry Needling Safety & Anatomical Danger Zones -->
+<section class="card red" id="p7-needling-safety">
+<div class="card-h"><span>7 · Dry Needling Safety &amp; Anatomical Danger Zones <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#needling-safety" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">SAFETY SCREEN</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb r"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#needling-safety" rel="noopener" target="_blank"><b>Adverse event rates:</b></a> Brady 2014 <span class="eb eb-m">M</span>: mild AEs 19.18 %; upper risk rate for significant AEs ≤ 0.04 %; bruising 7.55 %, bleeding 4.65 % • Boyce 2020 <span class="eb eb-m">M</span>: minor AE 36.7 %; major AE &lt; .1 % (prolonged symptom aggravation .03 %, fainting .02 %, forgotten needles .01 %; major AEs most often with gluteal, lumbar paraspinal, suboccipital and upper trapezius needling)</div></div>
+<div class="ci"><span class="cb r"></span><div><b>Serious risks &amp; screening:</b> Halle 2016 <span class="eb eb-e">E</span>: pneumothorax, cardiac tamponade, haematoma, infection, CNS injury; filament needles 32–36 gauge (.25–.20 mm) • Kearns 2019 <span class="eb eb-e">E</span>: anticoagulants / coagulopathy — caution — possible increased incidence or severity of haematoma and bruising</div></div>
+<div class="ci"><span class="cb r"></span><div><b>Shoulder / periscapular danger zones:</b> Folli 2020 <span class="eb eb-l">L</span>: pectoralis major (clavicular) — needle should not be inserted deeper than 0.9 cm • Sánchez-Sánchez 2026 <span class="eb eb-l">L</span>: pectoralis minor (cadaver pilot, n = 5) — pincer approach: 1 pleural puncture; flat approach onto the 3rd rib: no pleural injury • Valera-Calero 2021 <span class="eb eb-m">M</span>: rhomboid major — insert a maximum of 19 mm to reach deep limit; sex, BMI and thorax circumference explain 69.7 % of pleura depth • Kearns 2022 <span class="eb eb-l">L</span>: upper trapezius — a 30 mm needle never reached pleural space; consider needles &lt; 40 mm • Okçu 2026 <span class="eb eb-l">L</span>: parascapular region — women: shorter skin-to-pleura distance; depth increases with BMI</div></div>
+</div>
+</section>
 <!-- Consent Block -->
-<div class="box r flex flex-wrap items-center xs" style="padding:.7mm 1.6mm;">
+<div class="box r flex flex-wrap items-center xs" style="padding:.6mm 1.4mm;">
 <b class="crim mr-2">CONSENT OBTAINED FOR:</b>
 <span class="cio"><span class="cb r"></span>GH / scapular mobilisation</span>
 <span class="cio"><span class="cb r"></span>Thoracic manipulation / SMT</span>
@@ -1261,7 +1290,7 @@ body{
 <span class="cio"><span class="cb r"></span>Patient may decline</span>
 <span class="lr" style="margin-left:auto">Signature <span class="fl l"></span></span>
 </div>
-<div class="dots fill" id="p7-notes"><span class="dots-l">Manual Therapy Clinical Reasoning · Irritability Matching · Immediate Re-Test Notes</span></div>
+<div class="dots" id="p7-notes" style="min-height:5mm;height:5mm;"><span class="dots-l">Manual Therapy Clinical Reasoning · Irritability Matching · Immediate Re-Test Notes</span></div>
 
   </main>
   <footer class="pg-ftr">
@@ -1338,9 +1367,40 @@ body{
 <div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#throwers-gird-trm-wilk" rel="noopener" target="_blank"><b>Throwers — ER</b></a> (Wilk 2015 Am J Sports Med) <span class="eb eb-l">L</span>: <b class="emer">insufficient ER (&lt; 5° more ER on throwing side): 2.2× disabled-list risk (1.2–4.1), 4.0× surgery (1.5–12.6); GIRD not significant</b></div></div>
 </div>
 </section>
-<!-- 4 : 12-Week Loading Log (Blank Write-In Fields) -->
+<!-- 4 : Pain-Monitoring Model & Activity Guidance -->
+<section class="card" id="p8-pain-monitoring">
+<div class="card-h"><span>5 · Pain-Monitoring Model &amp; Activity Modification <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#pain-monitoring-model" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">TRAFFIC LIGHT</span></div>
+<div class="card-b grid grid-cols-12 gap-2" style="padding:.8mm 1.2mm;">
+<div class="col-span-7 flex flex-col gap-[1.5px]">
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#pain-monitoring-model" rel="noopener" target="_blank"><b>Pain-monitoring model:</b></a> Sprague 2021 <span class="eb eb-e">E</span>: <b class="emer">pain should not exceed 5/10 on the NPRS during or immediately after activity and should return to pre-activity levels by the following morning</b> • Silbernagel 2007 <span class="eb eb-m">M</span>: continued tendon loading with a pain-monitoring model showed no negative effects</div></div>
+<div class="ci"><span class="cb"></span><div><b>Origin of the zones:</b> Cavaggion 2024 <span class="eb eb-e">E</span>: low (0–2), acceptable (2–5) and high (5–10) risk zones were based on clinical experience</div></div>
+<div class="flex items-center gap-1 xs mt-[1px]">
+<span class="badge badge-green">Low 0–2 (Safe)</span>
+<span class="badge badge-amber">Acceptable 2–5 (Monitor)</span>
+<span class="badge badge-red">High 5–10 (Excessive)</span>
+</div>
+</div>
+<div class="col-span-5">
+<div class="xs b mb-[1px]">Activity Guidance (E):</div>
+<table class="t dense">
+<thead><tr><th style="width:33%">Avoid</th><th style="width:33%">Modify</th><th style="width:34%">OK</th></tr></thead>
+<tbody><tr style="height:5.5mm;"><td></td><td></td><td></td></tr></tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 5 : Upper-Limb Return-to-Sport Battery & BFR Protocol -->
+<section class="card" id="p8-rts-battery">
+<div class="card-h"><span>6 · Upper-Limb Return-to-Sport Battery &amp; Blood Flow Restriction (BFR) <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#rts-battery-ul" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a> <a aria-label="Open Atlas info card" class="info-icon" href="https://azhry-x.github.io/shoulder-atlas/#bfr-upper-limb" rel="noopener" target="_blank"><svg aria-hidden="true" class="info-svg" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="10" stroke="currentColor" stroke-width="2.2"></circle><line stroke="currentColor" stroke-width="2.4" x1="12" x2="12" y1="16.5" y2="10.5"></line><circle cx="12" cy="7.3" fill="currentColor" r="1.4"></circle></svg></a></span><span class="tag">RTS · BFR</span></div>
+<div class="card-b flex flex-col gap-[1.5px]" style="padding:.8mm 1.2mm;">
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rts-battery-ul" rel="noopener" target="_blank"><b>Upper-limb RTS battery:</b></a> <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ckcuest" rel="noopener" target="_blank">CKCUEST</a> (Tucci 2014 <span class="eb eb-m">M</span>: SEM 1.45–2.76 touches, MDC 2.05–3.91, at least 3 touches = real improvement; Pontillo 2014 <span class="eb eb-l">L</span>: 21 touches: Sn 0.83, Sp 0.79, OR 18.75) • <a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#ybt-uq" rel="noopener" target="_blank">YBT-UQ</a> (Westrick 2012 <span class="eb eb-l">L</span>: dominant and non-dominant limbs similar) • <b>Seated shot put</b> (Chmielewski 2014 <span class="eb eb-m">M</span>: LSI exceeded 100 % — males 108.7 %, females 104.4 %)</div></div>
+<div class="ci"><span class="cb g"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#rts-battery-ul" rel="noopener" target="_blank"><b>ASH test &amp; SIRSI:</b></a> ASH test (Ashworth 2018 <span class="eb eb-m">M</span>: interday ICC 0.94–0.98, MDC 13.2 and 25.9 N; Królikowska 2022 <span class="eb eb-l">L</span>: ICC 0.77–0.99; Çiftçi 2025 <span class="eb eb-l">L</span>: intra-day ICC 0.908–0.969; Schellekens 2025 <span class="eb eb-l">L</span>: non-dominant T position excellent; Trunt 2022 <span class="eb eb-l">L</span>: dominant stronger in T and Y) • SIRSI (Gerometta 2018 <span class="eb eb-m">M</span>: α = 0.96, test–retest ρ = 0.93; RTS rugby score 60.9 ± 26.6 % vs 38.1 ± 25.6 %)</div></div>
+<div class="ci"><span class="cb"></span><div><a class="test-link" href="https://azhry-x.github.io/shoulder-atlas/#bfr-upper-limb" rel="noopener" target="_blank"><b>Blood flow restriction (BFR):</b></a> Patterson 2019 (Guideline): 40 to 80 % of arterial occlusion pressure (AOP), set from measured AOP; 20–40 % 1RM; 75 repetitions as 30-15-15-15; rest 30–60 s; 2–3 sessions per week • Lorenz 2021 <span class="eb eb-l">L</span>: 20 % to 40 % of 1-RM • <b class="crim">Cuff on proximal arm only</b> <span class="eb eb-e">E</span></div></div>
+</div>
+</section>
+<!-- 6 : 12-Week Loading Log (Blank Write-In Fields) -->
 <section class="card" id="p8-loading-log">
-<div class="card-h"><span>5 · 12-Week Shoulder Exercise &amp; Return-to-Sport Progression Log</span><span class="tag">12-WEEK LOG</span></div>
+<div class="card-h"><span>7 · 12-Week Shoulder Exercise &amp; Return-to-Sport Progression Log</span><span class="tag">12-WEEK LOG</span></div>
 <div class="card-b" style="padding:.8mm 1.2mm;">
 <div class="flex flex-wrap xs mb-[2px]" style="row-gap:1px">
 <span class="lb mr-1">Primary Programme Ticked:</span>
@@ -1363,16 +1423,16 @@ body{
 </tr>
 </thead>
 <tbody>
-<tr style="height:6mm;"><td class="k">1 · Primary Cuff / Self-Managed Exercise</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="k">2 · Scapular Upward Rotation / Control</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="k">3 · Posterior Shoulder / Mobility</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="k">4 · Kinetic Chain / CKCUEST / Overhead</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr style="height:6mm;"><td class="k">5 · Symptom Response (NPRS)</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:4.2mm;"><td class="k">1 · Primary Cuff / Self-Managed Exercise</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:4.2mm;"><td class="k">2 · Scapular Upward Rotation / Control</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:4.2mm;"><td class="k">3 · Posterior Shoulder / Mobility</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:4.2mm;"><td class="k">4 · Kinetic Chain / CKCUEST / Overhead</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr style="height:4.2mm;"><td class="k">5 · Symptom Response (NPRS)</td><td></td><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 </div>
 </section>
-<div class="dots fill" id="p8-notes"><span class="dots-l">Exercise Prescription Details · Load Progression · Return-to-Sport Criteria Notes</span></div>
+<div class="dots fill" id="p8-notes" style="min-height:6mm;"><span class="dots-l">Exercise Prescription Details · Load Progression · Return-to-Sport Criteria Notes</span></div>
 
   </main>
   <footer class="pg-ftr">
@@ -1415,115 +1475,116 @@ body{
  <table class="t flow slate" id="p9-flowsheet" style="table-layout:fixed;">
 <thead>
 <tr>
-<th class="c" style="width:4%">#</th>
-<th style="width:7%">Date</th>
-<th style="width:6%">NPRS</th>
-<th style="width:8%">ER 0°/90°</th>
-<th style="width:8%">Elev / IR</th>
-<th style="width:7%">SAT/SSMP</th>
-<th style="width:24%">Exercise &amp; Loading Delivered</th>
+<th class="c" style="width:3%">#</th>
+<th style="width:6%">Date</th>
+<th style="width:5%">NPRS</th>
+<th style="width:7%">ER 0°/90°</th>
+<th style="width:7%">Elev / IR</th>
+<th style="width:6.5%">SAT/SSMP</th>
+<th style="width:22%">Exercise &amp; Loading Delivered</th>
 <th style="width:16%">Manual &amp; Adjuncts</th>
-<th style="width:8%">Irritability</th>
-<th style="width:8%">Adherence</th>
+<th style="width:7.5%">Irritability</th>
+<th style="width:7%">Adherence</th>
+<th style="width:10%;font-size:5.2pt;white-space:nowrap;">Patient signature</th>
 <th class="c" style="width:4%">Init</th>
 </tr>
 </thead>
 <tbody>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">1</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">2</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">3</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">4</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">5</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">6</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">7</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">8</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">9</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">10</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">11</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
-<tr style="height:12.2mm;">
+<tr style="height:11.2mm;">
 <td class="vnum">12</td>
 <td></td><td></td><td></td><td></td><td></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GRASP | Holmgren | SELF | Scap | Watson | Stretch</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">GH Mob | Cross-Body | Thoracic | DN</div></td>
 <td style="vertical-align:bottom;padding-bottom:1.2px;"><div class="p">Low | Mod | High</div></td>
-<td></td><td></td>
+<td></td><td></td><td></td>
 </tr>
 </tbody>
 </table>
@@ -1562,7 +1623,11 @@ body{
 </div>
 </section>
 </div>
-<div class="dots fill" id="p9-notes" style="min-height:8mm"><span class="dots-l">Home Exercise Maintenance · Overhead / RTS Plan · Discharge Summary</span></div>
+<div class="box amber xs flex flex-wrap items-center" style="padding:.7mm 1.5mm;margin-top:1mm;">
+<b class="mr-2">Session 6 checkpoint:</b>
+<span>Re-score the main PROM against the MCID / MDC already on the sheet. If there is no change, re-assess the diagnosis, the dose or referral (E).</span>
+</div>
+<div class="dots" id="p9-notes" style="min-height:5mm;height:5mm;"><span class="dots-l">Home Exercise Maintenance · Overhead / RTS Plan · Discharge Summary</span></div>
 <div class="fr xs" style="gap:2mm"><span class="lb">Clinician / Surgeon follow-up</span><span class="fl"></span><span class="lb">Signature</span><span class="fl"></span><span class="lb">Date</span><span class="fl m"></span></div>
 
   </main>

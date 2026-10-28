@@ -9,3 +9,5 @@ POST-OP RESTRICTIONS ARE SURGEON-DIRECTED
 Frozen shoulder
 CONSENT OBTAINED FOR:
 BESS/BOA
+Patient signature
+Session 6 checkpoint
