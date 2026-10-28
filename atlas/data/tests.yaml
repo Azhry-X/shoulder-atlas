@@ -162,10 +162,10 @@
   - Screen for left shoulder tip pain (Kehr sign) after abdominal/thoracic trauma, ectopic pregnancy, or diaphragmatic
     irritation; confirm that shoulder palpation and mechanical loading do not reproduce the primary symptom.
   positive: Non-mechanical shoulder pain provoked by exertion, respiration, or meals, or accompanied by autonomic/visceral
-    signs — no verified numbers.
+    signs.
   interpretation: Visceral and cardiac referral must be excluded when shoulder symptoms are unrelated to glenohumeral
     or cervical movement.
-  metrics: Clinical red-flag synthesis — no verified numbers in source file.
+  metrics: Clinical red-flag synthesis (E).
   evidence: E
   sources: []
   review_status: approved
@@ -405,10 +405,10 @@
     colour/temperature changes during overhead work.'
   - Combine cervical radiculopathy screening (Wainner cluster / ULTT A) and peripheral neurological examination
     to differentiate TOS from cervical root compression.
-  positive: Clinical pattern recognition in words — no verified numbers in source file.
+  positive: Clinical pattern recognition (E).
   interpretation: For calcific tendinopathy management evidence (ESWT and ultrasound-guided barbotage RCT), see
     Page 6.
-  metrics: Clinical differential synthesis — no verified numbers in source file.
+  metrics: Clinical differential synthesis (E).
   evidence: E
   sources: []
   review_status: approved
@@ -478,11 +478,10 @@
     baseline pain.
   - Place one hand over the superior aspect of the scapula and the other hand over the inferior angle.
   - Manually assist scapular upward rotation and posterior tilt as the patient repeats active arm elevation.
-  positive: Substantial reduction in pain or increase in pain-free elevation range during manual scapular assistance
-    — no verified numbers.
+  positive: Substantial reduction in pain or increase in pain-free elevation range during manual scapular assistance.
   interpretation: A positive SAT supports incorporating scapular upward-rotator and serratus anterior facilitation
     into the exercise programme.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   video_url: https://www.youtube.com/watch?v=pfXdmXL9ouM
   video_title: Scapular Assistance Test (SAT) (Physiotutors)
@@ -500,10 +499,10 @@
     position against the thorax.
   - Repeat the isometric test or elevation maneuver and compare pain intensity and force output.
   positive: Reduction of shoulder pain or improvement in apparent supraspinatus isometric strength with manual scapular
-    retraction — no verified numbers.
+    retraction.
   interpretation: Indicates that a stable scapulothoracic base improves rotator cuff force generation or symptom
     tolerance.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   video_url: https://www.youtube.com/watch?v=tyxDTbVn_gg
   video_title: Scapular Retraction Test (SRT) (Physiotutors)
@@ -520,11 +519,10 @@
   - 'Apply sequential modifications: thoracic extension/posture adjustment, scapular position/assistance (SAT/SRT),
     and humeral head procedures (depression, AP/PA glide, or external rotation recruitment).'
   - Adopt any modification that meaningfully reduces symptoms directly into the patient’s active exercise prescription.
-  positive: Meaningful immediate reduction or abolition of concordant pain during the provocative shoulder movement
-    — no verified numbers.
+  positive: Meaningful immediate reduction or abolition of concordant pain during the provocative shoulder movement.
   interpretation: Links physical examination directly to exercise selection without relying on pathoanatomical special
     test labels.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   sources: []
   review_status: approved
@@ -542,9 +540,9 @@
   - Record raw values and compute within-patient limb symmetry and ER:IR ratios across visits (no normative cut-offs
     applied).
   positive: Asymmetric isometric force deficit or symptom reproduction compared with the uninvolved limb and serial
-    baseline — no verified numbers.
+    baseline.
   interpretation: Track individual strength recovery and ER:IR balance across rehabilitation phases.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   sources: []
   review_status: approved
@@ -581,10 +579,10 @@
     to 90°.
   - From a push-up position, the patient stabilises on the tested arm and reaches maximally with the free hand along
     the medial, inferolateral, and superolateral directions without losing 3-point contact.
-  - Record reach distances and compare limb symmetry against the patient’s own baseline (no normative cut-offs applied).
-  positive: Side-to-side reach asymmetry or apprehension during closed-chain weight-bearing — no verified numbers.
+  - Record reach distances and compare limb symmetry against the patient’s own baseline and with the other side.
+  positive: Side-to-side reach asymmetry or apprehension during closed-chain weight-bearing.
   interpretation: Used alongside CKCUEST to evaluate closed-chain shoulder stability for return to sport.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   sources: []
   review_status: approved
@@ -604,9 +602,9 @@
   - 'Reflexes: grade Biceps (C5–C6), Brachioradialis (C6), and Triceps (C7) deep tendon reflexes, and screen Hoffman
     / Babinski signs if cervical myelopathy is suspected.'
   positive: Dermatomal sensory loss, myotomal weakness, or diminished/absent deep tendon reflex concordant with
-    a cervical root or peripheral nerve injury — no verified numbers.
+    a cervical root or peripheral nerve injury.
   interpretation: "Always check the axillary nerve (regimental badge sensation + deltoid contraction) after traumatic dislocation: clinically apparent nerve injury ≈ 13.5% of dislocations, nerve injury on EMG 48% (Brownson 2015)."
-  metrics: Standard neurological examination grid — no verified numbers in source file.
+  metrics: Standard neurological examination grid (E).
   evidence: E
   sources:
   - text: Brownson 2015 BESS/BOA traumatic anterior instability pathway
@@ -726,10 +724,9 @@
     up" / full can position).
   - Apply downward isometric resistance and evaluate force output and symptom provocation compared with the Empty
     Can position.
-  positive: Weakness or reproduction of subacromial/supraspinatus pain during resisted scapular-plane elevation
-    — no verified numbers.
+  positive: Weakness or reproduction of subacromial/supraspinatus pain during resisted scapular-plane elevation.
   interpretation: Minimises mechanical subacromial narrowing compared with the internal-rotation Empty Can position.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   video_url: https://www.youtube.com/watch?v=NuBOHdm20cc
   video_title: Full Can Test — Rotator Cuff Tears / SAPS (Physiotutors)
@@ -891,9 +888,9 @@
   - Observe for inability to maintain external rotation in abduction or compensatory elbow abduction above the hand
     ("hornblower" posture).
   positive: Inability to externally rotate or maintain external rotation in abduction (or obligatory elbow elevation
-    when bringing hand to mouth) — no verified numbers.
+    when bringing hand to mouth).
   interpretation: Indicates posterosuperior cuff tear extending into the teres minor.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   video_url: https://www.youtube.com/watch?v=am5XZ1VnoLc
   video_title: Hornblower’s Sign — Teres Minor Tears (Physiotutors)
@@ -1076,7 +1073,7 @@
   - Compare translation magnitude, end-feel, and symptom reproduction against the contralateral shoulder.
   positive: anterior drawer Sn 53%, Sp 85%, LR 3.6 (Farber 2006).
   interpretation: "Grades translation; always distinguish asymptomatic physiological laxity from symptomatic instability and combine with apprehension, relocation and surprise tests."
-  metrics: "No verified numbers for the load-and-shift test itself. Related anterior drawer test (Farber 2006 JBJS Am): Sn 53%, Sp 85%, LR 3.6."
+  metrics: "Load-and-shift test: graded expert examination (E). Related anterior drawer test (Farber 2006 JBJS Am): Sn 53%, Sp 85%, LR 3.6."
   evidence: "E"
   video_url: https://www.youtube.com/watch?v=txARar71h5E
   video_title: Load and Shift Test — Shoulder Instability Assessment (Physiotutors)
@@ -1095,11 +1092,10 @@
   - Apply downward (caudal) traction at the distal humerus / elbow.
   - Observe for a visible/palpable subacromial sulcus step-off beneath the lateral acromial border and ask whether
     it reproduces the patient’s concordant instability symptoms.
-  positive: Subacromial sulcus step-off accompanied by concordant inferior/multidirectional instability symptoms
-    — no verified numbers.
+  positive: Subacromial sulcus step-off accompanied by concordant inferior/multidirectional instability symptoms.
   interpretation: An asymptomatic sulcus sign reflects generalized inferior laxity (Stanmore type II); clinical
     multidirectional instability requires symptom reproduction.
-  metrics: no verified numbers — list the test only.
+  metrics: Expert clinical test (E) — compare with the other side and track against the patient's baseline.
   evidence: E
   video_url: https://www.youtube.com/watch?v=vV7u2JtdYWI
   video_title: Sulcus Sign — Inferior Shoulder Instability Assessment (Physiotutors)
@@ -2024,9 +2020,9 @@
   - Score across the 4 domains (physical symptoms, sports/recreation/work, lifestyle, emotions).
   - Track change against baseline (used as primary outcome in the Warby 2018 Watson vs Rockwood MDI trial on Page
     8).
-  positive: instability-specific QoL tool, 21 items, 4 domains — no MCID in source (Kirkley 1998).
+  positive: instability-specific QoL tool, 21 items, 4 domains (Kirkley 1998).
   interpretation: Condition-specific outcome tool more responsive than generic shoulder scales in instability cohorts.
-  metrics: 'Kirkley 1998 Am J Sports Med: instability-specific QoL tool, 21 items, 4 domains — no MCID in source.'
+  metrics: 'Kirkley 1998 Am J Sports Med: instability-specific QoL tool, 21 items, 4 domains.'
   evidence: M
   sources:
   - text: Kirkley 1998 Am J Sports Med
@@ -2080,10 +2076,10 @@
   - Have the patient rate each activity from 0 (unable to perform activity) to 10 (able to perform at the same level
     as before the problem).
   - Compute the average score (0–10) and track against the patient’s own baseline across visits.
-  positive: list the tool only (PSFS has no shoulder-specific number in this file).
+  positive: Improvement in the average score across visits against the patient's own baseline.
   interpretation: Tailors goal-setting and functional tracking directly to the patient’s personal overhead, work,
     or sport tasks.
-  metrics: list the tool only (PSFS has no shoulder-specific number in this file).
+  metrics: Patient-specific scale (E) — track against baseline.
   evidence: E
   calculator:
     kind: scale
@@ -2091,7 +2087,7 @@
     min: 0
     max: 10
     note: Rate each patient-nominated shoulder activity from 0 (unable to perform) to 10 (able to perform at prior
-      level). No shoulder-specific MCID number in source file.
+      level).
     item_labels:
     - First patient-nominated shoulder activity
     - Second patient-nominated shoulder activity
